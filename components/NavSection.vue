@@ -4,10 +4,10 @@
       <div class="flex justify-between h-16">
         <div class="flex items-center">
           <NuxtLink to="/" class="flex items-center space-x-3">
-            <Icon name="heroicons:building-office" class="w-8 h-8 text-blue-700" />
+            <Icon name="heroicons:building-office" class="w-8 h-8 text-primary-700" />
             <div class="flex flex-col">
-              <span class="text-lg font-bold text-gray-900 leading-tight">True North</span>
-              <span class="text-xs text-gray-600 leading-tight">Federal Solutions</span>
+              <span class="text-lg font-bold text-secondary-900 leading-tight">True North</span>
+              <span class="text-xs text-secondary-600 leading-tight">Federal Solutions</span>
             </div>
           </NuxtLink>
         </div>
@@ -16,13 +16,13 @@
         <div class="hidden md:flex items-center space-x-1">
           <NuxtLink 
             to="/" 
-            class="text-gray-700 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors"
           >
             Home
           </NuxtLink>
           <NuxtLink 
             to="/about" 
-            class="text-gray-700 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors"
           >
             About
           </NuxtLink>
@@ -30,7 +30,7 @@
           <!-- Services Dropdown -->
           <div class="relative group">
             <button 
-              class="text-gray-700 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center"
+              class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center"
               @click="toggleServicesDropdown"
             >
               Services
@@ -43,7 +43,7 @@
               <div class="py-2">
                 <NuxtLink 
                   to="/services" 
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                  class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns"
                 >
                   Services Overview
@@ -51,28 +51,28 @@
                 <hr class="my-1">
                 <NuxtLink 
                   to="/services/contract-setup" 
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                  class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns"
                 >
                   Federal Contract Setup
                 </NuxtLink>
                 <NuxtLink 
                   to="/services/proposal-development" 
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                  class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns"
                 >
                   Proposal Development
                 </NuxtLink>
                 <NuxtLink 
                   to="/services/far-compliance" 
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                  class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns"
                 >
                   FAR Compliance
                 </NuxtLink>
                 <NuxtLink 
                   to="/services/bid-no-bid-strategy" 
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                  class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns"
                 >
                   Bid/No-Bid Strategy
@@ -84,7 +84,7 @@
           <!-- Resources Dropdown -->
           <div class="relative group">
             <button 
-              class="text-gray-700 hover:text-blue-700 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center"
+              class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center"
               @click="toggleResourcesDropdown"
             >
               Resources
@@ -97,7 +97,7 @@
               <div class="py-2">
                 <NuxtLink 
                   to="/resources" 
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                  class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns"
                 >
                   Resource Hub
@@ -105,21 +105,21 @@
                 <hr class="my-1">
                 <NuxtLink 
                   to="/resources/blog" 
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                  class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns"
                 >
                   Blog & Articles
                 </NuxtLink>
                 <NuxtLink 
                   to="/resources/guides" 
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                  class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns"
                 >
                   Guides & Templates
                 </NuxtLink>
                 <NuxtLink 
                   to="/resources/certifications" 
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                  class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns"
                 >
                   Certification Help
@@ -130,7 +130,7 @@
 
           <NuxtLink 
             to="/contact" 
-            class="bg-blue-700 text-white hover:bg-blue-800 px-4 py-2 rounded-md text-sm font-medium transition-colors"
+            class="bg-primary-700 text-white hover:bg-primary-800 px-4 py-2 rounded-md text-sm font-medium transition-colors"
           >
             Get Started
           </NuxtLink>
@@ -140,7 +140,7 @@
         <div class="md:hidden flex items-center">
           <button 
             @click="toggleMobileMenu"
-            class="text-gray-700 hover:text-blue-700 p-2"
+            class="text-secondary-700 hover:text-primary-700 p-2"
           >
             <Icon name="heroicons:bars-3" v-show="!mobileMenuOpen" class="w-6 h-6" />
             <Icon name="heroicons:x-mark" v-show="mobileMenuOpen" class="w-6 h-6" />
@@ -153,14 +153,14 @@
         <div class="px-2 pt-2 pb-3 space-y-1">
           <NuxtLink 
             to="/" 
-            class="block text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium"
+            class="block text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium"
             @click="closeMobileMenu"
           >
             Home
           </NuxtLink>
           <NuxtLink 
             to="/about" 
-            class="block text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium"
+            class="block text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium"
             @click="closeMobileMenu"
           >
             About
@@ -170,7 +170,7 @@
           <div>
             <button 
               @click="toggleMobileServices"
-              class="w-full text-left text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
+              class="w-full text-left text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
             >
               Services
               <Icon name="heroicons:chevron-down" class="w-4 h-4" :class="{'rotate-180': mobileServicesOpen}" />
@@ -178,35 +178,35 @@
             <div v-show="mobileServicesOpen" class="pl-6 space-y-1">
               <NuxtLink 
                 to="/services" 
-                class="block text-gray-600 hover:text-blue-700 hover:bg-blue-50 px-3 py-1 rounded-md text-sm"
+                class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu"
               >
                 Services Overview
               </NuxtLink>
               <NuxtLink 
                 to="/services/contract-setup" 
-                class="block text-gray-600 hover:text-blue-700 hover:bg-blue-50 px-3 py-1 rounded-md text-sm"
+                class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu"
               >
                 Federal Contract Setup
               </NuxtLink>
               <NuxtLink 
                 to="/services/proposal-development" 
-                class="block text-gray-600 hover:text-blue-700 hover:bg-blue-50 px-3 py-1 rounded-md text-sm"
+                class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu"
               >
                 Proposal Development
               </NuxtLink>
               <NuxtLink 
                 to="/services/far-compliance" 
-                class="block text-gray-600 hover:text-blue-700 hover:bg-blue-50 px-3 py-1 rounded-md text-sm"
+                class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu"
               >
                 FAR Compliance
               </NuxtLink>
               <NuxtLink 
                 to="/services/bid-no-bid-strategy" 
-                class="block text-gray-600 hover:text-blue-700 hover:bg-blue-50 px-3 py-1 rounded-md text-sm"
+                class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu"
               >
                 Bid/No-Bid Strategy
@@ -218,7 +218,7 @@
           <div>
             <button 
               @click="toggleMobileResources"
-              class="w-full text-left text-gray-700 hover:text-blue-700 hover:bg-blue-50 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
+              class="w-full text-left text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
             >
               Resources
               <Icon name="heroicons:chevron-down" class="w-4 h-4" :class="{'rotate-180': mobileResourcesOpen}" />
@@ -226,28 +226,28 @@
             <div v-show="mobileResourcesOpen" class="pl-6 space-y-1">
               <NuxtLink 
                 to="/resources" 
-                class="block text-gray-600 hover:text-blue-700 hover:bg-blue-50 px-3 py-1 rounded-md text-sm"
+                class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu"
               >
                 Resource Hub
               </NuxtLink>
               <NuxtLink 
                 to="/resources/blog" 
-                class="block text-gray-600 hover:text-blue-700 hover:bg-blue-50 px-3 py-1 rounded-md text-sm"
+                class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu"
               >
                 Blog & Articles
               </NuxtLink>
               <NuxtLink 
                 to="/resources/guides" 
-                class="block text-gray-600 hover:text-blue-700 hover:bg-blue-50 px-3 py-1 rounded-md text-sm"
+                class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu"
               >
                 Guides & Templates
               </NuxtLink>
               <NuxtLink 
                 to="/resources/certifications" 
-                class="block text-gray-600 hover:text-blue-700 hover:bg-blue-50 px-3 py-1 rounded-md text-sm"
+                class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu"
               >
                 Certification Help
@@ -257,7 +257,7 @@
 
           <NuxtLink 
             to="/contact" 
-            class="block bg-blue-700 text-white hover:bg-blue-800 px-3 py-2 rounded-md text-base font-medium text-center"
+            class="block bg-primary-700 text-white hover:bg-primary-800 px-3 py-2 rounded-md text-base font-medium text-center"
             @click="closeMobileMenu"
           >
             Get Started

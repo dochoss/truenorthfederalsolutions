@@ -1,178 +1,254 @@
 <template>
   <div>
+    <NavSection />
+    
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-blue-600 to-indigo-700">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <BaseSection variant="primary" spacing="xl" centered>
+      <template #header>
+        <IconWrapper 
+          icon="heroicons:rocket-launch" 
+          variant="primary" 
+          size="xl" 
+          class="mx-auto mb-8 bg-white bg-opacity-20"
+        />
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+          Federal Contracting
+          <span class="block text-primary-200">Success Starts Here</span>
+        </h1>
+        <p class="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
+          Expert guidance from a seasoned contracting officer with 15 years of federal service. 
+          Navigate the complex world of government procurement with confidence and expertise.
+        </p>
+      </template>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <BaseButton 
+          variant="secondary" 
+          size="lg"
+          icon-left="heroicons:calendar-days"
+        >
+          <NuxtLink to="/contact" class="flex items-center">
+            Schedule Consultation
+          </NuxtLink>
+        </BaseButton>
+        <BaseButton 
+          variant="tertiary" 
+          size="lg"
+          icon-left="heroicons:book-open"
+        >
+          <NuxtLink to="/resources" class="flex items-center">
+            Explore Resources
+          </NuxtLink>
+        </BaseButton>
+      </div>
+    </BaseSection>
+
+    <!-- Services Overview -->
+    <BaseSection 
+      title="Expert Federal Contracting Services" 
+      subtitle="From initial setup to winning proposals, we provide comprehensive support for your federal contracting journey."
+      spacing="lg"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Contract Setup -->
+        <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
+          <div class="text-center">
+            <IconWrapper 
+              icon="heroicons:document-text" 
+              variant="primary" 
+              size="lg" 
+              class="mx-auto mb-6"
+            />
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Contract Setup</h3>
+            <p class="text-secondary-600 mb-6">
+              Get your business registered and ready for federal contracting with proper certifications and compliance.
+            </p>
+            <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
+              <NuxtLink to="/services/contract-setup">
+                Learn More
+              </NuxtLink>
+            </BaseButton>
+          </div>
+        </BaseCard>
+
+        <!-- Proposal Development -->
+        <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
+          <div class="text-center">
+            <IconWrapper 
+              icon="heroicons:pencil-square" 
+              variant="success" 
+              size="lg" 
+              class="mx-auto mb-6"
+            />
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Proposal Development</h3>
+            <p class="text-secondary-600 mb-6">
+              Craft winning proposals with strategic guidance from an experienced contracting officer perspective.
+            </p>
+            <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
+              <NuxtLink to="/services/proposal-development">
+                Learn More
+              </NuxtLink>
+            </BaseButton>
+          </div>
+        </BaseCard>
+
+        <!-- FAR Compliance -->
+        <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
+          <div class="text-center">
+            <IconWrapper 
+              icon="heroicons:shield-check" 
+              variant="warning" 
+              size="lg" 
+              class="mx-auto mb-6"
+            />
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">FAR Compliance</h3>
+            <p class="text-secondary-600 mb-6">
+              Ensure your business meets all Federal Acquisition Regulation requirements with expert guidance.
+            </p>
+            <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
+              <NuxtLink to="/services/far-compliance">
+                Learn More
+              </NuxtLink>
+            </BaseButton>
+          </div>
+        </BaseCard>
+
+        <!-- Strategic Consulting -->
+        <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
+          <div class="text-center">
+            <IconWrapper 
+              icon="heroicons:chart-bar" 
+              variant="accent" 
+              size="lg" 
+              class="mx-auto mb-6"
+            />
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Strategic Consulting</h3>
+            <p class="text-secondary-600 mb-6">
+              Make informed bid/no-bid decisions with strategic analysis and win probability assessment.
+            </p>
+            <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
+              <NuxtLink to="/services/bid-no-bid-strategy">
+                Learn More
+              </NuxtLink>
+            </BaseButton>
+          </div>
+        </BaseCard>
+      </div>
+    </BaseSection>
+
+    <!-- Trust Indicators -->
+    <BaseSection variant="secondary" spacing="lg">
+      <template #header>
         <div class="text-center">
-          <Icon name="heroicons:rocket-launch" class="w-20 h-20 text-white mx-auto mb-8" />
-          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-            Nuxt 3 + Tailwind
-            <span class="block text-blue-200">Starter Template</span>
-          </h1>
-          <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            A modern, opinionated starter template optimized for productive development with GitHub Copilot. 
-            Pre-configured with Nuxt 3, Tailwind CSS, NuxtIcon, and Nuxt Image.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <NuxtLink 
-              to="/about"
-              class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 transition-colors"
-            >
-              <Icon name="heroicons:information-circle" class="w-5 h-5 mr-2" />
-              Learn More
-            </NuxtLink>
-            <a 
-              href="https://github.com/dochoss/nuxt3-vue3-tailwind-starter"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:bg-opacity-10 transition-colors"
-            >
-              <Icon name="simple-icons:github" class="w-5 h-5 mr-2" />
-              View on GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">
-            Everything You Need to Start Building
+          <h2 class="text-3xl font-bold text-secondary-900 mb-4">
+            Why Choose True North Federal Solutions?
           </h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            Pre-configured with the best tools and practices for modern web development
+          <p class="text-lg text-secondary-600 max-w-2xl mx-auto">
+            Experience and expertise you can trust
+          </p>
+        </div>
+      </template>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Experience -->
+        <div class="text-center">
+          <IconWrapper 
+            icon="heroicons:star" 
+            variant="accent" 
+            size="lg" 
+            class="mx-auto mb-4"
+          />
+          <h3 class="text-2xl font-bold text-secondary-900 mb-2">15+ Years</h3>
+          <p class="text-secondary-600">
+            Federal service experience from GS-06 to Contracting Officer
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Nuxt 3 -->
-          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
-            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-              <Icon name="simple-icons:nuxtdotjs" class="w-6 h-6 text-green-600" />
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Nuxt 3</h3>
-            <p class="text-gray-600">
-              The intuitive Vue framework with auto-imports, file-based routing, and excellent developer experience.
-            </p>
-          </div>
-
-          <!-- Tailwind CSS -->
-          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-              <Icon name="simple-icons:tailwindcss" class="w-6 h-6 text-blue-600" />
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Tailwind CSS</h3>
-            <p class="text-gray-600">
-              Utility-first CSS framework for rapid UI development with responsive design built-in.
-            </p>
-          </div>
-
-          <!-- NuxtIcon -->
-          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
-            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-              <Icon name="heroicons:star" class="w-6 h-6 text-purple-600" />
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">NuxtIcon</h3>
-            <p class="text-gray-600">
-              Thousands of ready-to-use icons from popular icon sets, optimized for performance.
-            </p>
-          </div>
-
-          <!-- Nuxt Image -->
-          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
-            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-              <Icon name="heroicons:photo" class="w-6 h-6 text-orange-600" />
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Nuxt Image</h3>
-            <p class="text-gray-600">
-              Optimized image component with lazy loading, responsive sizing, and format optimization.
-            </p>
-          </div>
-
-          <!-- GitHub Copilot -->
-          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
-            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
-              <Icon name="simple-icons:github" class="w-6 h-6 text-gray-600" />
-            </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Copilot Ready</h3>
-            <p class="text-gray-600">
-              Pre-configured instructions and task management for optimal GitHub Copilot integration.
-            </p>
-          </div>
-
-          <!-- Azure Deploy -->
-          <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-              <Icon name="simple-icons:microsoftazure" class="w-6 h-6 text-blue-600" />
-            </div>            <h3 class="text-xl font-semibold text-gray-900 mb-2">Azure Ready</h3>
-            <p class="text-gray-600">
-              Automated deployment to Azure Static Web Apps with PowerShell script and GitHub Actions integration.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quick Start Section -->
-    <section class="py-24 bg-gray-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">
-            Quick Start
-          </h2>
-          <p class="text-lg text-gray-600">
-            Get up and running in minutes
+        <!-- Expertise -->
+        <div class="text-center">
+          <IconWrapper 
+            icon="heroicons:academic-cap" 
+            variant="primary" 
+            size="lg" 
+            class="mx-auto mb-4"
+          />
+          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Certified Expert</h3>
+          <p class="text-secondary-600">
+            Licensed contracting officer with deep FAR knowledge and practical experience
           </p>
         </div>
 
-        <div class="bg-white rounded-lg shadow-lg p-8">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="text-center">
-              <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-sm font-bold">
-                1
-              </div>
-              <h3 class="font-semibold text-gray-900 mb-2">Install Dependencies</h3>
-              <code class="text-sm bg-gray-100 px-3 py-1 rounded text-gray-800">npm install</code>
-            </div>
-            
-            <div class="text-center">
-              <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-sm font-bold">
-                2
-              </div>
-              <h3 class="font-semibold text-gray-900 mb-2">Start Development</h3>
-              <code class="text-sm bg-gray-100 px-3 py-1 rounded text-gray-800">npm run dev</code>
-            </div>
-            
-            <div class="text-center">
-              <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-sm font-bold">
-                3
-              </div>              <h3 class="font-semibold text-gray-900 mb-2">Deploy to Azure</h3>
-              <code class="text-sm bg-gray-100 px-3 py-1 rounded text-gray-800">.\setup-azure-swa.ps1</code>
-            </div>
-          </div>
+        <!-- Results -->
+        <div class="text-center">
+          <IconWrapper 
+            icon="heroicons:trophy" 
+            variant="success" 
+            size="lg" 
+            class="mx-auto mb-4"
+          />
+          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Proven Results</h3>
+          <p class="text-secondary-600">
+            Helping small businesses successfully enter and compete in federal markets
+          </p>
         </div>
       </div>
-    </section>
+    </BaseSection>
+
+    <!-- CTA Section -->
+    <BaseSection variant="primary" spacing="lg" centered>
+      <template #header>
+        <h2 class="text-3xl font-bold text-white mb-4">
+          Ready to Start Your Federal Contracting Journey?
+        </h2>
+        <p class="text-xl text-primary-100 mb-8">
+          Schedule a consultation to discuss your business goals and learn how we can help you succeed.
+        </p>
+      </template>
+      
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <BaseButton 
+          variant="secondary" 
+          size="lg"
+          icon-left="heroicons:phone"
+        >
+          <NuxtLink to="/contact">
+            Schedule Consultation
+          </NuxtLink>
+        </BaseButton>
+        <BaseButton 
+          variant="tertiary" 
+          size="lg"
+          icon-left="heroicons:document-text"
+        >
+          <NuxtLink to="/resources">
+            Download Free Guide
+          </NuxtLink>
+        </BaseButton>
+      </div>
+    </BaseSection>
+
+    <FooterSection />
   </div>
 </template>
 
 <script setup>
 // Set page meta for SEO
 definePageMeta({
-  title: 'Home - Nuxt 3 Tailwind Starter',
-  description: 'A modern, opinionated starter template for Nuxt 3 projects with Tailwind CSS, optimized for GitHub Copilot.'
+  title: 'Home - True North Federal Solutions',
+  description: 'Expert federal contracting consulting services. Navigate government procurement with confidence. 15+ years of contracting officer experience.'
 })
 
 // Set head for SEO
 useHead({
-  title: 'Nuxt 3 + Tailwind CSS Starter Template',
+  title: 'Federal Contracting Experts - True North Federal Solutions',
   meta: [
     { 
       name: 'description', 
-      content: 'A modern, opinionated starter template for Nuxt 3 projects with Tailwind CSS, optimized for productive development with GitHub Copilot.' 
+      content: 'Expert federal contracting consulting from experienced contracting officers. Contract setup, proposal development, FAR compliance, and strategic guidance.' 
+    },
+    { 
+      name: 'keywords', 
+      content: 'federal contracting, government contracts, small business, consulting, proposal development, FAR compliance, contracting officer' 
     }
   ]
 })
