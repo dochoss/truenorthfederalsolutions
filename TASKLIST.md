@@ -17,7 +17,7 @@ This file tracks work completed and plans future work for the True North Federal
 
 ### Website Architecture & Design
 - [x] Create information architecture and site mapping
-- [ ] Develop brand-aligned design system and component library
+- [x] Develop brand-aligned design system and component library
 - [ ] Design responsive layouts for all device sizes
 - [ ] Create federal contracting focused visual identity
 
