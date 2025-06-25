@@ -3,277 +3,309 @@
     <NavSection />
     
     <!-- Resources Header -->
-    <section class="bg-blue-50 py-16">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <Icon name="heroicons:book-open" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
-        <h1 class="text-4xl font-bold text-gray-900 mb-4">
+    <BaseSection variant="secondary" spacing="lg" centered>
+      <template #header>
+        <IconWrapper 
+          icon="heroicons:book-open" 
+          variant="primary" 
+          size="xl" 
+          class="mx-auto mb-6"
+        />
+        <h1 class="text-4xl font-bold text-secondary-900 mb-4">
           Federal Contracting Resources
         </h1>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        <p class="text-xl text-secondary-600 max-w-2xl mx-auto">
           Access comprehensive guides, templates, and educational content to help you navigate the federal contracting landscape with confidence.
         </p>
-      </div>
-    </section>
+      </template>
+    </BaseSection>
 
     <!-- Resource Categories -->
-    <section class="py-16 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <!-- Blog & Articles -->
-          <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow text-center">
-            <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-lg mx-auto mb-6">
-              <Icon name="heroicons:newspaper" class="w-8 h-8 text-blue-700" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Blog & Articles</h3>
-            <p class="text-gray-600 mb-6">
+    <BaseSection spacing="lg">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <!-- Blog & Articles -->
+        <BaseCard variant="elevated" padding="lg" interactive>
+          <div class="text-center">
+            <IconWrapper 
+              icon="heroicons:newspaper" 
+              variant="primary" 
+              size="lg" 
+              class="mx-auto mb-6"
+            />
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Blog & Articles</h3>
+            <p class="text-secondary-600 mb-6">
               Stay updated with the latest insights, best practices, and industry news in federal contracting.
             </p>
-            <NuxtLink 
-              to="/resources/blog"
-              class="inline-flex items-center justify-center w-full bg-blue-700 text-white py-3 px-6 rounded-md hover:bg-blue-800 transition-colors font-medium"
-            >
-              Read Articles
-              <Icon name="heroicons:arrow-right" class="w-4 h-4 ml-2" />
-            </NuxtLink>
+            <BaseButton variant="primary" full-width icon-right="heroicons:arrow-right">
+              <NuxtLink to="/resources/blog">
+                Read Articles
+              </NuxtLink>
+            </BaseButton>
           </div>
+        </BaseCard>
 
-          <!-- Guides & Templates -->
-          <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow text-center">
-            <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-lg mx-auto mb-6">
-              <Icon name="heroicons:document-arrow-down" class="w-8 h-8 text-green-700" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Guides & Templates</h3>
-            <p class="text-gray-600 mb-6">
+        <!-- Guides & Templates -->
+        <BaseCard variant="elevated" padding="lg" interactive>
+          <div class="text-center">
+            <IconWrapper 
+              icon="heroicons:document-arrow-down" 
+              variant="success" 
+              size="lg" 
+              class="mx-auto mb-6"
+            />
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Guides & Templates</h3>
+            <p class="text-secondary-600 mb-6">
               Download practical guides, checklists, and templates to streamline your federal contracting process.
             </p>
-            <NuxtLink 
-              to="/resources/guides"
-              class="inline-flex items-center justify-center w-full bg-blue-700 text-white py-3 px-6 rounded-md hover:bg-blue-800 transition-colors font-medium"
-            >
-              Browse Guides
-              <Icon name="heroicons:arrow-right" class="w-4 h-4 ml-2" />
-            </NuxtLink>
+            <BaseButton variant="primary" full-width icon-right="heroicons:arrow-right">
+              <NuxtLink to="/resources/guides">
+                Browse Guides
+              </NuxtLink>
+            </BaseButton>
           </div>
+        </BaseCard>
 
-          <!-- Certification Help -->
-          <div class="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow text-center">
-            <div class="flex items-center justify-center w-16 h-16 bg-purple-100 rounded-lg mx-auto mb-6">
-              <Icon name="heroicons:trophy" class="w-8 h-8 text-purple-700" />
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Certification Help</h3>
-            <p class="text-gray-600 mb-6">
-              Get guidance on WOSB, VOSB, 8(a), and other certifications to maximize your contracting opportunities.
+        <!-- Certification Help -->
+        <BaseCard variant="elevated" padding="lg" interactive>
+          <div class="text-center">
+            <IconWrapper 
+              icon="heroicons:academic-cap" 
+              variant="accent" 
+              size="lg" 
+              class="mx-auto mb-6"
+            />
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Certification Help</h3>
+            <p class="text-secondary-600 mb-6">
+              Navigate the certification process for WOSB, VOSB, 8(a), and other small business programs.
             </p>
-            <NuxtLink 
-              to="/resources/certifications"
-              class="inline-flex items-center justify-center w-full bg-blue-700 text-white py-3 px-6 rounded-md hover:bg-blue-800 transition-colors font-medium"
-            >
-              Learn About Certifications
-              <Icon name="heroicons:arrow-right" class="w-4 h-4 ml-2" />
-            </NuxtLink>
+            <BaseButton variant="primary" full-width icon-right="heroicons:arrow-right">
+              <NuxtLink to="/resources/certifications">
+                Get Certified
+              </NuxtLink>
+            </BaseButton>
           </div>
-        </div>
+        </BaseCard>
       </div>
-    </section>
+    </BaseSection>
 
-    <!-- Featured Content -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">
-            Featured Resources
-          </h2>
-          <p class="text-lg text-gray-600">
-            Popular guides and articles to get you started
+    <!-- Featured Resources -->
+    <BaseSection 
+      variant="secondary" 
+      title="Featured Resources" 
+      subtitle="Popular downloads and essential guides for federal contracting success"
+      spacing="lg"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Featured Article 1 -->
+        <BaseCard variant="bordered" padding="md" interactive>
+          <IconWrapper 
+            icon="heroicons:rocket-launch" 
+            variant="primary" 
+            size="md" 
+            class="mb-4"
+          />
+          <h3 class="text-lg font-semibold text-secondary-900 mb-3">
+            Getting Started in Federal Contracting
+          </h3>
+          <p class="text-secondary-600 text-sm mb-4">
+            A comprehensive guide to starting your federal contracting journey, from registration to first contract.
           </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Featured Article 1 -->
-          <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg mb-4">
-              <Icon name="heroicons:rocket-launch" class="w-6 h-6 text-blue-700" />
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Getting Started with Federal Contracting
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              A comprehensive guide to the first steps every small business should take when entering the federal marketplace.
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-xs text-gray-500">Beginner Guide</span>
-              <button class="text-blue-700 hover:text-blue-800 text-sm font-medium">
-                Coming Soon
-              </button>
-            </div>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-secondary-500">Beginner Guide</span>
+            <BaseButton variant="tertiary" size="sm">
+              Coming Soon
+            </BaseButton>
           </div>
+        </BaseCard>
 
-          <!-- Featured Article 2 -->
-          <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center justify-center w-12 h-12 bg-green-100 rounded-lg mb-4">
-              <Icon name="heroicons:document-check" class="w-6 h-6 text-green-700" />
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              SAM Registration Checklist
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Step-by-step checklist to ensure your SAM.gov registration is complete and accurate for federal contracting.
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-xs text-gray-500">Essential Template</span>
-              <button class="text-blue-700 hover:text-blue-800 text-sm font-medium">
-                Coming Soon
-              </button>
-            </div>
+        <!-- Featured Article 2 -->
+        <BaseCard variant="bordered" padding="md" interactive>
+          <IconWrapper 
+            icon="heroicons:clipboard-document-check" 
+            variant="success" 
+            size="md" 
+            class="mb-4"
+          />
+          <h3 class="text-lg font-semibold text-secondary-900 mb-3">
+            SAM.gov Registration Checklist
+          </h3>
+          <p class="text-secondary-600 text-sm mb-4">
+            Step-by-step checklist to ensure your SAM.gov registration is complete and accurate for federal contracting.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-secondary-500">Essential Template</span>
+            <BaseButton variant="tertiary" size="sm">
+              Coming Soon
+            </BaseButton>
           </div>
+        </BaseCard>
 
-          <!-- Featured Article 3 -->
-          <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg mb-4">
-              <Icon name="heroicons:shield-check" class="w-6 h-6 text-purple-700" />
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              WOSB Certification Guide
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Complete guide to Woman-Owned Small Business certification, including requirements and application process.
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-xs text-gray-500">Certification Guide</span>
-              <button class="text-blue-700 hover:text-blue-800 text-sm font-medium">
-                Coming Soon
-              </button>
-            </div>
+        <!-- Featured Article 3 -->
+        <BaseCard variant="bordered" padding="md" interactive>
+          <IconWrapper 
+            icon="heroicons:shield-check" 
+            variant="accent" 
+            size="md" 
+            class="mb-4"
+          />
+          <h3 class="text-lg font-semibold text-secondary-900 mb-3">
+            WOSB Certification Guide
+          </h3>
+          <p class="text-secondary-600 text-sm mb-4">
+            Complete guide to Woman-Owned Small Business certification, including requirements and application process.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-secondary-500">Certification Guide</span>
+            <BaseButton variant="tertiary" size="sm">
+              Coming Soon
+            </BaseButton>
           </div>
+        </BaseCard>
 
-          <!-- Featured Article 4 -->
-          <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center justify-center w-12 h-12 bg-orange-100 rounded-lg mb-4">
-              <Icon name="heroicons:chart-bar" class="w-6 h-6 text-orange-700" />
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Proposal Writing Best Practices
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Learn the key elements of winning federal proposals from a contracting officer's perspective.
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-xs text-gray-500">Expert Insights</span>
-              <button class="text-blue-700 hover:text-blue-800 text-sm font-medium">
-                Coming Soon
-              </button>
-            </div>
+        <!-- Featured Article 4 -->
+        <BaseCard variant="bordered" padding="md" interactive>
+          <IconWrapper 
+            icon="heroicons:chart-bar" 
+            variant="warning" 
+            size="md" 
+            class="mb-4"
+          />
+          <h3 class="text-lg font-semibold text-secondary-900 mb-3">
+            Proposal Writing Best Practices
+          </h3>
+          <p class="text-secondary-600 text-sm mb-4">
+            Learn the key elements of winning federal proposals from a contracting officer's perspective.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-secondary-500">Advanced Guide</span>
+            <BaseButton variant="tertiary" size="sm">
+              Coming Soon
+            </BaseButton>
           </div>
+        </BaseCard>
 
-          <!-- Featured Article 5 -->
-          <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center justify-center w-12 h-12 bg-red-100 rounded-lg mb-4">
-              <Icon name="heroicons:exclamation-triangle" class="w-6 h-6 text-red-700" />
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Common FAR Compliance Mistakes
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Avoid costly mistakes by understanding the most common FAR compliance issues and how to prevent them.
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-xs text-gray-500">Compliance Guide</span>
-              <button class="text-blue-700 hover:text-blue-800 text-sm font-medium">
-                Coming Soon
-              </button>
-            </div>
+        <!-- Featured Article 5 -->
+        <BaseCard variant="bordered" padding="md" interactive>
+          <IconWrapper 
+            icon="heroicons:exclamation-triangle" 
+            variant="danger" 
+            size="md" 
+            class="mb-4"
+          />
+          <h3 class="text-lg font-semibold text-secondary-900 mb-3">
+            Common FAR Compliance Mistakes
+          </h3>
+          <p class="text-secondary-600 text-sm mb-4">
+            Avoid costly mistakes by understanding the most common FAR compliance issues and how to prevent them.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-secondary-500">Compliance Guide</span>
+            <BaseButton variant="tertiary" size="sm">
+              Coming Soon
+            </BaseButton>
           </div>
+        </BaseCard>
 
-          <!-- Featured Article 6 -->
-          <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center justify-center w-12 h-12 bg-indigo-100 rounded-lg mb-4">
-              <Icon name="heroicons:calculator" class="w-6 h-6 text-indigo-700" />
-            </div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Bid/No-Bid Decision Framework
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Strategic framework to help you make informed decisions about which opportunities to pursue.
-            </p>
-            <div class="flex items-center justify-between">
-              <span class="text-xs text-gray-500">Strategy Tool</span>
-              <button class="text-blue-700 hover:text-blue-800 text-sm font-medium">
-                Coming Soon
-              </button>
-            </div>
+        <!-- Featured Article 6 -->
+        <BaseCard variant="bordered" padding="md" interactive>
+          <IconWrapper 
+            icon="heroicons:calculator" 
+            variant="secondary" 
+            size="md" 
+            class="mb-4"
+          />
+          <h3 class="text-lg font-semibold text-secondary-900 mb-3">
+            Bid/No-Bid Decision Framework
+          </h3>
+          <p class="text-secondary-600 text-sm mb-4">
+            Strategic framework to help you make informed decisions about which opportunities to pursue.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="text-xs text-secondary-500">Strategy Tool</span>
+            <BaseButton variant="tertiary" size="sm">
+              Coming Soon
+            </BaseButton>
           </div>
-        </div>
+        </BaseCard>
       </div>
-    </section>
+    </BaseSection>
 
     <!-- Newsletter Signup -->
-    <section class="py-16 bg-blue-700 text-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <Icon name="heroicons:envelope" class="w-12 h-12 mx-auto mb-6 opacity-80" />
-        <h2 class="text-3xl font-bold mb-4">
+    <BaseSection variant="primary" spacing="lg" centered>
+      <template #header>
+        <IconWrapper 
+          icon="heroicons:envelope" 
+          variant="primary" 
+          size="lg" 
+          class="mx-auto mb-6 bg-white bg-opacity-20"
+        />
+        <h2 class="text-3xl font-bold text-white mb-4">
           Stay Updated with Federal Contracting Insights
         </h2>
-        <p class="text-xl mb-8 opacity-90">
-          Get the latest tips, guides, and industry updates delivered directly to your inbox.
+        <p class="text-xl text-primary-100 mb-8">
+          Get the latest guides, templates, and industry updates delivered to your inbox monthly.
         </p>
-        <form class="max-w-md mx-auto flex space-x-4">
-          <input
-            type="email"
+      </template>
+      
+      <div class="max-w-md mx-auto">
+        <div class="flex gap-4">
+          <FormInput 
             placeholder="Enter your email address"
-            class="flex-1 px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            type="email"
+            class="flex-1"
           />
-          <button
-            type="submit"
-            class="bg-white text-blue-700 px-6 py-3 rounded-md hover:bg-gray-100 transition-colors font-medium"
-          >
+          <BaseButton variant="secondary" size="md">
             Subscribe
-          </button>
-        </form>
-        <p class="text-sm mt-4 opacity-80">
-          No spam, unsubscribe at any time.
+          </BaseButton>
+        </div>
+        <p class="text-sm text-primary-200 mt-4">
+          No spam. Unsubscribe at any time. Your information is secure.
         </p>
       </div>
-    </section>
+    </BaseSection>
 
     <!-- Tools Preview (Phase 2) -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="bg-white rounded-lg p-8 shadow-sm">
-          <Icon name="heroicons:cog-6-tooth" class="w-16 h-16 text-gray-400 mx-auto mb-6" />
-          <h2 class="text-2xl font-bold text-gray-900 mb-4">
+    <BaseSection spacing="lg" centered>
+      <BaseCard variant="elevated" padding="lg">
+        <div class="text-center">
+          <IconWrapper 
+            icon="heroicons:cog-6-tooth" 
+            variant="secondary" 
+            size="xl" 
+            class="mx-auto mb-6"
+          />
+          <h2 class="text-2xl font-bold text-secondary-900 mb-4">
             AI-Powered Tools Coming Soon
           </h2>
-          <p class="text-lg text-gray-600 mb-6">
+          <p class="text-lg text-secondary-600 mb-6">
             We're developing intelligent assessment tools to help you make better decisions about federal contracting opportunities.
           </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-8">
             <div class="flex items-start space-x-3">
-              <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mt-1" />
+              <Icon name="heroicons:check-circle" class="w-5 h-5 text-success-600 mt-1" />
               <div>
-                <h3 class="font-semibold text-gray-900">Business Readiness Assessment</h3>
-                <p class="text-sm text-gray-600">Evaluate your readiness for federal contracting</p>
+                <h3 class="font-semibold text-secondary-900">Business Readiness Assessment</h3>
+                <p class="text-sm text-secondary-600">Evaluate your readiness for federal contracting</p>
               </div>
             </div>
             <div class="flex items-start space-x-3">
-              <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mt-1" />
+              <Icon name="heroicons:check-circle" class="w-5 h-5 text-success-600 mt-1" />
               <div>
-                <h3 class="font-semibold text-gray-900">Bid/No-Bid Decision Tool</h3>
-                <p class="text-sm text-gray-600">Get recommendations on which opportunities to pursue</p>
+                <h3 class="font-semibold text-secondary-900">Bid/No-Bid Decision Tool</h3>
+                <p class="text-sm text-secondary-600">Get recommendations on which opportunities to pursue</p>
               </div>
             </div>
           </div>
-          <div class="mt-8">
-            <NuxtLink 
-              to="/contact"
-              class="inline-flex items-center bg-blue-700 text-white px-6 py-3 rounded-md hover:bg-blue-800 transition-colors font-medium"
-            >
-              <Icon name="heroicons:bell" class="w-5 h-5 mr-2" />
+          <BaseButton variant="primary" icon-left="heroicons:bell">
+            <NuxtLink to="/contact">
               Get Notified When Available
             </NuxtLink>
-          </div>
+          </BaseButton>
         </div>
-      </div>
-    </section>
+      </BaseCard>
+    </BaseSection>
+
+    <FooterSection />
   </div>
 </template>
 
@@ -281,7 +313,7 @@
 // Set page meta for SEO
 definePageMeta({
   title: 'Resources - True North Federal Solutions',
-  description: 'Access comprehensive federal contracting resources including guides, templates, articles, and certification help for small businesses.'
+  description: 'Federal contracting resources including guides, templates, blog articles, and certification help for small businesses.'
 })
 
 // Set head for SEO
@@ -290,11 +322,11 @@ useHead({
   meta: [
     { 
       name: 'description', 
-      content: 'Free federal contracting resources for small businesses. Access guides, templates, articles, and certification help to succeed in government contracting.' 
+      content: 'Comprehensive federal contracting resources for small businesses. Access guides, templates, articles, and certification help to succeed in government contracting.' 
     },
     { 
       name: 'keywords', 
-      content: 'federal contracting resources, small business guides, government contract templates, WOSB certification, VOSB certification, 8a program' 
+      content: 'federal contracting resources, government contract guides, SAM.gov registration, WOSB certification, proposal writing, small business' 
     }
   ]
 })

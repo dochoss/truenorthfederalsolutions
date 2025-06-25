@@ -3,41 +3,39 @@
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between">
         <div class="flex items-center space-x-2">
-          <Icon name="heroicons:cube" class="w-6 h-6 text-blue-600" />
-          <span class="text-gray-900 font-medium">Nuxt 3 + Tailwind Starter</span>
+          <Icon name="heroicons:building-office" class="w-6 h-6 text-primary-600" />
+          <span class="text-secondary-900 font-medium">True North Federal Solutions</span>
         </div>
         
         <div class="flex items-center space-x-6">
           <a 
-            href="https://nuxt.com" 
+            href="https://linkedin.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            class="text-gray-500 hover:text-gray-900 transition-colors"
+            class="text-secondary-500 hover:text-secondary-900 transition-colors"
           >
-            <Icon name="simple-icons:nuxtdotjs" class="w-5 h-5" />
+            <Icon name="simple-icons:linkedin" class="w-5 h-5" />
           </a>
           <a 
-            href="https://tailwindcss.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="text-gray-500 hover:text-gray-900 transition-colors"
+            href="mailto:contact@truenorthfederalsolutions.com" 
+            class="text-secondary-500 hover:text-secondary-900 transition-colors"
           >
-            <Icon name="simple-icons:tailwindcss" class="w-5 h-5" />
+            <Icon name="heroicons:envelope" class="w-5 h-5" />
           </a>
           <a 
-            href="https://github.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="text-gray-500 hover:text-gray-900 transition-colors"
+            href="tel:+1234567890" 
+            class="text-secondary-500 hover:text-secondary-900 transition-colors"
           >
-            <Icon name="simple-icons:github" class="w-5 h-5" />
+            <Icon name="heroicons:phone" class="w-5 h-5" />
           </a>
         </div>
       </div>
       
       <div class="mt-8 border-t pt-8">
-        <p class="text-center text-sm text-gray-500">
-          Built with ❤️ using Nuxt 3, Tailwind CSS, and GitHub Copilot
+        <p class="text-center text-sm text-secondary-500">
+          © {{ currentYear }} True North Federal Solutions. All rights reserved. | 
+          <NuxtLink to="/privacy" class="hover:text-secondary-700 transition-colors">Privacy Policy</NuxtLink> | 
+          <NuxtLink to="/terms" class="hover:text-secondary-700 transition-colors">Terms of Service</NuxtLink>
         </p>
       </div>
     </div>
@@ -45,6 +43,8 @@
 </template>
 
 <script setup>
-// Footer component for the main site footer
-// Auto-imported by Nuxt - no need for manual registration
+// Footer component for True North Federal Solutions
+// Updated to follow the design system
+
+const currentYear = new Date().getFullYear()
 </script>
