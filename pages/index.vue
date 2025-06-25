@@ -9,11 +9,11 @@
           size="xl" 
           class="mx-auto mb-8 bg-white bg-opacity-20"
         />
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+        <h1 class="text-4xl text-left md:text-center sm:text-5xl md:text-6xl font-bold text-white mb-6">
           Federal Contracting
           <span class="block text-primary-200">Success Starts Here</span>
         </h1>
-        <p class="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
+        <p class="text-xl text-left md:text-center text-primary-100 mb-8 max-w-3xl mx-auto">
           Expert guidance from a seasoned contracting officer with 15 years of federal service. 
           Navigate the complex world of government procurement with confidence and expertise.
         </p>
@@ -30,7 +30,7 @@
           </NuxtLink>
         </BaseButton>
         <BaseButton 
-          variant="tertiary" 
+          variant="secondary" 
           size="lg"
           icon-left="heroicons:book-open"
         >
@@ -195,10 +195,10 @@
     <!-- CTA Section -->
     <BaseSection variant="primary" spacing="lg" centered>
       <template #header>
-        <h2 class="text-3xl font-bold text-white mb-4">
+        <h2 class="text-3xl text-left md:text-center font-bold text-white mb-4">
           Ready to Start Your Federal Contracting Journey?
         </h2>
-        <p class="text-xl text-primary-100 mb-8">
+        <p class="text-xl text-left md:text-center text-primary-100 mb-8">
           Schedule a consultation to discuss your business goals and learn how we can help you succeed.
         </p>
       </template>
@@ -214,7 +214,7 @@
           </NuxtLink>
         </BaseButton>
         <BaseButton 
-          variant="tertiary" 
+          variant="secondary" 
           size="lg"
           icon-left="heroicons:document-text"
         >
@@ -224,8 +224,6 @@
         </BaseButton>
       </div>
     </BaseSection>
-
-    <FooterSection />
   </div>
 </template>
 
