@@ -1,7 +1,5 @@
 <template>
   <div>
-    <NavSection />
-    
     <!-- Resources Header -->
     <BaseSection variant="secondary" spacing="lg" centered>
       <template #header>

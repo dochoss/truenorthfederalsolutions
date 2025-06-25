@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <NavSection />
-    
+  <div>    
     <!-- Hero Section -->
     <BaseSection variant="primary" spacing="xl" centered>
       <template #header>
