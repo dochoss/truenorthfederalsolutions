@@ -11,19 +11,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // True North Federal Solutions Brand Colors
+        // True North Federal Solutions Brand Colors - Aligned with Logo
         primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',  // Main brand blue
-          700: '#1d4ed8',  // Dark brand blue
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
+          50: '#e6f9ff',
+          100: '#ccf3ff',
+          200: '#99e6ff',
+          300: '#66daff',
+          400: '#33cdff',
+          500: '#00bff3',  // Logo bright cyan - main brand
+          600: '#008db4',  // Logo medium blue
+          700: '#006b8a',
+          800: '#024865',  // Logo dark blue-gray
+          900: '#00273c',  // Logo very dark blue
+          950: '#001a26',
         },
         secondary: {
           50: '#f8fafc',
