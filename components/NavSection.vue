@@ -4,11 +4,18 @@
       <div class="flex justify-between h-16">
         <div class="flex items-center">
           <NuxtLink to="/" class="flex items-center space-x-3">
-            <Icon name="heroicons:building-office" class="w-8 h-8 text-primary-700" />
+            <NuxtImg 
+              src="/logo.svg"
+              :placeholder="img(`/logo.svg`, { h: 50, f: 'png', q:50})"
+              alt="True North Federal Solutions Logo"
+              class="h-12 w-auto"
+              />
+
+            <!-- <Icon name="heroicons:building-office" class="w-8 h-8 text-primary-700" />
             <div class="flex flex-col">
               <span class="text-lg font-bold text-secondary-900 leading-tight">True North</span>
               <span class="text-xs text-secondary-600 leading-tight">Federal Solutions</span>
-            </div>
+            </div> -->
           </NuxtLink>
         </div>
         
@@ -268,9 +275,11 @@
   </nav>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // Navigation component for True North Federal Solutions
 // Auto-imported by Nuxt - no need for manual registration
+
+const img = useImage()
 
 // Reactive state for dropdown and mobile menu
 const servicesDropdownOpen = ref(false)
