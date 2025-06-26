@@ -8,11 +8,11 @@
       </slot>
     </div>
     
-    <div :class="contentClasses">
+    <div :class="contentClasses" :style="contentStyle">
       <slot />
     </div>
     
-    <div v-if="$slots.footer" class="px-6 py-4 border-t border-secondary-200 bg-secondary-50">
+    <div v-if="$slots.footer" class="px-6 py-4 border-t border-secondary-200 bg-secondary-50 mt-auto">
       <slot name="footer" />
     </div>
   </div>
@@ -40,11 +40,20 @@ const props = defineProps({
     type: String,
     default: 'md',
     validator: (value) => ['none', 'sm', 'md', 'lg'].includes(value)
+  },
+  fullHeight: {
+    type: Boolean,
+    default: false
   }
 })
 
 const cardClasses = computed(() => {
   const baseClasses = ['bg-white', 'rounded-lg', 'overflow-hidden']
+  
+  // Add flex classes for full height cards
+  if (props.fullHeight) {
+    baseClasses.push('flex', 'flex-col', 'h-full')
+  }
   
   // Interactive states
   if (props.interactive) {
@@ -70,6 +79,18 @@ const contentClasses = computed(() => {
     lg: ['p-8']
   }
   
-  return paddingClasses[props.padding]
+  const classes = [...paddingClasses[props.padding]]
+  
+  // Add flex-1 for full height cards to make content expand
+  if (props.fullHeight) {
+    classes.push('flex-1')
+  }
+  
+  return classes
+})
+
+const contentStyle = computed(() => {
+  // For full height cards, ensure content area can grow
+  return props.fullHeight ? { display: 'flex', flexDirection: 'column', flex: '1' } : {}
 })
 </script>

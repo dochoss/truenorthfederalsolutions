@@ -73,7 +73,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Featured Article 1 -->
-        <BaseCard variant="bordered" padding="md" interactive>
+        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
           <IconWrapper icon="heroicons:rocket-launch" variant="primary" size="md" class="mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             Getting Started in Federal Contracting
@@ -92,7 +92,7 @@
         </BaseCard>
 
         <!-- Featured Article 2 -->
-        <BaseCard variant="bordered" padding="md" interactive>
+        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
           <IconWrapper icon="heroicons:clipboard-document-check" variant="success" size="md" class="mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             SAM.gov Registration Checklist
@@ -111,7 +111,7 @@
         </BaseCard>
 
         <!-- Featured Article 3 -->
-        <BaseCard variant="bordered" padding="md" interactive>
+        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
           <IconWrapper icon="heroicons:shield-check" variant="accent" size="md" class="mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             WOSB Certification Guide
@@ -130,7 +130,7 @@
         </BaseCard>
 
         <!-- Featured Article 4 -->
-        <BaseCard variant="bordered" padding="md" interactive>
+        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
           <IconWrapper icon="heroicons:chart-bar" variant="warning" size="md" class="mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             Proposal Writing Best Practices
@@ -149,7 +149,7 @@
         </BaseCard>
 
         <!-- Featured Article 5 -->
-        <BaseCard variant="bordered" padding="md" interactive>
+        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
           <IconWrapper icon="heroicons:exclamation-triangle" variant="danger" size="md" class="mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             Common FAR Compliance Mistakes
@@ -168,7 +168,7 @@
         </BaseCard>
 
         <!-- Featured Article 6 -->
-        <BaseCard variant="bordered" padding="md" interactive>
+        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
           <IconWrapper icon="heroicons:calculator" variant="secondary" size="md" class="mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             Bid/No-Bid Decision Framework
