@@ -327,13 +327,6 @@ const toggleMobileResources = () => {
   mobileResourcesOpen.value = !mobileResourcesOpen.value
 }
 
-// Close dropdowns when clicking outside
-const handleClickOutside = (event) => {
-  if (!event.target.closest('.group')) {
-    closeDropdowns()
-  }
-}
-
 // Close dropdowns on route change
 const router = useRouter()
 router.afterEach(() => {
@@ -341,13 +334,20 @@ router.afterEach(() => {
   closeMobileMenu()
 })
 
-// Add click outside listener
+// Close dropdowns when clicking outside
 onMounted(() => {
+  const handleClickOutside = (event: Event) => {
+    // Only close if we clicked completely outside the nav
+    if (!event.target || !(event.target as Element).closest('nav')) {
+      closeDropdowns()
+    }
+  }
+  
   document.addEventListener('click', handleClickOutside)
-})
-
-onUnmounted(() => {
-  document.removeEventListener('click', handleClickOutside)
+  
+  onUnmounted(() => {
+    document.removeEventListener('click', handleClickOutside)
+  })
 })
 </script>
 
