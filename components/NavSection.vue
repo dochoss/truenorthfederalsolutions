@@ -5,8 +5,8 @@
         <div class="flex items-center">
           <NuxtLink to="/" class="flex items-center space-x-3">
             <NuxtImg 
-              src="/logo.svg"
-              :placeholder="img(`/logo.svg`, { h: 50, f: 'png', q:50})"
+              src="/logo-side.svg"
+              :placeholder="img(`/logo-side.svg`, { h: 50, f: 'png', q:50})"
               alt="True North Federal Solutions Logo"
               class="h-12 w-auto"
               />
