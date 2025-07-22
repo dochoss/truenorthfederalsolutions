@@ -155,9 +155,9 @@
             size="lg" 
             class="mx-auto mb-4"
           />
-          <h3 class="text-2xl font-bold text-secondary-900 mb-2">15+ Years</h3>
+          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Decades of Real-World Experience</h3>
           <p class="text-secondary-600">
-            Federal service experience from GS-06 to Contracting Officer
+            Over 15 years of hands-on federal contracting expertise
           </p>
         </div>
 
@@ -169,9 +169,9 @@
             size="lg" 
             class="mx-auto mb-4"
           />
-          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Certified Expert</h3>
+          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Certified Acquisition Professional</h3>
           <p class="text-secondary-600">
-            Licensed contracting officer with deep FAR knowledge and practical experience
+            FAC-C Professional & DAWIA Level III certified with deep knowledge of FAR, cost analysis, and full acquisition lifecycle strategy
           </p>
         </div>
 
@@ -183,7 +183,7 @@
             size="lg" 
             class="mx-auto mb-4"
           />
-          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Proven Results</h3>
+          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Results That Matter</h3>
           <p class="text-secondary-600">
             Helping small businesses successfully enter and compete in federal markets
           </p>
