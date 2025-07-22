@@ -102,8 +102,8 @@ const sectionClasses = computed(() => {
   
   return [
     ...baseClasses,
-    ...spacingClasses[props.spacing],
-    ...variantClasses[variant]
+    ...spacingClasses[props.spacing] || [],
+    ...variantClasses[variant] || []
   ]
 })
 
@@ -118,7 +118,7 @@ const containerClasses = computed(() => {
     '7xl': ['max-w-7xl']
   }
   
-  return [...baseClasses, ...widthClasses[props.container]]
+  return [...baseClasses, ...widthClasses[props.container] || []]
 })
 
 const headerClasses = computed(() => {
@@ -129,7 +129,7 @@ const headerClasses = computed(() => {
     xl: ['mb-16']
   }
   
-  return spacingClasses[props.headerSpacing]
+  return spacingClasses[props.headerSpacing] || []
 })
 
 const titleClasses = computed(() => {
