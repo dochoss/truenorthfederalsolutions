@@ -46,19 +46,19 @@
       subtitle="From initial setup to winning proposals, we provide comprehensive support for your federal contracting journey."
       spacing="lg"
     >
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Contract Setup -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <!-- Contracting Readiness & Set-Up -->
         <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
           <div class="text-center">
             <IconWrapper 
-              icon="heroicons:document-text" 
+              icon="heroicons:cog-6-tooth" 
               variant="primary" 
               size="lg" 
               class="mx-auto mb-6"
             />
-            <h3 class="text-xl font-bold text-secondary-900 mb-4">Contract Setup</h3>
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Contracting Readiness & Set-Up</h3>
             <p class="text-secondary-600 mb-6">
-              Get your business registered and ready for federal contracting with proper certifications and compliance.
+              Get contract-ready with strategic setup and compliance tools. SAM.gov & State Registration Assistance, NAICS & PSC Code Optimization, and Capability Statement Development.
             </p>
             <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
               <NuxtLink to="/services/contract-setup">
@@ -68,7 +68,28 @@
           </div>
         </BaseCard>
 
-        <!-- Proposal Development -->
+        <!-- Opportunity Identification and Market Intelligence -->
+        <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
+          <div class="text-center">
+            <IconWrapper 
+              icon="heroicons:magnifying-glass" 
+              variant="primary" 
+              size="lg" 
+              class="mx-auto mb-6"
+            />
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Opportunity Identification and Market Intelligence</h3>
+            <p class="text-secondary-600 mb-6">
+              Find and target the right opportunities before your competition. Bid Matchmaking Services, Opportunity Tracking, and Strategic Targeting Plans.
+            </p>
+            <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
+              <NuxtLink to="/services/market-intelligence">
+                Learn More
+              </NuxtLink>
+            </BaseButton>
+          </div>
+        </BaseCard>
+
+        <!-- Proposal Development & Management -->
         <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
           <div class="text-center">
             <IconWrapper 
@@ -77,9 +98,9 @@
               size="lg" 
               class="mx-auto mb-6"
             />
-            <h3 class="text-xl font-bold text-secondary-900 mb-4">Proposal Development</h3>
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Proposal Development & Management</h3>
             <p class="text-secondary-600 mb-6">
-              Craft winning proposals with strategic guidance from an experienced contracting officer perspective.
+              From RFP to submission — we manage the full proposal lifecycle. Proposal Writing & Management, Bid/No-Bid Strategy, and Submission Support & Formatting.
             </p>
             <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
               <NuxtLink to="/services/proposal-development">
@@ -88,8 +109,11 @@
             </BaseButton>
           </div>
         </BaseCard>
-
-        <!-- FAR Compliance -->
+      </div>
+      
+      <!-- Second row with 2 features -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Compliance & Regulatory Support -->
         <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
           <div class="text-center">
             <IconWrapper 
@@ -98,9 +122,9 @@
               size="lg" 
               class="mx-auto mb-6"
             />
-            <h3 class="text-xl font-bold text-secondary-900 mb-4">FAR Compliance</h3>
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Compliance & Regulatory Support</h3>
             <p class="text-secondary-600 mb-6">
-              Ensure your business meets all Federal Acquisition Regulation requirements with expert guidance.
+              Navigate the FAR and state-specific requirements with confidence. FAR Compliance Consulting, Contract Risk Mitigation, and Bonding Guidance.
             </p>
             <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
               <NuxtLink to="/services/far-compliance">
@@ -110,21 +134,21 @@
           </div>
         </BaseCard>
 
-        <!-- Strategic Consulting -->
+        <!-- Training & Capacity Building -->
         <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
           <div class="text-center">
             <IconWrapper 
-              icon="heroicons:chart-bar" 
+              icon="heroicons:academic-cap" 
               variant="primary" 
               size="lg" 
               class="mx-auto mb-6"
             />
-            <h3 class="text-xl font-bold text-secondary-900 mb-4">Strategic Consulting</h3>
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Training & Capacity Building</h3>
             <p class="text-secondary-600 mb-6">
-              Make informed bid/no-bid decisions with strategic analysis and win probability assessment.
+              Equip your team with the knowledge to compete and win. Customized Government Contracting Training, Proposal Writing Best Practices, and Procurement Systems Navigation.
             </p>
             <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
-              <NuxtLink to="/services/bid-no-bid-strategy">
+              <NuxtLink to="/services/training">
                 Learn More
               </NuxtLink>
             </BaseButton>
