@@ -97,10 +97,13 @@ const sectionClasses = computed(() => {
     accent: ['bg-accent-50']
   }
   
+  // Fallback to 'default' if props.variant is invalid
+  const variant = variantClasses[props.variant] ? props.variant : 'default'
+  
   return [
     ...baseClasses,
     ...spacingClasses[props.spacing],
-    ...variantClasses[props.variant]
+    ...variantClasses[variant]
   ]
 })
 
