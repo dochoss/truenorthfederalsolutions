@@ -9,137 +9,84 @@
             About True North Federal Solutions
           </h1>
           <p class="text-xl text-gray-600 leading-relaxed">
-            Founded by a former Contracting Officer with 15 years of federal service experience, 
-            we provide expert guidance to help small businesses navigate the complex world of federal contracting.
+            At True North Federal Solutions, our mission is to demystify federal contracting
+            for small businesses. Led by a former federal Contracting Officer with over 15
+            years of experience, we equip you with the tools, strategies, and insights needed
+            to become contract-ready, submit competitive proposals, and grow in the public
+            sector.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Founder Background -->
+    <!-- Meet the Founder -->
     <section class="py-16 bg-gray-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">
-          Founder Background & Expertise
+          Meet the Founder
         </h2>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white rounded-lg p-6 shadow-sm">
-            <div class="flex items-center mb-4">
-              <Icon name="heroicons:star" class="w-8 h-8 text-blue-600 mr-3" />
-              <h3 class="text-xl font-semibold text-gray-900">15+ Years Federal Service</h3>
-            </div>
-            <p class="text-gray-600 mb-4">
-              Extensive federal contracting experience from GS-06 to Contracting Officer:
-            </p>
-            <ul class="text-sm text-gray-600 space-y-1">
-              <li>• Deep understanding of federal acquisition processes</li>
-              <li>• Insider knowledge of government procurement</li>
-              <li>• Hands-on experience with FAR compliance</li>
-              <li>• Direct involvement in contract evaluation and award</li>
-              <li>• Understanding of both sides of the contracting process</li>
-            </ul>
+        <div class="bg-white rounded-lg p-8 shadow-sm mb-8">
+          <div class="text-center mb-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Jennifer Peterson</h3>
+            <p class="text-lg text-blue-600 font-semibold mb-2">Founder & Principal Consultant | True North Federal Solutions</p>
+            <p class="text-md text-gray-700 italic">From the Inside Out: Experience. Integrity. Results.</p>
           </div>
-
-          <div class="bg-white rounded-lg p-6 shadow-sm">
-            <div class="flex items-center mb-4">
-              <Icon name="heroicons:academic-cap" class="w-8 h-8 text-green-600 mr-3" />
-              <h3 class="text-xl font-semibold text-gray-900">Professional Credentials</h3>
-            </div>
-            <p class="text-gray-600 mb-4">
-              Certified expertise in federal contracting:
+          
+          <div class="space-y-6 text-gray-600">
+            <p>
+              Jennifer Peterson is a highly accomplished federal acquisition expert with over 15 years
+              of experience spanning multiple U.S. government agencies. As the Founder and Principal
+              Consultant of True North Federal Solutions, Jennifer brings unmatched insight into the
+              federal procurement landscape—earned from years of managing and negotiating
+              contracts valued in the hundreds of millions of dollars.
             </p>
-            <ul class="text-sm text-gray-600 space-y-1">
-              <li>• Former Federal Contracting Officer</li>
-              <li>• FAR/DFARS expertise and training</li>
-              <li>• Woman-Owned Small Business (WOSB)</li>
-              <li>• Veteran-Owned Small Business (VOSB)</li>
-              <li>• Federal acquisition regulation specialist</li>
-            </ul>
-          </div>
-
-          <div class="bg-white rounded-lg p-6 shadow-sm">
-            <div class="flex items-center mb-4">
-              <Icon name="heroicons:shield-check" class="w-8 h-8 text-purple-600 mr-3" />
-              <h3 class="text-xl font-semibold text-gray-900">Specialized Knowledge</h3>
-            </div>
-            <p class="text-gray-600 mb-4">
-              Comprehensive understanding of federal contracting:
+            
+            <p>
+              Her federal contracting journey began with the Defense Contract Management Agency
+              (DCMA) and advanced through roles with the Red River Army Depot, U.S. Army Corps
+              of Engineers (USACE), NASA's Johnson Space Center, and the U.S. Department of
+              Agriculture (USDA). She has held key leadership roles, including Supervisory Contract
+              Specialist and Contracting Officer with an active $75 million warrant, overseeing
+              complex acquisition portfolios and mentoring junior specialists.
             </p>
-            <ul class="text-sm text-gray-600 space-y-1">
-              <li>• Contract setup and registration processes</li>
-              <li>• Proposal evaluation from government perspective</li>
-              <li>• Common pitfalls and how to avoid them</li>
-              <li>• Strategic bid/no-bid decision making</li>
-              <li>• Certification and compliance requirements</li>
-            </ul>
-          </div>
-
-          <div class="bg-white rounded-lg p-6 shadow-sm">
-            <div class="flex items-center mb-4">
-              <Icon name="heroicons:heart" class="w-8 h-8 text-red-600 mr-3" />
-              <h3 class="text-xl font-semibold text-gray-900">Mission & Values</h3>
-            </div>
-            <p class="text-gray-600 mb-4">
-              Dedicated to empowering small businesses:
+            
+            <p>
+              Jennifer has managed full life-cycle acquisition strategies—from pre-award planning and
+              cost analysis to post-award administration and contract closeout—across a wide range of
+              contract types including FFP, IDIQ, CPAF, and CPIF. During her tenure at NASA, she
+              served as Lead Contract Specialist for the $21B NAS15-1000 contract supporting the
+              International Space Station, where her negotiation leadership saved the government over
+              $16M.
             </p>
-            <ul class="text-sm text-gray-600 space-y-1">
-              <li>• Level the playing field for small businesses</li>
-              <li>• Provide insider knowledge and guidance</li>
-              <li>• Help avoid costly mistakes and delays</li>
-              <li>• Build long-term partnerships for success</li>
-              <li>• Support veteran and woman-owned businesses</li>
-            </ul>
+            
+            <p>
+              Throughout her career, Jennifer has been recognized for her strategic mindset, process
+              improvement leadership, and commitment to acquisition excellence. She has conducted
+              over 130 peer reviews and closed more than 280 contracts in under six months, ensuring
+              compliance, speed, and accuracy for federal missions.
+            </p>
+            
+            <p>
+              Jennifer holds a Bachelor of Science in Business Administration with a concentration in
+              Human Resource Management and maintains both the FAC-C Professional Certification
+              and DAWIA Level III certification.
+            </p>
+            
+            <p>
+              At True North Federal Solutions, Jennifer's mission is to help small and growing
+              businesses navigate the federal contracting world with clarity and confidence. Her
+              philosophy is simple: "I've sat at the government table—now I help you win from the
+              other side." With deep knowledge of the FAR, contracting strategy, and procurement
+              systems, she offers practical, compliance-driven support that empowers clients to
+              compete—and succeed—in government markets.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Company Story -->
-    <section class="py-16 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <Icon name="heroicons:building-office" class="w-16 h-16 text-blue-600 mx-auto mb-6" />
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">
-            Our Story & Mission
-          </h2>
-          <p class="text-lg text-gray-600">
-            Finding Your True North in Federal Contracting
-          </p>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Why We Started True North
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              After 15 years in federal service as a Contracting Officer, our founder witnessed too many small businesses struggle 
-              with the complexities of federal contracting. Many capable companies missed opportunities or made costly mistakes 
-              simply because they lacked insider knowledge of how the system really works.
-            </p>
-            <p class="text-gray-600 text-sm">
-              True North Federal Solutions was founded to level the playing field and provide the expert guidance that small 
-              businesses need to succeed in federal contracting.
-            </p>
-          </div>
-
-          <div class="bg-gray-50 rounded-lg p-6">
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">
-              Our Commitment to You
-            </h3>
-            <p class="text-gray-600 text-sm mb-4">
-              We understand that federal contracting can seem overwhelming. That's why we're committed to providing clear, 
-              actionable guidance based on real-world experience from both sides of the contracting process.
-            </p>
-            <p class="text-gray-600 text-sm">
-              As a woman- and veteran-owned business ourselves, we're especially passionate about helping other small, 
-              diverse businesses access the opportunities that federal contracting provides.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Call to Action -->
     <section class="py-16 bg-blue-50">
