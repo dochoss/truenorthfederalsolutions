@@ -4,78 +4,57 @@
       <div class="flex justify-between h-16">
         <div class="flex items-center">
           <NuxtLink to="/" class="flex items-center space-x-3">
-            <NuxtImg 
-              src="/logo-side.svg"
-              :placeholder="img(`/logo-side.svg`, { h: 50, f: 'png', q:50})"
-              alt="True North Federal Solutions Logo"
-              class="h-12 w-auto"
-              />
+            <NuxtImg src="/logo-side.svg" :placeholder="img(`/logo-side.svg`, { h: 50, f: 'png', q: 50 })"
+              alt="True North Federal Solutions Logo" class="h-12 w-auto" />
           </NuxtLink>
         </div>
-        
+
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-1">
-          <NuxtLink 
-            to="/" 
-            class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-          >
+          <NuxtLink to="/"
+            class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">
             Home
           </NuxtLink>
-          <NuxtLink 
-            to="/about" 
-            class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-          >
+          <NuxtLink to="/about"
+            class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors">
             About
           </NuxtLink>
-          
+
           <!-- Services Dropdown -->
           <div class="relative group">
-            <button 
+            <button
               class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center"
-              @click="toggleServicesDropdown"
-            >
+              @click="toggleServicesDropdown">
               Services
               <Icon name="heroicons:chevron-down" class="w-4 h-4 ml-1" />
             </button>
-            <div 
-              v-show="servicesDropdownOpen" 
-              class="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg z-50 border"
-            >
+            <div v-show="servicesDropdownOpen"
+              class="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg z-50 border">
               <div class="py-2">
-                <NuxtLink 
-                  to="/services" 
+                <NuxtLink to="/services"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
-                  @click="closeDropdowns"
-                >
+                  @click="closeDropdowns">
                   Services Overview
                 </NuxtLink>
                 <hr class="my-1">
-                <NuxtLink 
-                  to="/services/contract-setup" 
+                <NuxtLink to="/services/contract-setup"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
-                  @click="closeDropdowns"
-                >
+                  @click="closeDropdowns">
                   Federal Contract Setup
                 </NuxtLink>
-                <NuxtLink 
-                  to="/services/proposal-development" 
+                <NuxtLink to="/services/proposal-development"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
-                  @click="closeDropdowns"
-                >
+                  @click="closeDropdowns">
                   Proposal Development
                 </NuxtLink>
-                <NuxtLink 
-                  to="/services/far-compliance" 
+                <NuxtLink to="/services/far-compliance"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
-                  @click="closeDropdowns"
-                >
+                  @click="closeDropdowns">
                   FAR Compliance
                 </NuxtLink>
-                <NuxtLink 
-                  to="/services/bid-no-bid-strategy" 
+                <NuxtLink to="/services/bid-no-bid-strategy"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
-                  @click="closeDropdowns"
-                >
+                  @click="closeDropdowns">
                   Bid/No-Bid Strategy
                 </NuxtLink>
               </div>
@@ -84,65 +63,51 @@
 
           <!-- Resources Dropdown -->
           <div class="relative group">
-            <button 
+            <button
               class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center"
-              @click="toggleResourcesDropdown"
-            >
+              @click="toggleResourcesDropdown">
               Resources
               <Icon name="heroicons:chevron-down" class="w-4 h-4 ml-1" />
             </button>
-            <div 
-              v-show="resourcesDropdownOpen" 
-              class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg z-50 border"
-            >
+            <div v-show="resourcesDropdownOpen"
+              class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg z-50 border">
               <div class="py-2">
-                <NuxtLink 
-                  to="/resources" 
+                <NuxtLink to="/resources"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
-                  @click="closeDropdowns"
-                >
+                  @click="closeDropdowns">
                   Resource Hub
                 </NuxtLink>
                 <hr class="my-1">
-                <NuxtLink 
-                  to="/resources/blog" 
+                <NuxtLink to="/resources/blog"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
-                  @click="closeDropdowns"
-                >
+                  @click="closeDropdowns">
                   Blog & Articles
                 </NuxtLink>
-                <NuxtLink 
-                  to="/resources/guides" 
+                <NuxtLink to="/resources/guides"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
-                  @click="closeDropdowns"
-                >
+                  @click="closeDropdowns">
                   Guides & Templates
                 </NuxtLink>
-                <NuxtLink 
-                  to="/resources/certifications" 
+                <NuxtLink to="/resources/certifications"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
-                  @click="closeDropdowns"
-                >
+                  @click="closeDropdowns">
                   Certification Help
                 </NuxtLink>
               </div>
             </div>
           </div>
 
-          <NuxtLink 
-            to="/contact" 
-            class="bg-primary-700 text-white hover:bg-primary-800 px-4 py-2 rounded-md text-sm font-medium transition-colors"
-          >
+          <Social class="px-2" />
+
+          <NuxtLink to="/contact"
+            class="bg-primary-700 text-white hover:bg-primary-800 px-4 py-2 rounded-md text-sm font-medium transition-colors">
             Get Started
           </NuxtLink>
         </div>
 
         <!-- Mobile menu button -->
         <div class="md:hidden flex items-center">
-          <button 
-            @click="toggleMobileMenu"
-            class="text-secondary-700 hover:text-primary-700 p-2"
-          >
+          <button @click="toggleMobileMenu" class="text-secondary-700 hover:text-primary-700 p-2">
             <Icon name="heroicons:bars-3" v-show="!mobileMenuOpen" class="w-6 h-6" />
             <Icon name="heroicons:x-mark" v-show="mobileMenuOpen" class="w-6 h-6" />
           </button>
@@ -152,64 +117,48 @@
       <!-- Mobile Navigation Menu -->
       <div v-show="mobileMenuOpen" class="md:hidden border-t">
         <div class="px-2 pt-2 pb-3 space-y-1">
-          <NuxtLink 
-            to="/" 
+          <NuxtLink to="/"
             class="block text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium"
-            @click="closeMobileMenu"
-          >
+            @click="closeMobileMenu">
             Home
           </NuxtLink>
-          <NuxtLink 
-            to="/about" 
+          <NuxtLink to="/about"
             class="block text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium"
-            @click="closeMobileMenu"
-          >
+            @click="closeMobileMenu">
             About
           </NuxtLink>
-          
+
           <!-- Mobile Services Section -->
           <div>
-            <button 
-              @click="toggleMobileServices"
-              class="w-full text-left text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
-            >
+            <button @click="toggleMobileServices"
+              class="w-full text-left text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between">
               Services
-              <Icon name="heroicons:chevron-down" class="w-4 h-4" :class="{'rotate-180': mobileServicesOpen}" />
+              <Icon name="heroicons:chevron-down" class="w-4 h-4" :class="{ 'rotate-180': mobileServicesOpen }" />
             </button>
             <div v-show="mobileServicesOpen" class="pl-6 space-y-1">
-              <NuxtLink 
-                to="/services" 
+              <NuxtLink to="/services"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
-                @click="closeMobileMenu"
-              >
+                @click="closeMobileMenu">
                 Services Overview
               </NuxtLink>
-              <NuxtLink 
-                to="/services/contract-setup" 
+              <NuxtLink to="/services/contract-setup"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
-                @click="closeMobileMenu"
-              >
+                @click="closeMobileMenu">
                 Federal Contract Setup
               </NuxtLink>
-              <NuxtLink 
-                to="/services/proposal-development" 
+              <NuxtLink to="/services/proposal-development"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
-                @click="closeMobileMenu"
-              >
+                @click="closeMobileMenu">
                 Proposal Development
               </NuxtLink>
-              <NuxtLink 
-                to="/services/far-compliance" 
+              <NuxtLink to="/services/far-compliance"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
-                @click="closeMobileMenu"
-              >
+                @click="closeMobileMenu">
                 FAR Compliance
               </NuxtLink>
-              <NuxtLink 
-                to="/services/bid-no-bid-strategy" 
+              <NuxtLink to="/services/bid-no-bid-strategy"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
-                @click="closeMobileMenu"
-              >
+                @click="closeMobileMenu">
                 Bid/No-Bid Strategy
               </NuxtLink>
             </div>
@@ -217,50 +166,38 @@
 
           <!-- Mobile Resources Section -->
           <div>
-            <button 
-              @click="toggleMobileResources"
-              class="w-full text-left text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between"
-            >
+            <button @click="toggleMobileResources"
+              class="w-full text-left text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between">
               Resources
-              <Icon name="heroicons:chevron-down" class="w-4 h-4" :class="{'rotate-180': mobileResourcesOpen}" />
+              <Icon name="heroicons:chevron-down" class="w-4 h-4" :class="{ 'rotate-180': mobileResourcesOpen }" />
             </button>
             <div v-show="mobileResourcesOpen" class="pl-6 space-y-1">
-              <NuxtLink 
-                to="/resources" 
+              <NuxtLink to="/resources"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
-                @click="closeMobileMenu"
-              >
+                @click="closeMobileMenu">
                 Resource Hub
               </NuxtLink>
-              <NuxtLink 
-                to="/resources/blog" 
+              <NuxtLink to="/resources/blog"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
-                @click="closeMobileMenu"
-              >
+                @click="closeMobileMenu">
                 Blog & Articles
               </NuxtLink>
-              <NuxtLink 
-                to="/resources/guides" 
+              <NuxtLink to="/resources/guides"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
-                @click="closeMobileMenu"
-              >
+                @click="closeMobileMenu">
                 Guides & Templates
               </NuxtLink>
-              <NuxtLink 
-                to="/resources/certifications" 
+              <NuxtLink to="/resources/certifications"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
-                @click="closeMobileMenu"
-              >
+                @click="closeMobileMenu">
                 Certification Help
               </NuxtLink>
             </div>
           </div>
 
-          <NuxtLink 
-            to="/contact" 
+          <NuxtLink to="/contact"
             class="block bg-primary-700 text-white hover:bg-primary-800 px-3 py-2 rounded-md text-base font-medium text-center"
-            @click="closeMobileMenu"
-          >
+            @click="closeMobileMenu">
             Get Started
           </NuxtLink>
         </div>
@@ -336,9 +273,9 @@ onMounted(() => {
       closeDropdowns()
     }
   }
-  
+
   document.addEventListener('click', handleClickOutside)
-  
+
   onUnmounted(() => {
     document.removeEventListener('click', handleClickOutside)
   })
