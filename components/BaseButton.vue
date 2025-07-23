@@ -113,10 +113,18 @@ const buttonClasses = computed(() => {
     ]
   }
 
+  // Defensive prop access with fallbacks
+  const size = props?.size || 'md'
+  const variant = props?.variant || 'primary'
+  
+  // Ensure we always get arrays
+  const sizeClass = sizeClasses[size] || sizeClasses.md || []
+  const variantClass = variantClasses[variant] || variantClasses.primary || []
+
   return [
     ...baseClasses,
-    ...sizeClasses[props.size],
-    ...variantClasses[props.variant]
+    ...sizeClass,
+    ...variantClass
   ]
 })
 
@@ -127,7 +135,11 @@ const iconClasses = computed(() => {
     lg: 'w-6 h-6'
   }
   
-  const classes = [sizeMap[props.size]]
+  // Defensive prop access with fallback
+  const size = props?.size || 'md'
+  const sizeClass = sizeMap[size] || sizeMap.md || ''
+  
+  const classes = [sizeClass]
   
   // Add spacing based on slot content
   if (props.iconLeft) {
