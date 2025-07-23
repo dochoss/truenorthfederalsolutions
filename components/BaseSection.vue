@@ -97,13 +97,18 @@ const sectionClasses = computed(() => {
     accent: ['bg-accent-50']
   }
   
-  // Fallback to 'default' if props.variant is invalid
-  const variant = variantClasses[props.variant] ? props.variant : 'default'
+  // Defensive prop access with fallbacks
+  const spacing = props?.spacing || 'lg'
+  const variant = props?.variant || 'default'
+  
+  // Ensure we always get arrays
+  const spacingClass = spacingClasses[spacing] || spacingClasses.lg || []
+  const variantClass = variantClasses[variant] || variantClasses.default || []
   
   return [
     ...baseClasses,
-    ...spacingClasses[props.spacing] || [],
-    ...variantClasses[variant] || []
+    ...spacingClass,
+    ...variantClass
   ]
 })
 
@@ -118,7 +123,11 @@ const containerClasses = computed(() => {
     '7xl': ['max-w-7xl']
   }
   
-  return [...baseClasses, ...widthClasses[props.container] || []]
+  // Defensive prop access with fallback
+  const container = props?.container || '7xl'
+  const widthClass = widthClasses[container] || widthClasses['7xl'] || []
+  
+  return [...baseClasses, ...widthClass]
 })
 
 const headerClasses = computed(() => {
@@ -129,7 +138,11 @@ const headerClasses = computed(() => {
     xl: ['mb-16']
   }
   
-  return spacingClasses[props.headerSpacing] || []
+  // Defensive prop access with fallback
+  const headerSpacing = props?.headerSpacing || 'lg'
+  const spacingClass = spacingClasses[headerSpacing] || spacingClasses.lg || []
+  
+  return spacingClass
 })
 
 const titleClasses = computed(() => {
