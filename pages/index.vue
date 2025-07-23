@@ -1,63 +1,7 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <div class="relative bg-white overflow-hidden">
-      <!-- Background Image -->
-      <div class="absolute inset-0">
-        <NuxtImg src="/conference-table-hero.svg" alt="Professionals collaborating around a conference table"
-          class="w-full h-full object-cover" loading="eager" />
-        <!-- Overlay for contrast -->
-        <div class="absolute inset-0 bg-gradient-to-r from-primary-900/90 via-primary-800/80 to-primary-700/70"></div>
-      </div>
-
-      <!-- Content -->
-      <div class="relative max-w-7xl mx-auto">
-        <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <!-- Blue section with content -->
-          <div class="bg-primary-600 lg:bg-gradient-to-r lg:from-primary-600 lg:to-transparent lg:via-primary-600/95">
-            <div class="pt-10 mx-auto max-w-7xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-20 lg:px-8 xl:pt-28">
-              <div class="text-center lg:text-left">
-                <!-- Logo -->
-                <NuxtImg src="/logo.svg" alt="True North Federal Solutions Logo" width="200" height="45"
-                  class="mx-auto lg:mx-0 mb-6 bg-white rounded-full p-4" />
-
-                <!-- Title -->
-                <h1 class="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl">
-                  <span class="block">Federal Contracting</span>
-                  <span class="block text-white font-extrabold">Success Starts Here</span>
-                </h1>
-
-                <!-- Updated tagline -->
-                <p
-                  class="mt-3 text-base text-primary-100 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  We Know the Rules — So You Can Win the Work.
-                </p>
-
-                <!-- CTA Buttons -->
-                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <div class="rounded-md shadow">
-                    <BaseButton variant="secondary" size="lg" icon-left="heroicons:calendar-days"
-                      class="w-full flex items-center justify-center px-8 py-3">
-                      <NuxtLink to="/contact" class="flex items-center">
-                        Schedule Consultation
-                      </NuxtLink>
-                    </BaseButton>
-                  </div>
-                  <div class="mt-3 sm:mt-0 sm:ml-3">
-                    <BaseButton variant="secondary" size="lg" icon-left="heroicons:book-open"
-                      class="w-full flex items-center justify-center px-8 py-3">
-                      <NuxtLink to="/resources" class="flex items-center">
-                        Explore Resources
-                      </NuxtLink>
-                    </BaseButton>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Hero />
 
     <!-- Services Overview -->
     <BaseSection title="Expert Federal Contracting Services"
@@ -66,7 +10,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
         <!-- Contracting Readiness & Set-Up -->
         <NuxtLink to="/services/contract-setup">
-          <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
+          <BaseCard fullHeight interactive padding="md" class="hover:shadow-medium transition-shadow">
             <div class="text-center">
               <IconWrapper icon="heroicons:cog-6-tooth" variant="primary" size="lg" class="mx-auto mb-6" />
               <h3 class="text-xl font-bold text-secondary-900 mb-4">Contracting Readiness & Set-Up</h3>
@@ -83,7 +27,7 @@
 
         <!-- Opportunity Identification and Market Intelligence -->
         <NuxtLink to="/services/market-intelligence">
-          <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
+          <BaseCard fullHeight interactive padding="md" class="hover:shadow-medium transition-shadow">
             <div class="text-center">
               <IconWrapper icon="heroicons:magnifying-glass" variant="primary" size="lg" class="mx-auto mb-6" />
               <h3 class="text-xl font-bold text-secondary-900 mb-4">Opportunity Identification and Market Intelligence
@@ -101,7 +45,7 @@
 
         <!-- Proposal Development & Management -->
         <NuxtLink to="/services/proposal-development">
-          <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
+          <BaseCard fullHeight interactive padding="md" class="hover:shadow-medium transition-shadow">
             <div class="text-center">
               <IconWrapper icon="heroicons:pencil-square" variant="primary" size="lg" class="mx-auto mb-6" />
               <h3 class="text-xl font-bold text-secondary-900 mb-4">Proposal Development & Management</h3>
@@ -122,7 +66,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         <!-- Compliance & Regulatory Support -->
         <NuxtLink to="/services/far-compliance">
-          <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
+          <BaseCard fullHeight interactive padding="md" class="hover:shadow-medium transition-shadow">
             <div class="text-center">
               <IconWrapper icon="heroicons:shield-check" variant="primary" size="lg" class="mx-auto mb-6" />
               <h3 class="text-xl font-bold text-secondary-900 mb-4">Compliance & Regulatory Support</h3>
@@ -140,7 +84,7 @@
 
         <!-- Training & Capacity Building -->
         <NuxtLink to="/services/training">
-          <BaseCard interactive padding="md" class="hover:shadow-medium transition-shadow">
+          <BaseCard fullHeight interactive padding="md" class="hover:shadow-medium transition-shadow">
             <div class="text-center">
               <IconWrapper icon="heroicons:academic-cap" variant="primary" size="lg" class="mx-auto mb-6" />
               <h3 class="text-xl font-bold text-secondary-900 mb-4">Training & Capacity Building</h3>
@@ -174,25 +118,26 @@
         <!-- Experience -->
         <div class="text-center">
           <IconWrapper icon="heroicons:star" variant="primary" size="lg" class="mx-auto mb-4" />
-          <h3 class="text-2xl font-bold text-secondary-900 mb-2">15+ Years</h3>
+          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Decades of Real-World Experience</h3>
           <p class="text-secondary-600">
-            Federal service experience from GS-06 to Contracting Officer
+            Over 15 years of hands-on federal contracting expertise
           </p>
         </div>
 
         <!-- Expertise -->
         <div class="text-center">
           <IconWrapper icon="heroicons:academic-cap" variant="primary" size="lg" class="mx-auto mb-4" />
-          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Certified Expert</h3>
+          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Certified Acquisition Professional</h3>
           <p class="text-secondary-600">
-            Licensed contracting officer with deep FAR knowledge and practical experience
+            FAC-C Professional &amp; DAWIA Level III certified with deep knowledge of
+            FAR, cost analysis, and full acquisition lifecycle strategy.
           </p>
         </div>
 
         <!-- Results -->
         <div class="text-center">
           <IconWrapper icon="heroicons:trophy" variant="primary" size="lg" class="mx-auto mb-4" />
-          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Proven Results</h3>
+          <h3 class="text-2xl font-bold text-secondary-900 mb-2">Results That Matter</h3>
           <p class="text-secondary-600">
             Helping small businesses successfully enter and compete in federal markets
           </p>

@@ -10,12 +10,6 @@
               alt="True North Federal Solutions Logo"
               class="h-12 w-auto"
               />
-
-            <!-- <Icon name="heroicons:building-office" class="w-8 h-8 text-primary-700" />
-            <div class="flex flex-col">
-              <span class="text-lg font-bold text-secondary-900 leading-tight">True North</span>
-              <span class="text-xs text-secondary-600 leading-tight">Federal Solutions</span>
-            </div> -->
           </NuxtLink>
         </div>
         
