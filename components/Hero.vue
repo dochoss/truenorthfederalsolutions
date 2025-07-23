@@ -1,9 +1,9 @@
 <template>
   <div class="bg-primary-600">
     <div class="relative isolate overflow-hidden pt-14">
-      <img
-        src="C:\Users\bocli\Downloads\ChatGPT Image Jul 23, 2025, 11_10_18 AM.png"
-        alt="" class="absolute inset-0 -z-10 size-full object-cover brightness-[0.3]" />
+      <NuxtImg src="/conference-table.png" alt="People sitting around a conference table" 
+        class="absolute inset-0 -z-10 size-full object-cover brightness-[0.3]" />
+      
       <div class="absolute inset-0 bg-primary-600/40 -z-10"></div>
 
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
