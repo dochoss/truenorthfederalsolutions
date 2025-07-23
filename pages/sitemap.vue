@@ -1,11 +1,8 @@
 <template>
   <div>
-    <Hero 
-      title="Site Map"
-      subtitle="Navigate all areas of True North Federal Solutions"
-      background-class="bg-gradient-to-r from-gray-600 to-gray-800"
-    />
-    
+    <Hero title="Site Map" subtitle="Navigate all areas of True North Federal Solutions"
+      background-class="bg-gradient-to-r from-gray-600 to-gray-800" />
+
     <BaseSection>
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
@@ -26,22 +23,13 @@
                 Main Pages
               </h3>
               <div class="space-y-3">
-                <NuxtLink 
-                  to="/" 
-                  class="block text-gray-700 hover:text-primary-600 transition-colors"
-                >
+                <NuxtLink to="/" class="block text-gray-700 hover:text-primary-600 transition-colors">
                   🏠 Home - Federal contracting expertise and guidance
                 </NuxtLink>
-                <NuxtLink 
-                  to="/about" 
-                  class="block text-gray-700 hover:text-primary-600 transition-colors"
-                >
+                <NuxtLink to="/about" class="block text-gray-700 hover:text-primary-600 transition-colors">
                   👤 About - Our founder's background and mission
                 </NuxtLink>
-                <NuxtLink 
-                  to="/contact" 
-                  class="block text-gray-700 hover:text-primary-600 transition-colors"
-                >
+                <NuxtLink to="/contact" class="block text-gray-700 hover:text-primary-600 transition-colors">
                   📞 Contact - Get in touch for consultation
                 </NuxtLink>
               </div>
@@ -56,35 +44,24 @@
                 Services
               </h3>
               <div class="space-y-3">
-                <NuxtLink 
-                  to="/services" 
-                  class="block text-gray-700 hover:text-primary-600 transition-colors"
-                >
+                <NuxtLink to="/services" class="block text-gray-700 hover:text-primary-600 transition-colors">
                   💼 Services Overview
                 </NuxtLink>
                 <div class="ml-4 space-y-2">
-                  <NuxtLink 
-                    to="/services/contract-setup" 
-                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm"
-                  >
+                  <NuxtLink to="/services/contract-setup"
+                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm">
                     📋 Federal Contract Setup
                   </NuxtLink>
-                  <NuxtLink 
-                    to="/services/proposal-development" 
-                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm"
-                  >
+                  <NuxtLink to="/services/proposal-development"
+                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm">
                     📝 Proposal Development
                   </NuxtLink>
-                  <NuxtLink 
-                    to="/services/far-compliance" 
-                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm"
-                  >
+                  <NuxtLink to="/services/far-compliance"
+                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm">
                     ⚖️ FAR Compliance Consulting
                   </NuxtLink>
-                  <NuxtLink 
-                    to="/services/bid-no-bid-strategy" 
-                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm"
-                  >
+                  <NuxtLink to="/services/bid-no-bid-strategy"
+                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm">
                     🎯 Bid/No-Bid Strategy
                   </NuxtLink>
                 </div>
@@ -100,48 +77,33 @@
                 Resources
               </h3>
               <div class="space-y-3">
-                <NuxtLink 
-                  to="/resources" 
-                  class="block text-gray-700 hover:text-primary-600 transition-colors"
-                >
+                <NuxtLink to="/resources" class="block text-gray-700 hover:text-primary-600 transition-colors">
                   📚 Resource Hub Overview
                 </NuxtLink>
                 <div class="ml-4 space-y-2">
-                  <NuxtLink 
-                    to="/resources/blog" 
-                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm"
-                  >
+                  <NuxtLink to="/resources/blog"
+                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm">
                     📰 Blog & Articles
                   </NuxtLink>
-                  <NuxtLink 
-                    to="/resources/guides" 
-                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm"
-                  >
+                  <NuxtLink to="/resources/guides"
+                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm">
                     📖 Guides & Templates
                   </NuxtLink>
-                  <NuxtLink 
-                    to="/resources/certifications" 
-                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm"
-                  >
+                  <NuxtLink to="/resources/certifications"
+                    class="block text-gray-600 hover:text-primary-600 transition-colors text-sm">
                     🏆 Certification Help
                   </NuxtLink>
                   <div class="ml-4 space-y-1">
-                    <NuxtLink 
-                      to="/resources/certifications/wosb" 
-                      class="block text-gray-500 hover:text-primary-600 transition-colors text-xs"
-                    >
+                    <NuxtLink to="/resources/certifications/wosb"
+                      class="block text-gray-500 hover:text-primary-600 transition-colors text-xs">
                       👩‍💼 WOSB Guide
                     </NuxtLink>
-                    <NuxtLink 
-                      to="/resources/certifications/vosb" 
-                      class="block text-gray-500 hover:text-primary-600 transition-colors text-xs"
-                    >
+                    <NuxtLink to="/resources/certifications/vosb"
+                      class="block text-gray-500 hover:text-primary-600 transition-colors text-xs">
                       🎖️ VOSB Guide
                     </NuxtLink>
-                    <NuxtLink 
-                      to="/resources/certifications/8a" 
-                      class="block text-gray-500 hover:text-primary-600 transition-colors text-xs"
-                    >
+                    <NuxtLink to="/resources/certifications/8a"
+                      class="block text-gray-500 hover:text-primary-600 transition-colors text-xs">
                       🔄 8(a) Program
                     </NuxtLink>
                   </div>
@@ -158,28 +120,16 @@
                 Legal & Utility
               </h3>
               <div class="space-y-3">
-                <NuxtLink 
-                  to="/privacy" 
-                  class="block text-gray-700 hover:text-primary-600 transition-colors"
-                >
+                <NuxtLink to="/privacy" class="block text-gray-700 hover:text-primary-600 transition-colors">
                   🔒 Privacy Policy
                 </NuxtLink>
-                <NuxtLink 
-                  to="/terms" 
-                  class="block text-gray-700 hover:text-primary-600 transition-colors"
-                >
+                <NuxtLink to="/terms" class="block text-gray-700 hover:text-primary-600 transition-colors">
                   📜 Terms of Service
                 </NuxtLink>
-                <NuxtLink 
-                  to="/accessibility" 
-                  class="block text-gray-700 hover:text-primary-600 transition-colors"
-                >
+                <NuxtLink to="/accessibility" class="block text-gray-700 hover:text-primary-600 transition-colors">
                   ♿ Accessibility Statement
                 </NuxtLink>
-                <NuxtLink 
-                  to="/sitemap" 
-                  class="block text-gray-700 hover:text-primary-600 transition-colors"
-                >
+                <NuxtLink to="/sitemap" class="block text-gray-700 hover:text-primary-600 transition-colors">
                   🗺️ Site Map (This Page)
                 </NuxtLink>
               </div>

@@ -25,14 +25,18 @@
         <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">
           Meet the Founder
         </h2>
-        
+
         <div class="bg-white rounded-lg p-8 shadow-sm mb-8">
           <div class="text-center mb-6">
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Jennifer Peterson</h3>
-            <p class="text-lg text-blue-600 font-semibold mb-2">Founder & Principal Consultant | True North Federal Solutions</p>
-            <p class="text-md text-gray-700 italic">From the Inside Out: Experience. Integrity. Results.</p>
+            <p class="text-lg text-blue-600 font-semibold mb-2">
+              Founder & Principal Consultant | True North Federal Solutions
+            </p>
+            <p class="text-md text-gray-700 italic">
+              From the Inside Out: Experience. Integrity. Results.
+            </p>
           </div>
-          
+
           <div class="space-y-6 text-gray-600">
             <p>
               Jennifer Peterson is a highly accomplished federal acquisition expert with over 15 years
@@ -41,7 +45,7 @@
               federal procurement landscape—earned from years of managing and negotiating
               contracts valued in the hundreds of millions of dollars.
             </p>
-            
+
             <p>
               Her federal contracting journey began with the Defense Contract Management Agency
               (DCMA) and advanced through roles with the Red River Army Depot, U.S. Army Corps
@@ -50,7 +54,7 @@
               Specialist and Contracting Officer with an active $75 million warrant, overseeing
               complex acquisition portfolios and mentoring junior specialists.
             </p>
-            
+
             <p>
               Jennifer has managed full life-cycle acquisition strategies—from pre-award planning and
               cost analysis to post-award administration and contract closeout—across a wide range of
@@ -59,20 +63,20 @@
               International Space Station, where her negotiation leadership saved the government over
               $16M.
             </p>
-            
+
             <p>
               Throughout her career, Jennifer has been recognized for her strategic mindset, process
               improvement leadership, and commitment to acquisition excellence. She has conducted
               over 130 peer reviews and closed more than 280 contracts in under six months, ensuring
               compliance, speed, and accuracy for federal missions.
             </p>
-            
+
             <p>
               Jennifer holds a Bachelor of Science in Business Administration with a concentration in
               Human Resource Management and maintains both the FAC-C Professional Certification
               and DAWIA Level III certification.
             </p>
-            
+
             <p>
               At True North Federal Solutions, Jennifer's mission is to help small and growing
               businesses navigate the federal contracting world with clarity and confidence. Her
@@ -96,9 +100,10 @@
           Ready to Start Your Federal Contracting Journey?
         </h2>
         <p class="text-lg text-gray-600 mb-8">
-          Schedule a consultation to discuss your business goals and learn how we can help you succeed in federal contracting.
+          Schedule a consultation to discuss your business goals and learn how we can help you succeed in federal
+          contracting.
         </p>
-        
+
         <div class="bg-white rounded-lg p-6 shadow-sm inline-block">
           <div class="text-left">
             <p class="text-sm text-gray-600 mb-2">Get started with a free consultation:</p>
@@ -108,7 +113,8 @@
               <p class="text-sm text-gray-700">✓ Develop a strategic roadmap for success</p>
             </div>
             <div class="mt-6">
-              <a href="/contact" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors font-medium inline-block">
+              <a href="/contact"
+                class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors font-medium inline-block">
                 Schedule Your Consultation
               </a>
             </div>
@@ -129,9 +135,9 @@ definePageMeta({
 useHead({
   title: 'About Us - True North Federal Solutions',
   meta: [
-    { 
-      name: 'description', 
-      content: 'Learn about True North Federal Solutions and our founder\'s 15+ years of federal contracting experience. Expert guidance for small businesses entering federal contracting.' 
+    {
+      name: 'description',
+      content: 'Learn about True North Federal Solutions and our founder\'s 15+ years of federal contracting experience. Expert guidance for small businesses entering federal contracting.'
     },
     {
       name: 'keywords',
