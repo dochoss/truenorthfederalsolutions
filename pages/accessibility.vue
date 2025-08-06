@@ -194,7 +194,7 @@
                     <ul class="space-y-2 text-gray-600">
                       <li class="flex items-center">
                         <Icon name="heroicons:envelope" class="w-4 h-4 mr-2" />
-                        accessibility@truenorthfederalsolutions.com
+                        truenorthfederalconsulting@gmail.com
                       </li>
                       <li class="flex items-center">
                         <Icon name="heroicons:phone" class="w-4 h-4 mr-2" />

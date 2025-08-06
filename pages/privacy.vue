@@ -111,7 +111,7 @@
 
           <div class="bg-gray-50 p-6 rounded-lg mt-6">
             <p class="mb-2"><strong>True North Federal Solutions</strong></p>
-            <p class="mb-2">Email: privacy@truenorthfederalsolutions.com</p>
+            <p class="mb-2">Email: truenorthfederalconsulting@gmail.com</p>
             <p class="mb-2">Phone: (555) 123-4567</p>
             <p>Address: 123 Federal Way, Suite 100, Washington, DC 20001</p>
           </div>

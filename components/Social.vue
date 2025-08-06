@@ -8,7 +8,7 @@
                 aria-label="LinkedIn Company Page">
                 <Icon name="simple-icons:linkedin" class="w-5 h-5" />
             </a>
-            <a href="mailto:contact@truenorthfederalsolutions.com"
+            <a href="mailto:truenorthfederalconsulting@gmail.com"
                 class="text-secondary-400 hover:text-primary-400 transition-colors" aria-label="Email Contact">
                 <Icon name="heroicons:envelope" class="w-5 h-5" />
             </a>
