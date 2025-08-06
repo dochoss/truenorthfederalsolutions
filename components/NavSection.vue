@@ -40,22 +40,27 @@
                 <NuxtLink to="/services/contract-setup"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns">
-                  Federal Contract Setup
+                  Contracting Readiness & Set-Up
+                </NuxtLink>
+                <NuxtLink to="/services/market-intelligence"
+                  class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
+                  @click="closeDropdowns">
+                  Opportunity Identification
                 </NuxtLink>
                 <NuxtLink to="/services/proposal-development"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns">
-                  Proposal Development
+                  Proposal Development & Management
                 </NuxtLink>
                 <NuxtLink to="/services/far-compliance"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns">
-                  FAR Compliance
+                  Compliance & Regulatory Support
                 </NuxtLink>
-                <NuxtLink to="/services/bid-no-bid-strategy"
+                <NuxtLink to="/services/training"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns">
-                  Bid/No-Bid Strategy
+                  Training & Capacity Building
                 </NuxtLink>
               </div>
             </div>
@@ -144,22 +149,27 @@
               <NuxtLink to="/services/contract-setup"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu">
-                Federal Contract Setup
+                Contracting Readiness & Set-Up
+              </NuxtLink>
+              <NuxtLink to="/services/market-intelligence"
+                class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
+                @click="closeMobileMenu">
+                Opportunity Identification
               </NuxtLink>
               <NuxtLink to="/services/proposal-development"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu">
-                Proposal Development
+                Proposal Development & Management
               </NuxtLink>
               <NuxtLink to="/services/far-compliance"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu">
-                FAR Compliance
+                Compliance & Regulatory Support
               </NuxtLink>
-              <NuxtLink to="/services/bid-no-bid-strategy"
+              <NuxtLink to="/services/training"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu">
-                Bid/No-Bid Strategy
+                Training & Capacity Building
               </NuxtLink>
             </div>
           </div>

@@ -15,97 +15,132 @@
     </BaseSection>
 
     <!-- Services Overview -->
-    <BaseSection title="Comprehensive Federal Contracting Support"
-      subtitle="With 15 years of federal service experience, from GS-06 to Contracting Officer, we provide the expertise you need to successfully navigate federal procurement."
+    <BaseSection title="Expert Federal Contracting Services"
+      subtitle="From initial setup to winning proposals, we provide comprehensive support for your federal contracting journey."
       spacing="lg">
-      <!-- Service Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <!-- Federal Contract Setup -->
-        <BaseCard variant="elevated" padding="lg" interactive>
-          <IconWrapper icon="heroicons:document-text" variant="primary" size="lg" class="mb-6" />
-          <h3 class="text-xl font-bold text-secondary-900 mb-4">Federal Contract Setup</h3>
-          <p class="text-secondary-600 mb-6">
-            Get your business ready for federal contracting with proper registrations, certifications, and compliance
-            foundation.
-          </p>
-          <ul class="text-sm text-secondary-600 space-y-2 mb-6">
-            <li>• SAM.gov registration and maintenance</li>
-            <li>• CAGE code acquisition</li>
-            <li>• NAICS code selection and strategy</li>
-            <li>• Small business certifications (WOSB, VOSB, 8a)</li>
-            <li>• Compliance systems setup</li>
-          </ul>
-          <BaseButton variant="tertiary" icon-right="heroicons:arrow-right">
-            <NuxtLink to="/services/contract-setup">
-              Learn More
-            </NuxtLink>
-          </BaseButton>
-        </BaseCard>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <!-- Contracting Readiness & Set-Up -->
+        <NuxtLink to="/services/contract-setup">
+          <BaseCard fullHeight interactive padding="md" class="hover:shadow-medium transition-shadow">
+            <div class="text-center">
+              <IconWrapper icon="heroicons:cog-6-tooth" variant="primary" size="lg" class="mx-auto mb-6" />
+              <h3 class="text-xl font-bold text-secondary-900 mb-4">Contracting Readiness & Set-Up</h3>
+              <p class="text-secondary-600 mb-6">
+                Get contract-ready with strategic setup and compliance tools.
+              </p>
+              <div class="text-left text-sm text-secondary-600 space-y-2 mb-6">
+                <p class="font-medium">• SAM.gov & State Registration Assistance:</p>
+                <p class="pl-4">Full review and setup for SAM.gov, Texas.gov, and other essential platforms.</p>
+                <p class="font-medium">• NAICS & PSC Code Optimization:</p>
+                <p class="pl-4">Align your business classification codes to your current and future capabilities for maximum eligibility.</p>
+                <p class="font-medium">• Capability Statement Development:</p>
+                <p class="pl-4">Professionally crafted narrative, core competencies, differentiators, and past performance summaries tailored to your niche.</p>
+              </div>
+              <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
+                Learn More
+              </BaseButton>
+            </div>
+          </BaseCard>
+        </NuxtLink>
 
-        <!-- Proposal Development -->
-        <BaseCard variant="elevated" padding="lg" interactive>
-          <IconWrapper icon="heroicons:pencil-square" variant="success" size="lg" class="mb-6" />
-          <h3 class="text-xl font-bold text-secondary-900 mb-4">Proposal Development</h3>
-          <p class="text-secondary-600 mb-6">
-            Craft winning proposals with strategic guidance from an experienced contracting officer perspective.
-          </p>
-          <ul class="text-sm text-secondary-600 space-y-2 mb-6">
-            <li>• Opportunity analysis and strategy</li>
-            <li>• Proposal writing and review</li>
-            <li>• Technical and price evaluation</li>
-            <li>• Past performance documentation</li>
-            <li>• Submission support and follow-up</li>
-          </ul>
-          <BaseButton variant="tertiary" icon-right="heroicons:arrow-right">
-            <NuxtLink to="/services/proposal-development">
-              Learn More
-            </NuxtLink>
-          </BaseButton>
-        </BaseCard>
+        <!-- Opportunity Identification and Market Intelligence -->
+        <NuxtLink to="/services/market-intelligence">
+          <BaseCard fullHeight interactive padding="md" class="hover:shadow-medium transition-shadow">
+            <div class="text-center">
+              <IconWrapper icon="heroicons:magnifying-glass" variant="primary" size="lg" class="mx-auto mb-6" />
+              <h3 class="text-xl font-bold text-secondary-900 mb-4">Opportunity Identification and Market Intelligence</h3>
+              <p class="text-secondary-600 mb-6">
+                Find and target the right opportunities before your competition.
+              </p>
+              <div class="text-left text-sm text-secondary-600 space-y-2 mb-6">
+                <p class="font-medium">• Bid Matchmaking Services:</p>
+                <p class="pl-4">We use premium intelligence tools to uncover relevant opportunities.</p>
+                <p class="font-medium">• Opportunity Tracking:</p>
+                <p class="pl-4">Stay ahead of new bids with regular updates on potential contracts aligned with your capabilities.</p>
+                <p class="font-medium">• Strategic Targeting Plans:</p>
+                <p class="pl-4">Focus your efforts on winnable opportunities with higher return on investment.</p>
+              </div>
+              <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
+                Learn More
+              </BaseButton>
+            </div>
+          </BaseCard>
+        </NuxtLink>
 
-        <!-- FAR Compliance -->
-        <BaseCard variant="elevated" padding="lg" interactive>
-          <IconWrapper icon="heroicons:shield-check" variant="warning" size="lg" class="mb-6" />
-          <h3 class="text-xl font-bold text-secondary-900 mb-4">FAR Compliance Consulting</h3>
-          <p class="text-secondary-600 mb-6">
-            Ensure your business meets all Federal Acquisition Regulation requirements with expert guidance and ongoing
-            support.
-          </p>
-          <ul class="text-sm text-secondary-600 space-y-2 mb-6">
-            <li>• FAR compliance audits and assessments</li>
-            <li>• Training and education programs</li>
-            <li>• Documentation and process setup</li>
-            <li>• Ongoing compliance monitoring</li>
-            <li>• Risk assessment and mitigation</li>
-          </ul>
-          <BaseButton variant="tertiary" icon-right="heroicons:arrow-right">
-            <NuxtLink to="/services/far-compliance">
-              Learn More
-            </NuxtLink>
-          </BaseButton>
-        </BaseCard>
+        <!-- Proposal Development & Management -->
+        <NuxtLink to="/services/proposal-development">
+          <BaseCard fullHeight interactive padding="md" class="hover:shadow-medium transition-shadow">
+            <div class="text-center">
+              <IconWrapper icon="heroicons:pencil-square" variant="primary" size="lg" class="mx-auto mb-6" />
+              <h3 class="text-xl font-bold text-secondary-900 mb-4">Proposal Development & Management</h3>
+              <p class="text-secondary-600 mb-6">
+                From RFP to submission — we manage the full proposal lifecycle.
+              </p>
+              <div class="text-left text-sm text-secondary-600 space-y-2 mb-6">
+                <p class="font-medium">• Proposal Writing & Management:</p>
+                <p class="pl-4">Complete support for responding to RFPs/RFQs at both the state and federal levels.</p>
+                <p class="font-medium">• Bid/No-Bid Strategy:</p>
+                <p class="pl-4">We help you assess which opportunities are worth pursuing—saving you time and increasing win probability.</p>
+                <p class="font-medium">• Submission Support & Formatting:</p>
+                <p class="pl-4">Ensure your proposal is professionally formatted, complete, and compliant with all solicitation requirements.</p>
+              </div>
+              <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
+                Learn More
+              </BaseButton>
+            </div>
+          </BaseCard>
+        </NuxtLink>
+      </div>
 
-        <!-- Bid/No-Bid Strategy -->
-        <BaseCard variant="elevated" padding="lg" interactive>
-          <IconWrapper icon="heroicons:chart-bar" variant="accent" size="lg" class="mb-6" />
-          <h3 class="text-xl font-bold text-secondary-900 mb-4">Bid/No-Bid Strategy</h3>
-          <p class="text-secondary-600 mb-6">
-            Make informed decisions about which opportunities to pursue with strategic analysis and win probability
-            assessment.
-          </p>
-          <ul class="text-sm text-secondary-600 space-y-2 mb-6">
-            <li>• Opportunity analysis and evaluation</li>
-            <li>• Win probability assessment</li>
-            <li>• Resource requirement analysis</li>
-            <li>• ROI projections and modeling</li>
-            <li>• Strategic recommendations</li>
-          </ul>
-          <BaseButton variant="tertiary" icon-right="heroicons:arrow-right">
-            <NuxtLink to="/services/bid-no-bid-strategy">
-              Learn More
-            </NuxtLink>
-          </BaseButton>
-        </BaseCard>
+      <!-- Second row with 2 features -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Compliance & Regulatory Support -->
+        <NuxtLink to="/services/far-compliance">
+          <BaseCard fullHeight interactive padding="md" class="hover:shadow-medium transition-shadow">
+            <div class="text-center">
+              <IconWrapper icon="heroicons:shield-check" variant="primary" size="lg" class="mx-auto mb-6" />
+              <h3 class="text-xl font-bold text-secondary-900 mb-4">Compliance & Regulatory Support</h3>
+              <p class="text-secondary-600 mb-6">
+                Navigate the FAR and state-specific requirements with confidence.
+              </p>
+              <div class="text-left text-sm text-secondary-600 space-y-2 mb-6">
+                <p class="font-medium">• FAR Compliance Consulting:</p>
+                <p class="pl-4">Interpret, apply, and integrate Federal Acquisition Regulations into your processes.</p>
+                <p class="font-medium">• Contract Risk Mitigation:</p>
+                <p class="pl-4">Avoid costly mistakes with expert guidance on regulatory traps, certifications, and performance clauses.</p>
+                <p class="font-medium">• Bonding Guidance:</p>
+                <p class="pl-4">Understand and meet bonding requirements to qualify for public sector contracts.</p>
+              </div>
+              <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
+                Learn More
+              </BaseButton>
+            </div>
+          </BaseCard>
+        </NuxtLink>
+
+        <!-- Training & Capacity Building -->
+        <NuxtLink to="/services/training">
+          <BaseCard fullHeight interactive padding="md" class="hover:shadow-medium transition-shadow">
+            <div class="text-center">
+              <IconWrapper icon="heroicons:academic-cap" variant="primary" size="lg" class="mx-auto mb-6" />
+              <h3 class="text-xl font-bold text-secondary-900 mb-4">Training & Capacity Building</h3>
+              <p class="text-secondary-600 mb-6">
+                Equip your team with the knowledge to compete and win.
+              </p>
+              <div class="text-left text-sm text-secondary-600 space-y-2 mb-6">
+                <p class="font-medium">• Customized Government Contracting Training:</p>
+                <p class="pl-4">In-person or virtual sessions tailored to your business and team needs.</p>
+                <p class="font-medium">• Proposal Writing Best Practices:</p>
+                <p class="pl-4">Improve your internal capacity to respond to opportunities with in-house skill development.</p>
+                <p class="font-medium">• Procurement Systems Navigation:</p>
+                <p class="pl-4">Learn how to effectively use platforms like SAM.gov, eBuy, FPDS, and more.</p>
+              </div>
+              <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
+                Learn More
+              </BaseButton>
+            </div>
+          </BaseCard>
+        </NuxtLink>
       </div>
     </BaseSection>
 
