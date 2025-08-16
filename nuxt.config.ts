@@ -8,8 +8,11 @@ export default defineNuxtConfig({
     app: {
       head: {
         link: [
-          { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-          { rel: 'apple-touch-icon', href: '/favicon.ico' }
+          // Ensure favicon paths respect the GitHub Pages base URL
+          // NUXT_APP_BASE_URL should include a trailing slash (e.g., "/repo-name/")
+          // Fallback to root when not defined (local dev)
+          { rel: 'icon', type: 'image/x-icon', href: `${(process.env.NUXT_APP_BASE_URL || '/').replace(/([^/])$/, '$1/') }favicon.ico` },
+          { rel: 'apple-touch-icon', href: `${(process.env.NUXT_APP_BASE_URL || '/').replace(/([^/])$/, '$1/') }favicon.ico` }
         ],
         meta: [
           { name: 'theme-color', content: '#ffffff' }

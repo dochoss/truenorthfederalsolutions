@@ -28,14 +28,14 @@ This file tracks work completed and plans future work for the True North Federal
 - [ ] Create federal contracting focused visual identity
 
 ### Core Business Pages
-- [ ] Homepage - Value proposition and service overview
-- [ ] About page - Founder's credentials and company story
-- [ ] Services pages:
-  - [ ] Federal Contract Setup
-  - [ ] Proposal Development  
-  - [ ] FAR Compliance Consulting
-  - [ ] Bid/No-Bid Strategy
-- [ ] Resources/Blog section for thought leadership content
+- [x] Homepage - Value proposition and service overview
+- [x] About page - Founder's credentials and company story
+- [x] Services pages:
+  - [x] Federal Contract Setup
+  - [x] Proposal Development  
+  - [x] FAR Compliance Consulting
+  - [x] Bid/No-Bid Strategy
+- [x] Resources/Blog section for thought leadership content (links to LinkedIn)
 - [ ] Contact page with consultation booking
 - [ ] Legal pages (Privacy Policy, Terms of Service)
 
@@ -47,7 +47,7 @@ This file tracks work completed and plans future work for the True North Federal
 - [ ] Set up analytics and tracking
 
 ### Lead Generation Infrastructure
-- [ ] Build contact forms with validation
+- [x] Build contact forms with validation
 - [ ] Integrate with CRM/email marketing system
 - [ ] Create lead magnets (free resources, assessments)
 - [ ] Set up newsletter signup and automation
