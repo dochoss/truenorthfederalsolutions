@@ -20,9 +20,9 @@
             <div class="space-y-3">
               <div class="flex items-center space-x-3">
                 <Icon name="heroicons:envelope" class="w-4 h-4 text-primary-400" />
-                <a href="mailto:contact@truenorthfederalsolutions.com"
+                <a href="mailto:truenorthfederalconsulting@gmail.com"
                   class="text-secondary-300 hover:text-white transition-colors text-sm">
-                  contact@truenorthfederalsolutions.com
+                  truenorthfederalconsulting@gmail.com
                 </a>
               </div>
               <div class="flex items-center space-x-3">
