@@ -40,6 +40,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Generate guides index
+        run: npm run generate-guides
       - name: Static HTML export with Nuxt
         # run: npm run generate
         # CHANGE BASE URL HERE if your site is not at the root of the domain

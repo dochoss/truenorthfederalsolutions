@@ -1,6 +1,9 @@
 {
   "private": true,
   "scripts": {
+    "generate-guides": "node ./scripts/generate-guides.js",
+    "prebuild": "npm run generate-guides",
+    "pregenerate": "npm run generate-guides",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",

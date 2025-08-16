@@ -71,7 +71,9 @@ const loading = ref(true)
 async function loadGuides() {
   loading.value = true
   try {
-    const res = await $fetch('/api/guides')
+    // Use a pre-generated static index so this works on static hosts (GitHub Pages)
+    const res = await $fetch('/guides/index.json')
+    // Keep the same shape { files: [...] } for minimal changes
     files.value = res?.files || []
   } catch (e) {
     files.value = []
