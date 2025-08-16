@@ -1,5 +1,15 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+    runtimeConfig: {
+      // Private server-side only
+      mailchimp: {
+        apiKey: process.env.MAILCHIMP_API_KEY,
+        audienceId: process.env.MAILCHIMP_AUDIENCE_ID,
+        serverPrefix: process.env.MAILCHIMP_SERVER_PREFIX
+      },
+      // Public config (none needed for Mailchimp)
+      public: {}
+    },
     modules: [
       '@nuxtjs/tailwindcss',
       '@nuxt/image',
