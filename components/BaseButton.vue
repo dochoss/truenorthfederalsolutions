@@ -81,10 +81,10 @@ const buttonClasses = computed(() => {
   // Color variants
   const variantClasses = {
     primary: [
-      'bg-primary-600',
+  'bg-primary-700',
       'text-white',
-      'hover:bg-primary-700',
-      'focus:ring-primary-500',
+  'hover:bg-primary-800',
+  'focus:ring-primary-600',
       'disabled:bg-primary-300'
     ],
     secondary: [

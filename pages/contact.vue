@@ -121,12 +121,9 @@
                 ></textarea>
               </div>
 
-              <button
-                type="submit"
-                class="w-full bg-blue-700 text-white py-3 px-6 rounded-md hover:bg-blue-800 transition-colors font-medium"
-              >
+              <BaseButton type="submit" variant="primary" :fullWidth="true">
                 Schedule Consultation
-              </button>
+              </BaseButton>
             </form>
           </div>
 
@@ -192,12 +189,9 @@
                   placeholder="Enter your email"
                   class="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
-                <button
-                  type="submit"
-                  class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition-colors"
-                >
+                <BaseButton type="submit" variant="primary">
                   Subscribe
-                </button>
+                </BaseButton>
               </form>
             </div>
           </div>
