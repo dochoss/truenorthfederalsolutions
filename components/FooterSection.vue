@@ -45,25 +45,31 @@
               <li>
                 <NuxtLink to="/services/contract-setup"
                   class="text-secondary-300 hover:text-white transition-colors text-sm">
-                  Contract Setup
+                  Contracting Readiness & Set-Up
+                </NuxtLink>
+              </li>
+              <li>
+                <NuxtLink to="/services/market-intelligence"
+                  class="text-secondary-300 hover:text-white transition-colors text-sm">
+                  Opportunity Identification
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/services/proposal-development"
                   class="text-secondary-300 hover:text-white transition-colors text-sm">
-                  Proposal Development
+                  Proposal Development & Management
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/services/far-compliance"
                   class="text-secondary-300 hover:text-white transition-colors text-sm">
-                  FAR Compliance
+                  Compliance & Regulatory Support
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/services/bid-no-bid-strategy"
+                <NuxtLink to="/services/training"
                   class="text-secondary-300 hover:text-white transition-colors text-sm">
-                  Strategic Consulting
+                  Training & Capacity Building
                 </NuxtLink>
               </li>
               <li>

@@ -31,15 +31,15 @@
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
                   <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
-                  <span>Customized government contracting training programs</span>
+                  <span>Customized Government Contracting Training: In-person or virtual sessions tailored to your business and team needs</span>
                 </li>
                 <li class="flex items-start">
                   <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
-                  <span>Proposal writing best practices and workshops</span>
+                  <span>Proposal Writing Best Practices: Improve your internal capacity to respond to opportunities with in-house skill development</span>
                 </li>
                 <li class="flex items-start">
                   <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
-                  <span>Procurement systems navigation and training</span>
+                  <span>Procurement Systems Navigation: Learn how to effectively use platforms like SAM.gov, eBuy, FPDS, and more</span>
                 </li>
                 <li class="flex items-start">
                   <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />

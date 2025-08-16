@@ -5,10 +5,10 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <Icon name="heroicons:document-text" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
         <h1 class="text-4xl font-bold text-gray-900 mb-4">
-          Federal Contract Setup
+          Contracting Readiness & Set-Up
         </h1>
         <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-          Get your business ready for federal contracting with proper registrations, certifications, and compliance foundation.
+          Get contract-ready with strategic setup and compliance tools. Full support for SAM.gov registration, NAICS optimization, and capability statement development.
         </p>
       </div>
     </section>
@@ -31,7 +31,15 @@
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
                   <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
-                  <span>SAM.gov registration and maintenance</span>
+                  <span>SAM.gov & State Registration Assistance: Full review and setup for SAM.gov, Texas.gov, and other essential platforms</span>
+                </li>
+                <li class="flex items-start">
+                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <span>NAICS & PSC Code Optimization: Align your business classification codes to your current and future capabilities for maximum eligibility</span>
+                </li>
+                <li class="flex items-start">
+                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <span>Capability Statement Development: Professionally crafted narrative, core competencies, differentiators, and past performance summaries tailored to your niche</span>
                 </li>
                 <li class="flex items-start">
                   <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
@@ -39,19 +47,11 @@
                 </li>
                 <li class="flex items-start">
                   <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
-                  <span>NAICS code analysis and selection</span>
-                </li>
-                <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
-                  <span>Small business certification guidance</span>
+                  <span>Small business certification guidance and applications</span>
                 </li>
                 <li class="flex items-start">
                   <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Compliance systems and documentation setup</span>
-                </li>
-                <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
-                  <span>Electronic payment setup and banking</span>
                 </li>
               </ul>
             </div>
@@ -259,21 +259,21 @@
 <script setup>
 // Set page meta for SEO
 definePageMeta({
-  title: 'Federal Contract Setup - True North Federal Solutions',
-  description: 'Professional federal contract setup services including SAM registration, CAGE codes, certifications, and compliance foundation for small businesses.'
+  title: 'Contracting Readiness & Set-Up - True North Federal Solutions',
+  description: 'Professional contracting readiness services including SAM.gov registration, NAICS optimization, capability statements, and compliance foundation for small businesses.'
 })
 
 // Set head for SEO
 useHead({
-  title: 'Federal Contract Setup Services - True North Federal Solutions',
+  title: 'Contracting Readiness & Set-Up Services - True North Federal Solutions',
   meta: [
     { 
       name: 'description', 
-      content: 'Expert federal contract setup services. SAM registration, CAGE codes, NAICS strategy, certifications, and compliance foundation for small business success.' 
+      content: 'Expert contracting readiness services. SAM.gov registration, NAICS & PSC code optimization, capability statement development, and compliance foundation for small business success.' 
     },
     { 
       name: 'keywords', 
-      content: 'federal contract setup, SAM registration, CAGE code, NAICS codes, small business certifications, WOSB, VOSB, 8a certification' 
+      content: 'contracting readiness, SAM registration, NAICS codes, PSC codes, capability statement, small business certifications, WOSB, VOSB, 8a certification' 
     }
   ]
 })
