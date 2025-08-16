@@ -5,6 +5,17 @@ export default defineNuxtConfig({
       '@nuxt/image',
       'nuxt-icon'
     ],
+    app: {
+      head: {
+        link: [
+          { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+          { rel: 'apple-touch-icon', href: '/favicon.ico' }
+        ],
+        meta: [
+          { name: 'theme-color', content: '#ffffff' }
+        ]
+      }
+    },
     postcss: {
       plugins: {
         tailwindcss: {},
