@@ -88,7 +88,7 @@
                   @click="closeDropdowns">
                   Blog & Articles
                 </NuxtLink>
-                <NuxtLink to="/resources/guides"
+                <NuxtLink to="/guides"
                   class="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-700"
                   @click="closeDropdowns">
                   Guides & Templates
@@ -192,7 +192,7 @@
                 @click="closeMobileMenu">
                 Blog & Articles
               </NuxtLink>
-              <NuxtLink to="/resources/guides"
+              <NuxtLink to="/guides"
                 class="block text-secondary-600 hover:text-primary-700 hover:bg-primary-50 px-3 py-1 rounded-md text-sm"
                 @click="closeMobileMenu">
                 Guides & Templates

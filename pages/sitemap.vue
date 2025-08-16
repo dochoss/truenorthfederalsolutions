@@ -85,7 +85,7 @@
                     class="block text-gray-600 hover:text-primary-600 transition-colors text-sm">
                     📰 Blog & Articles
                   </NuxtLink>
-                  <NuxtLink to="/resources/guides"
+                  <NuxtLink to="/guides"
                     class="block text-gray-600 hover:text-primary-600 transition-colors text-sm">
                     📖 Guides & Templates
                   </NuxtLink>

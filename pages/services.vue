@@ -35,10 +35,7 @@
                 <p class="pl-4">Align your business classification codes to your current and future capabilities for maximum eligibility.</p>
                 <p class="font-medium">• Capability Statement Development:</p>
                 <p class="pl-4">Professionally crafted narrative, core competencies, differentiators, and past performance summaries tailored to your niche.</p>
-              </div>
-              <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
-                Learn More
-              </BaseButton>
+              </div>              
             </div>
           </BaseCard>
         </NuxtLink>
@@ -59,10 +56,7 @@
                 <p class="pl-4">Stay ahead of new bids with regular updates on potential contracts aligned with your capabilities.</p>
                 <p class="font-medium">• Strategic Targeting Plans:</p>
                 <p class="pl-4">Focus your efforts on winnable opportunities with higher return on investment.</p>
-              </div>
-              <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
-                Learn More
-              </BaseButton>
+              </div>              
             </div>
           </BaseCard>
         </NuxtLink>
@@ -83,10 +77,7 @@
                 <p class="pl-4">We help you assess which opportunities are worth pursuing—saving you time and increasing win probability.</p>
                 <p class="font-medium">• Submission Support & Formatting:</p>
                 <p class="pl-4">Ensure your proposal is professionally formatted, complete, and compliant with all solicitation requirements.</p>
-              </div>
-              <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
-                Learn More
-              </BaseButton>
+              </div>              
             </div>
           </BaseCard>
         </NuxtLink>
@@ -110,10 +101,7 @@
                 <p class="pl-4">Avoid costly mistakes with expert guidance on regulatory traps, certifications, and performance clauses.</p>
                 <p class="font-medium">• Bonding Guidance:</p>
                 <p class="pl-4">Understand and meet bonding requirements to qualify for public sector contracts.</p>
-              </div>
-              <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
-                Learn More
-              </BaseButton>
+              </div>              
             </div>
           </BaseCard>
         </NuxtLink>
@@ -134,10 +122,7 @@
                 <p class="pl-4">Improve your internal capacity to respond to opportunities with in-house skill development.</p>
                 <p class="font-medium">• Procurement Systems Navigation:</p>
                 <p class="pl-4">Learn how to effectively use platforms like SAM.gov, eBuy, FPDS, and more.</p>
-              </div>
-              <BaseButton variant="tertiary" size="sm" icon-right="heroicons:arrow-right">
-                Learn More
-              </BaseButton>
+              </div>              
             </div>
           </BaseCard>
         </NuxtLink>

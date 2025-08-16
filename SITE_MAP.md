@@ -52,7 +52,7 @@ TRUE NORTH FEDERAL SOLUTIONS
 │   │   ├── Success Stories
 │   │   └── Regulatory Changes
 │   │
-│   ├── 📖 Guides & Templates (/resources/guides)
+│   ├── 📖 Guides & Templates (/guides)
 │   │   ├── Step-by-Step Guides
 │   │   ├── Compliance Checklists
 │   │   ├── Proposal Templates
@@ -230,8 +230,8 @@ Home > Resources > Blog > [Article Title]
 ### Resource Pages
 - `/resources/blog`
 - `/resources/blog/[slug]`
-- `/resources/guides`
-- `/resources/guides/[slug]`
+- `/guides`
+- `/guides/[slug]`
 - `/resources/certifications/[type]`
 
 ### Tool Pages (Phase 2)

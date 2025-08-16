@@ -137,7 +137,7 @@ This document defines the comprehensive information architecture and site mappin
 - Success stories and case studies
 - Regulatory changes and implications
 
-#### 4.2 Guides & Templates (`/resources/guides`)
+#### 4.2 Guides & Templates (`/guides`)
 **Content Types**:
 - Step-by-step guides
 - Checklists and templates
@@ -200,8 +200,8 @@ Service Pages:
 Resource Pages:
 /resources/blog
 /resources/blog/[slug]
-/resources/guides
-/resources/guides/[slug]
+/guides
+/guides/[slug]
 /resources/certifications
 /resources/certifications/[certification-type]
 

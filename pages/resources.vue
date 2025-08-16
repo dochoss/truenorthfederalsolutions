@@ -26,7 +26,7 @@
               Stay updated with the latest insights, best practices, and industry news in federal contracting.
             </p>
             <BaseButton variant="primary" full-width icon-right="heroicons:arrow-right">
-              <NuxtLink to="/resources/blog">
+              <NuxtLink to="https://www.linkedin.com/company/true-north-federal-solutions-llc/posts/" target="_blank">
                 Read Articles
               </NuxtLink>
             </BaseButton>
@@ -41,11 +41,11 @@
             <p class="text-secondary-600 mb-6">
               Download practical guides, checklists, and templates to streamline your federal contracting process.
             </p>
-            <BaseButton variant="primary" full-width icon-right="heroicons:arrow-right">
-              <NuxtLink to="/resources/guides">
+            <NuxtLink to="/guides">
+              <BaseButton variant="primary" full-width icon-right="heroicons:arrow-right">
                 Browse Guides
-              </NuxtLink>
-            </BaseButton>
+              </BaseButton>
+            </NuxtLink>
           </div>
         </BaseCard>
 
@@ -274,4 +274,5 @@ useHead({
     }
   ]
 })
+
 </script>

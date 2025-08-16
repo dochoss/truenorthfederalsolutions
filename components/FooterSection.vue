@@ -86,7 +86,7 @@
             <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Resources</h3>
             <ul class="space-y-3">
               <li>
-                <NuxtLink to="/resources/guides" class="text-secondary-300 hover:text-white transition-colors text-sm">
+                <NuxtLink to="/guides" class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Federal Contracting Guides
                 </NuxtLink>
               </li>
