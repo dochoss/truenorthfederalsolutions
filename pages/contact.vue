@@ -3,7 +3,7 @@
     <!-- Contact Header -->
     <section class="bg-blue-50 py-16">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <Icon name="heroicons:envelope" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
+        <Icon name="heroicons:envelope" class="w-16 h-16 text-primary-700 mx-auto mb-6" />
         <h1 class="text-4xl font-bold text-gray-900 mb-4">
           Get Started with Federal Contracting
         </h1>
@@ -135,7 +135,7 @@
             
             <div class="space-y-6">
               <div class="flex items-start space-x-4">
-                <Icon name="heroicons:clock" class="w-6 h-6 text-blue-700 mt-1" />
+                <Icon name="heroicons:clock" class="w-6 h-6 text-primary-700 mt-1" />
                 <div>
                   <h3 class="font-semibold text-gray-900 mb-2">Response Time</h3>
                   <p class="text-gray-600">
@@ -145,7 +145,7 @@
               </div>
 
               <div class="flex items-start space-x-4">
-                <Icon name="heroicons:chat-bubble-left-right" class="w-6 h-6 text-blue-700 mt-1" />
+                <Icon name="heroicons:chat-bubble-left-right" class="w-6 h-6 text-primary-700 mt-1" />
                 <div>
                   <h3 class="font-semibold text-gray-900 mb-2">Consultation Format</h3>
                   <p class="text-gray-600">
@@ -155,7 +155,7 @@
               </div>
 
               <div class="flex items-start space-x-4">
-                <Icon name="heroicons:shield-check" class="w-6 h-6 text-blue-700 mt-1" />
+                <Icon name="heroicons:shield-check" class="w-6 h-6 text-primary-700 mt-1" />
                 <div>
                   <h3 class="font-semibold text-gray-900 mb-2">Confidentiality</h3>
                   <p class="text-gray-600">
@@ -165,7 +165,7 @@
               </div>
 
               <div class="flex items-start space-x-4">
-                <Icon name="heroicons:document-text" class="w-6 h-6 text-blue-700 mt-1" />
+                <Icon name="heroicons:document-text" class="w-6 h-6 text-primary-700 mt-1" />
                 <div>
                   <h3 class="font-semibold text-gray-900 mb-2">Preparation</h3>
                   <p class="text-gray-600">

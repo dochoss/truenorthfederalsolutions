@@ -1,10 +1,5 @@
 <template>
-  <button
-    :class="buttonClasses"
-    :disabled="disabled"
-    :type="type"
-    @click="$emit('click', $event)"
-  >
+  <button :class="buttonClasses" :disabled="disabled" :type="type" @click="$emit('click', $event)">
     <Icon v-if="iconLeft" :name="iconLeft" :class="iconClasses" />
     <slot />
     <Icon v-if="iconRight" :name="iconRight" :class="iconClasses" />
@@ -81,10 +76,10 @@ const buttonClasses = computed(() => {
   // Color variants
   const variantClasses = {
     primary: [
-  'bg-primary-700',
+      'bg-primary-700',
       'text-white',
-  'hover:bg-primary-800',
-  'focus:ring-primary-600',
+      'hover:bg-primary-800',
+      'focus:ring-primary-600',
       'disabled:bg-primary-300'
     ],
     secondary: [
@@ -116,7 +111,7 @@ const buttonClasses = computed(() => {
   // Defensive prop access with fallbacks
   const size = props?.size || 'md'
   const variant = props?.variant || 'primary'
-  
+
   // Ensure we always get arrays
   const sizeClass = sizeClasses[size] || sizeClasses.md || []
   const variantClass = variantClasses[variant] || variantClasses.primary || []
@@ -134,13 +129,13 @@ const iconClasses = computed(() => {
     md: 'w-5 h-5',
     lg: 'w-6 h-6'
   }
-  
+
   // Defensive prop access with fallback
   const size = props?.size || 'md'
   const sizeClass = sizeMap[size] || sizeMap.md || ''
-  
+
   const classes = [sizeClass]
-  
+
   // Add spacing based on slot content
   if (props.iconLeft) {
     classes.push('mr-2')
@@ -148,7 +143,7 @@ const iconClasses = computed(() => {
   if (props.iconRight) {
     classes.push('ml-2')
   }
-  
+
   return classes
 })
 </script>
