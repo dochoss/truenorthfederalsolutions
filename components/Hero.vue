@@ -28,13 +28,13 @@
           <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
               <UButton color="neutral" variant="outline" size="lg" icon="i-heroicons-calendar-days" to="/contact"
-                class="flex items-center justify-center px-8 py-3 w-64 hover:bg-secondary-100 hover:text-secondary-900">
+                class="flex items-center justify-center px-8 py-3 w-80 hover:bg-secondary-100 hover:text-secondary-900 text-lg">
                 Schedule Consultation
               </UButton>
             </div>
             <div class="mt-3 sm:mt-0 sm:ml-3">
               <UButton color="neutral" variant="outline" size="lg" icon="i-heroicons-book-open" to="/resources"
-                class="flex items-center justify-center px-8 py-3 w-64 hover:bg-secondary-100 hover:text-secondary-900">
+                class="flex items-center justify-center px-8 py-3 w-80 hover:bg-secondary-100 hover:text-secondary-900 text-lg">
                 Explore Resources
               </UButton>
             </div>
