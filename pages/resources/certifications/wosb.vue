@@ -18,7 +18,7 @@
         </div>
 
         <!-- Quick Stats -->
-        <BaseCard class="mb-12">
+        <UCard class="mb-12">
           <div class="p-8">
             <h3 class="text-2xl font-bold mb-6 text-center">WOSB Program Impact</h3>
             <div class="grid md:grid-cols-3 gap-8 text-center">
@@ -36,13 +36,13 @@
               </div>
             </div>
           </div>
-        </BaseCard>
+        </UCard>
 
         <!-- Program Overview -->
         <div class="space-y-12">
           <div>
             <h3 class="text-2xl font-bold mb-6">What is WOSB Certification?</h3>
-            <BaseCard>
+            <UCard>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">
                   The WOSB Federal Contracting Program authorizes contracting officers to set aside certain federal contracts for eligible women-owned small businesses or economically disadvantaged women-owned small businesses (EDWOSB).
@@ -51,17 +51,17 @@
                   This program helps level the playing field for women entrepreneurs and provides access to federal contracting opportunities in industries where women-owned businesses are underrepresented.
                 </p>
               </div>
-            </BaseCard>
+            </UCard>
           </div>
 
           <!-- Eligibility Requirements -->
           <div>
             <h3 class="text-2xl font-bold mb-6">Eligibility Requirements</h3>
             <div class="grid md:grid-cols-2 gap-6">
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <Icon name="heroicons:check-circle" class="w-6 h-6 text-pink-600 mr-2" />
+                    <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-pink-600 mr-2" />
                     WOSB Requirements
                   </h4>
                   <ul class="space-y-2 text-gray-600">
@@ -72,12 +72,12 @@
                     <li>• Must be in an eligible NAICS code</li>
                   </ul>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <Icon name="heroicons:star" class="w-6 h-6 text-pink-600 mr-2" />
+                    <UIcon name="i-heroicons-star" class="w-6 h-6 text-pink-600 mr-2" />
                     EDWOSB Additional Requirements
                   </h4>
                   <ul class="space-y-2 text-gray-600">
@@ -87,14 +87,14 @@
                     <li>• Fair market value of assets less than $6 million</li>
                   </ul>
                 </div>
-              </BaseCard>
+              </UCard>
             </div>
           </div>
 
           <!-- Application Process -->
           <div>
             <h3 class="text-2xl font-bold mb-6">Certification Process</h3>
-            <BaseCard>
+            <UCard>
               <div class="p-6">
                 <div class="space-y-6">
                   <div class="flex items-start">
@@ -138,30 +138,30 @@
                   </div>
                 </div>
               </div>
-            </BaseCard>
+            </UCard>
           </div>
 
           <!-- Benefits -->
           <div>
             <h3 class="text-2xl font-bold mb-6">Benefits of WOSB Certification</h3>
             <div class="grid md:grid-cols-3 gap-6">
-              <BaseCard class="text-center p-6">
-                <Icon name="heroicons:target" class="w-12 h-12 text-pink-600 mb-4 mx-auto" />
+              <UCard class="text-center p-6">
+                <UIcon name="i-heroicons-target" class="w-12 h-12 text-pink-600 mb-4 mx-auto" />
                 <h4 class="font-semibold mb-3">Set-Aside Opportunities</h4>
                 <p class="text-gray-600 text-sm">Access to contracts specifically reserved for women-owned businesses</p>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard class="text-center p-6">
-                <Icon name="heroicons:chart-bar" class="w-12 h-12 text-pink-600 mb-4 mx-auto" />
+              <UCard class="text-center p-6">
+                <UIcon name="i-heroicons-chart-bar" class="w-12 h-12 text-pink-600 mb-4 mx-auto" />
                 <h4 class="font-semibold mb-3">Reduced Competition</h4>
                 <p class="text-gray-600 text-sm">Compete against fewer businesses in set-aside procurements</p>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard class="text-center p-6">
-                <Icon name="heroicons:building-office" class="w-12 h-12 text-pink-600 mb-4 mx-auto" />
+              <UCard class="text-center p-6">
+                <UIcon name="i-heroicons-building-office" class="w-12 h-12 text-pink-600 mb-4 mx-auto" />
                 <h4 class="font-semibold mb-3">Prime Contractor Opportunities</h4>
                 <p class="text-gray-600 text-sm">Pursue larger contracts as a prime contractor, not just subcontractor</p>
-              </BaseCard>
+              </UCard>
             </div>
           </div>
 
@@ -174,12 +174,12 @@
               Let our experts guide you through the certification process and help you leverage your WOSB status for maximum impact.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-              <BaseButton variant="primary">
-                <NuxtLink to="/contact">Schedule Consultation</NuxtLink>
-              </BaseButton>
-              <BaseButton variant="outline">
+              <UButton color="primary" to="/contact">
+                Schedule Consultation
+              </UButton>
+              <UButton variant="outline">
                 Download WOSB Guide
-              </BaseButton>
+              </UButton>
             </div>
           </div>
         </div>

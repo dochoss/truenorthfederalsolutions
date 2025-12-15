@@ -118,9 +118,9 @@
         </div>
 
         <div class="mt-12 text-center">
-          <BaseButton variant="outline">
-            <NuxtLink to="/">Return to Home</NuxtLink>
-          </BaseButton>
+          <UButton variant="outline" to="/">
+            Return to Home
+          </UButton>
         </div>
       </div>
     </BaseSection>

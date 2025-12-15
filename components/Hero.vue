@@ -14,7 +14,7 @@
 
           <!-- Title -->
           <h1 class="text-4xl tracking-tight font-bold text-white sm:text-5xl md:text-6xl">
-            <span class="block">Federal Contracting</span>
+            <span class="block font-light">Federal Contracting</span>
             <span class="block text-white font-extrabold">Success Starts Here</span>
           </h1>
 
@@ -27,20 +27,16 @@
           <!-- CTA Buttons -->
           <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div class="rounded-md shadow">
-              <BaseButton variant="secondary" size="lg" icon-left="heroicons:calendar-days"
-                class="w-full flex items-center justify-center px-8 py-3">
-                <NuxtLink to="/contact" class="flex items-center">
-                  Schedule Consultation
-                </NuxtLink>
-              </BaseButton>
+              <UButton color="neutral" variant="outline" size="lg" icon="i-heroicons-calendar-days" to="/contact"
+                class="flex items-center justify-center px-8 py-3 w-64 hover:bg-secondary-100 hover:text-secondary-900">
+                Schedule Consultation
+              </UButton>
             </div>
             <div class="mt-3 sm:mt-0 sm:ml-3">
-              <BaseButton variant="secondary" size="lg" icon-left="heroicons:book-open"
-                class="w-full flex items-center justify-center px-8 py-3">
-                <NuxtLink to="/resources" class="flex items-center">
-                  Explore Resources
-                </NuxtLink>
-              </BaseButton>
+              <UButton color="neutral" variant="outline" size="lg" icon="i-heroicons-book-open" to="/resources"
+                class="flex items-center justify-center px-8 py-3 w-64 hover:bg-secondary-100 hover:text-secondary-900">
+                Explore Resources
+              </UButton>
             </div>
           </div>
         </div>

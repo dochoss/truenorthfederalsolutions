@@ -3,7 +3,7 @@
     <!-- Resources Header -->
     <BaseSection variant="secondary" spacing="lg" centered>
       <template #header>
-        <IconWrapper icon="heroicons:book-open" variant="primary" size="xl" class="mx-auto mb-6" />
+        <UIcon name="i-heroicons-book-open" class="w-16 h-16 text-primary-600 mx-auto mb-6" />
         <h1 class="text-4xl text-center font-bold text-secondary-900 mb-4">
           Federal Contracting Resources
         </h1>
@@ -18,52 +18,46 @@
     <BaseSection spacing="lg">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         <!-- Blog & Articles -->
-        <BaseCard variant="elevated" padding="lg" interactive>
+        <UCard variant="elevated" padding="lg" interactive>
           <div class="text-center">
-            <IconWrapper icon="heroicons:newspaper" variant="primary" size="lg" class="mx-auto mb-6" />
+            <UIcon name="i-heroicons-newspaper" class="w-12 h-12 text-primary-600 mx-auto mb-6" />
             <h3 class="text-xl font-bold text-secondary-900 mb-4">Blog & Articles</h3>
             <p class="text-secondary-600 mb-6">
               Stay updated with the latest insights, best practices, and industry news in federal contracting.
             </p>
-            <BaseButton variant="primary" full-width icon-right="heroicons:arrow-right">
-              <NuxtLink to="https://www.linkedin.com/company/true-north-federal-solutions-llc/posts/" target="_blank">
-                Read Articles
-              </NuxtLink>
-            </BaseButton>
+            <UButton color="primary" block trailing-icon="i-heroicons-arrow-right" to="https://www.linkedin.com/company/true-north-federal-solutions-llc/posts/" target="_blank">
+              Read Articles
+            </UButton>
           </div>
-        </BaseCard>
+        </UCard>
 
         <!-- Guides & Templates -->
-        <BaseCard variant="elevated" padding="lg" interactive>
+        <UCard variant="elevated" padding="lg" interactive>
           <div class="text-center">
-            <IconWrapper icon="heroicons:document-arrow-down" variant="success" size="lg" class="mx-auto mb-6" />
+            <UIcon name="i-heroicons-document-arrow-down" class="w-12 h-12 text-success-600 mx-auto mb-6" />
             <h3 class="text-xl font-bold text-secondary-900 mb-4">Guides & Templates</h3>
             <p class="text-secondary-600 mb-6">
               Download practical guides, checklists, and templates to streamline your federal contracting process.
             </p>
-            <NuxtLink to="/guides">
-              <BaseButton variant="primary" full-width icon-right="heroicons:arrow-right">
-                Browse Guides
-              </BaseButton>
-            </NuxtLink>
+            <UButton color="primary" block trailing-icon="i-heroicons-arrow-right" to="/guides">
+              Browse Guides
+            </UButton>
           </div>
-        </BaseCard>
+        </UCard>
 
         <!-- Certification Help -->
-        <BaseCard variant="elevated" padding="lg" interactive>
+        <UCard variant="elevated" padding="lg" interactive>
           <div class="text-center">
-            <IconWrapper icon="heroicons:academic-cap" variant="accent" size="lg" class="mx-auto mb-6" />
+            <UIcon name="i-heroicons-academic-cap" class="w-12 h-12 text-accent-600 mx-auto mb-6" />
             <h3 class="text-xl font-bold text-secondary-900 mb-4">Certification Help</h3>
             <p class="text-secondary-600 mb-6">
               Navigate the certification process for WOSB, VOSB, 8(a), and other small business programs.
             </p>
-            <BaseButton variant="primary" full-width icon-right="heroicons:arrow-right">
-              <NuxtLink to="/resources/certifications">
-                Get Certified
-              </NuxtLink>
-            </BaseButton>
+            <UButton color="primary" block trailing-icon="i-heroicons-arrow-right" to="/resources/certifications">
+              Get Certified
+            </UButton>
           </div>
-        </BaseCard>
+        </UCard>
       </div>
     </BaseSection>
 
@@ -73,8 +67,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Featured Article 1 -->
-        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
-          <IconWrapper icon="heroicons:rocket-launch" variant="primary" size="md" class="mb-4" />
+        <UCard variant="bordered" padding="md" interactive :full-height="true">
+          <UIcon name="i-heroicons-rocket-launch" class="w-8 h-8 text-primary-600 mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             Getting Started in Federal Contracting
           </h3>
@@ -84,16 +78,16 @@
           <template #footer>
             <div class="flex items-center justify-between">
               <span class="text-xs text-secondary-500">Beginner Guide</span>
-              <BaseButton variant="tertiary" size="sm">
+              <UButton variant="ghost" size="sm">
                 Coming Soon
-              </BaseButton>
+              </UButton>
             </div>
           </template>
-        </BaseCard>
+        </UCard>
 
         <!-- Featured Article 2 -->
-        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
-          <IconWrapper icon="heroicons:clipboard-document-check" variant="success" size="md" class="mb-4" />
+        <UCard variant="bordered" padding="md" interactive :full-height="true">
+          <UIcon name="i-heroicons-clipboard-document-check" class="w-8 h-8 text-success-600 mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             SAM.gov Registration Checklist
           </h3>
@@ -103,16 +97,16 @@
           <template #footer>
             <div class="flex items-center justify-between">
               <span class="text-xs text-secondary-500">Essential Template</span>
-              <BaseButton variant="tertiary" size="sm">
+              <UButton variant="ghost" size="sm">
                 Coming Soon
-              </BaseButton>
+              </UButton>
             </div>
           </template>
-        </BaseCard>
+        </UCard>
 
         <!-- Featured Article 3 -->
-        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
-          <IconWrapper icon="heroicons:shield-check" variant="accent" size="md" class="mb-4" />
+        <UCard variant="bordered" padding="md" interactive :full-height="true">
+          <UIcon name="i-heroicons-shield-check" class="w-8 h-8 text-accent-600 mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             WOSB Certification Guide
           </h3>
@@ -122,16 +116,16 @@
           <template #footer>
             <div class="flex items-center justify-between">
               <span class="text-xs text-secondary-500">Certification Guide</span>
-              <BaseButton variant="tertiary" size="sm">
+              <UButton variant="ghost" size="sm">
                 Coming Soon
-              </BaseButton>
+              </UButton>
             </div>
           </template>
-        </BaseCard>
+        </UCard>
 
         <!-- Featured Article 4 -->
-        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
-          <IconWrapper icon="heroicons:chart-bar" variant="warning" size="md" class="mb-4" />
+        <UCard variant="bordered" padding="md" interactive :full-height="true">
+          <UIcon name="i-heroicons-chart-bar" class="w-8 h-8 text-warning-600 mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             Proposal Writing Best Practices
           </h3>
@@ -141,16 +135,16 @@
           <template #footer>
             <div class="flex items-center justify-between">
               <span class="text-xs text-secondary-500">Advanced Guide</span>
-              <BaseButton variant="tertiary" size="sm">
+              <UButton variant="ghost" size="sm">
                 Coming Soon
-              </BaseButton>
+              </UButton>
             </div>
           </template>
-        </BaseCard>
+        </UCard>
 
         <!-- Featured Article 5 -->
-        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
-          <IconWrapper icon="heroicons:exclamation-triangle" variant="danger" size="md" class="mb-4" />
+        <UCard variant="bordered" padding="md" interactive :full-height="true">
+          <UIcon name="i-heroicons-exclamation-triangle" class="w-8 h-8 text-error-600 mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             Common FAR Compliance Mistakes
           </h3>
@@ -160,16 +154,16 @@
           <template #footer>
             <div class="flex items-center justify-between">
               <span class="text-xs text-secondary-500">Compliance Guide</span>
-              <BaseButton variant="tertiary" size="sm">
+              <UButton variant="ghost" size="sm">
                 Coming Soon
-              </BaseButton>
+              </UButton>
             </div>
           </template>
-        </BaseCard>
+        </UCard>
 
         <!-- Featured Article 6 -->
-        <BaseCard variant="bordered" padding="md" interactive :full-height="true">
-          <IconWrapper icon="heroicons:calculator" variant="secondary" size="md" class="mb-4" />
+        <UCard variant="bordered" padding="md" interactive :full-height="true">
+          <UIcon name="i-heroicons-calculator" class="w-8 h-8 text-secondary-600 mb-4" />
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">
             Bid/No-Bid Decision Framework
           </h3>
@@ -179,20 +173,19 @@
           <template #footer>
             <div class="flex items-center justify-between">
               <span class="text-xs text-secondary-500">Strategy Tool</span>
-              <BaseButton variant="tertiary" size="sm">
+              <UButton variant="ghost" size="sm">
                 Coming Soon
-              </BaseButton>
+              </UButton>
             </div>
           </template>
-        </BaseCard>
+        </UCard>
       </div>
     </BaseSection>
 
     <!-- Newsletter Signup -->
     <BaseSection variant="primary" spacing="lg" centered>
       <template #header>
-        <IconWrapper icon="heroicons:envelope" variant="primary" size="lg"
-          class="mx-auto mb-6 bg-white bg-opacity-20" />
+        <UIcon name="i-heroicons-envelope" class="w-12 h-12 text-white mx-auto mb-6 bg-white/20 rounded-full p-2" />
         <h2 class="text-3xl text-left md:text-center font-bold text-white mb-4">
           Stay Updated with Federal Contracting Insights
         </h2>
@@ -203,10 +196,10 @@
 
       <div class="max-w-md mx-auto">
         <div class="flex gap-4">
-          <FormInput placeholder="Enter your email address" type="email" class="flex-1" />
-          <BaseButton variant="secondary" size="md">
+          <UInput placeholder="Enter your email address" type="email" class="flex-1" />
+          <UButton color="primary" variant="outline" size="md">
             Subscribe
-          </BaseButton>
+          </UButton>
         </div>
         <p class="text-sm text-primary-200 mt-4">
           No spam. Unsubscribe at any time. Your information is secure.
@@ -216,9 +209,9 @@
 
     <!-- Tools Preview (Phase 2) -->
     <BaseSection spacing="lg" centered>
-      <BaseCard variant="elevated" padding="lg">
+      <UCard variant="elevated" padding="lg">
         <div class="text-center">
-          <IconWrapper icon="heroicons:cog-6-tooth" variant="secondary" size="xl" class="mx-auto mb-6" />
+          <UIcon name="i-heroicons-cog-6-tooth" class="w-16 h-16 text-secondary-600 mx-auto mb-6" />
           <h2 class="text-2xl font-bold text-secondary-900 mb-4">
             AI-Powered Tools Coming Soon
           </h2>
@@ -228,27 +221,25 @@
           </p>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-8">
             <div class="flex items-start space-x-3">
-              <Icon name="heroicons:check-circle" class="w-5 h-5 text-success-600 mt-1" />
+              <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-success-600 mt-1" />
               <div>
                 <h3 class="font-semibold text-secondary-900">Business Readiness Assessment</h3>
                 <p class="text-sm text-secondary-600">Evaluate your readiness for federal contracting</p>
               </div>
             </div>
             <div class="flex items-start space-x-3">
-              <Icon name="heroicons:check-circle" class="w-5 h-5 text-success-600 mt-1" />
+              <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-success-600 mt-1" />
               <div>
                 <h3 class="font-semibold text-secondary-900">Bid/No-Bid Decision Tool</h3>
                 <p class="text-sm text-secondary-600">Get recommendations on which opportunities to pursue</p>
               </div>
             </div>
           </div>
-          <BaseButton variant="primary" icon-left="heroicons:bell">
-            <NuxtLink to="/contact">
-              Get Notified When Available
-            </NuxtLink>
-          </BaseButton>
+          <UButton color="primary" icon="i-heroicons-bell" to="/contact">
+            Get Notified When Available
+          </UButton>
         </div>
-      </BaseCard>
+      </UCard>
     </BaseSection>
   </div>
 </template>

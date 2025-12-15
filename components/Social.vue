@@ -6,15 +6,15 @@
             <a href="https://linkedin.com/company/true-north-federal-solutions-llc" target="_blank"
                 rel="noopener noreferrer" class="text-secondary-400 hover:text-primary-400 transition-colors"
                 aria-label="LinkedIn Company Page">
-                <Icon name="simple-icons:linkedin" class="w-5 h-5" />
+                <UIcon name="i-simple-icons-linkedin" class="w-5 h-5" />
             </a>
             <a href="mailto:truenorthfederalconsulting@gmail.com"
                 class="text-secondary-400 hover:text-primary-400 transition-colors" aria-label="Email Contact">
-                <Icon name="heroicons:envelope" class="w-5 h-5" />
+                <UIcon name="i-heroicons-envelope" class="w-5 h-5" />
             </a>
             <a href="tel:+1234567890" class="text-secondary-400 hover:text-primary-400 transition-colors"
                 aria-label="Phone Contact">
-                <Icon name="heroicons:phone" class="w-5 h-5" />
+                <UIcon name="i-heroicons-phone" class="w-5 h-5" />
             </a>
         </div>
     </div>

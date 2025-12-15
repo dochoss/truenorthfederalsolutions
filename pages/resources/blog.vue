@@ -18,7 +18,7 @@
         </div>
 
         <!-- Featured Article -->
-        <BaseCard class="mb-12">
+        <UCard class="mb-12">
           <div class="p-8">
             <div class="flex items-center mb-4">
               <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Featured</span>
@@ -30,42 +30,42 @@
             <p class="text-gray-600 mb-6">
               The latest updates to the Federal Acquisition Regulation bring significant changes that will impact how contractors approach federal opportunities. Learn about the key modifications and how to ensure compliance in your next proposal.
             </p>
-            <BaseButton variant="outline">
+            <UButton variant="outline">
               Read Full Article
-            </BaseButton>
+            </UButton>
           </div>
-        </BaseCard>
+        </UCard>
 
         <!-- Blog Categories -->
         <div class="grid md:grid-cols-4 gap-6 mb-12">
-          <BaseCard class="text-center p-6 hover:shadow-lg transition-shadow">
-            <Icon name="heroicons:document-text" class="w-12 h-12 text-indigo-600 mb-4 mx-auto" />
+          <UCard class="text-center p-6 hover:shadow-lg transition-shadow">
+            <UIcon name="i-heroicons-document-text" class="w-12 h-12 text-indigo-600 mb-4 mx-auto" />
             <h3 class="font-semibold mb-2">Proposal Writing</h3>
             <p class="text-sm text-gray-600">Tips and strategies for winning proposals</p>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard class="text-center p-6 hover:shadow-lg transition-shadow">
-            <Icon name="heroicons:scale" class="w-12 h-12 text-indigo-600 mb-4 mx-auto" />
+          <UCard class="text-center p-6 hover:shadow-lg transition-shadow">
+            <UIcon name="i-heroicons-scale" class="w-12 h-12 text-indigo-600 mb-4 mx-auto" />
             <h3 class="font-semibold mb-2">Compliance</h3>
             <p class="text-sm text-gray-600">Regulatory updates and compliance guidance</p>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard class="text-center p-6 hover:shadow-lg transition-shadow">
-            <Icon name="heroicons:chart-bar" class="w-12 h-12 text-indigo-600 mb-4 mx-auto" />
+          <UCard class="text-center p-6 hover:shadow-lg transition-shadow">
+            <UIcon name="i-heroicons-chart-bar" class="w-12 h-12 text-indigo-600 mb-4 mx-auto" />
             <h3 class="font-semibold mb-2">Business Strategy</h3>
             <p class="text-sm text-gray-600">Growth strategies for federal contractors</p>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard class="text-center p-6 hover:shadow-lg transition-shadow">
-            <Icon name="heroicons:light-bulb" class="w-12 h-12 text-indigo-600 mb-4 mx-auto" />
+          <UCard class="text-center p-6 hover:shadow-lg transition-shadow">
+            <UIcon name="i-heroicons-light-bulb" class="w-12 h-12 text-indigo-600 mb-4 mx-auto" />
             <h3 class="font-semibold mb-2">Industry Insights</h3>
             <p class="text-sm text-gray-600">Market trends and opportunities</p>
-          </BaseCard>
+          </UCard>
         </div>
 
         <!-- Recent Articles -->
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <div class="text-sm text-gray-500 mb-2">December 10, 2024</div>
               <h3 class="text-lg font-semibold mb-3">
@@ -74,13 +74,13 @@
               <p class="text-gray-600 mb-4">
                 Avoid these critical errors that can sink even the most technically sound proposals.
               </p>
-              <BaseButton variant="outline" size="sm">
+              <UButton variant="outline" size="sm">
                 Read More
-              </BaseButton>
+              </UButton>
             </div>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <div class="text-sm text-gray-500 mb-2">December 5, 2024</div>
               <h3 class="text-lg font-semibold mb-3">
@@ -89,13 +89,13 @@
               <p class="text-gray-600 mb-4">
                 Navigate the changing landscape of small business contracting opportunities.
               </p>
-              <BaseButton variant="outline" size="sm">
+              <UButton variant="outline" size="sm">
                 Read More
-              </BaseButton>
+              </UButton>
             </div>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <div class="text-sm text-gray-500 mb-2">November 28, 2024</div>
               <h3 class="text-lg font-semibold mb-3">
@@ -104,13 +104,13 @@
               <p class="text-gray-600 mb-4">
                 Latest developments in cybersecurity compliance for defense contractors.
               </p>
-              <BaseButton variant="outline" size="sm">
+              <UButton variant="outline" size="sm">
                 Read More
-              </BaseButton>
+              </UButton>
             </div>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <div class="text-sm text-gray-500 mb-2">November 20, 2024</div>
               <h3 class="text-lg font-semibold mb-3">
@@ -119,13 +119,13 @@
               <p class="text-gray-600 mb-4">
                 How to craft compelling past performance examples that differentiate your proposal.
               </p>
-              <BaseButton variant="outline" size="sm">
+              <UButton variant="outline" size="sm">
                 Read More
-              </BaseButton>
+              </UButton>
             </div>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <div class="text-sm text-gray-500 mb-2">November 15, 2024</div>
               <h3 class="text-lg font-semibold mb-3">
@@ -134,13 +134,13 @@
               <p class="text-gray-600 mb-4">
                 Recent changes to GSA Schedules and how to leverage them for growth.
               </p>
-              <BaseButton variant="outline" size="sm">
+              <UButton variant="outline" size="sm">
                 Read More
-              </BaseButton>
+              </UButton>
             </div>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <div class="text-sm text-gray-500 mb-2">November 8, 2024</div>
               <h3 class="text-lg font-semibold mb-3">
@@ -149,11 +149,11 @@
               <p class="text-gray-600 mb-4">
                 Building successful partnerships to compete for larger federal opportunities.
               </p>
-              <BaseButton variant="outline" size="sm">
+              <UButton variant="outline" size="sm">
                 Read More
-              </BaseButton>
+              </UButton>
             </div>
-          </BaseCard>
+          </UCard>
         </div>
 
         <!-- Newsletter Signup -->
@@ -165,9 +165,9 @@
             Get the latest federal contracting insights delivered to your inbox weekly
           </p>
           <div class="max-w-md mx-auto">
-            <BaseButton variant="primary" size="lg" class="w-full">
+            <UButton color="primary" size="lg" class="w-full">
               Subscribe to Newsletter
-            </BaseButton>
+            </UButton>
           </div>
         </div>
       </div>

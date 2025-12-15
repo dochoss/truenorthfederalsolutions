@@ -18,7 +18,7 @@
         </div>
 
         <!-- Quick Stats -->
-        <BaseCard class="mb-12">
+        <UCard class="mb-12">
           <div class="p-8">
             <h3 class="text-2xl font-bold mb-6 text-center">VOSB Program Impact</h3>
             <div class="grid md:grid-cols-3 gap-8 text-center">
@@ -36,13 +36,13 @@
               </div>
             </div>
           </div>
-        </BaseCard>
+        </UCard>
 
         <!-- Program Overview -->
         <div class="space-y-12">
           <div>
             <h3 class="text-2xl font-bold mb-6">What is VOSB Certification?</h3>
-            <BaseCard>
+            <UCard>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">
                   The Veterans First Contracting Program helps ensure that veteran-owned small businesses have the opportunity to compete for federal contracts. The program includes both VOSB (Veteran-Owned Small Business) and SDVOSB (Service-Disabled Veteran-Owned Small Business) certifications.
@@ -51,17 +51,17 @@
                   VOSB certification recognizes businesses owned and controlled by veterans, providing access to set-aside contracts and sole-source opportunities up to certain thresholds.
                 </p>
               </div>
-            </BaseCard>
+            </UCard>
           </div>
 
           <!-- Program Types -->
           <div>
             <h3 class="text-2xl font-bold mb-6">Types of Veteran Business Certifications</h3>
             <div class="grid md:grid-cols-2 gap-6">
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <Icon name="heroicons:shield-check" class="w-6 h-6 text-red-600 mr-2" />
+                    <UIcon name="i-heroicons-shield-check" class="w-6 h-6 text-red-600 mr-2" />
                     VOSB (Veteran-Owned Small Business)
                   </h4>
                   <ul class="space-y-2 text-gray-600 mb-4">
@@ -74,12 +74,12 @@
                     <p class="text-red-700 text-sm"><strong>Best for:</strong> All qualifying veteran-owned businesses</p>
                   </div>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <Icon name="heroicons:star" class="w-6 h-6 text-red-600 mr-2" />
+                    <UIcon name="i-heroicons-star" class="w-6 h-6 text-red-600 mr-2" />
                     SDVOSB (Service-Disabled Veteran-Owned)
                   </h4>
                   <ul class="space-y-2 text-gray-600 mb-4">
@@ -92,14 +92,14 @@
                     <p class="text-red-700 text-sm"><strong>Best for:</strong> Veterans with service-connected disabilities</p>
                   </div>
                 </div>
-              </BaseCard>
+              </UCard>
             </div>
           </div>
 
           <!-- Eligibility Requirements -->
           <div>
             <h3 class="text-2xl font-bold mb-6">VOSB Eligibility Requirements</h3>
-            <BaseCard>
+            <UCard>
               <div class="p-6">
                 <div class="grid md:grid-cols-2 gap-6">
                   <div>
@@ -122,13 +122,13 @@
                   </div>
                 </div>
               </div>
-            </BaseCard>
+            </UCard>
           </div>
 
           <!-- Verification Process -->
           <div>
             <h3 class="text-2xl font-bold mb-6">Verification Process</h3>
-            <BaseCard>
+            <UCard>
               <div class="p-6">
                 <div class="space-y-6">
                   <div class="flex items-start">
@@ -172,41 +172,41 @@
                   </div>
                 </div>
               </div>
-            </BaseCard>
+            </UCard>
           </div>
 
           <!-- Benefits -->
           <div>
             <h3 class="text-2xl font-bold mb-6">Benefits of VOSB Verification</h3>
             <div class="grid md:grid-cols-3 gap-6">
-              <BaseCard class="text-center p-6">
-                <Icon name="heroicons:flag" class="w-12 h-12 text-red-600 mb-4 mx-auto" />
+              <UCard class="text-center p-6">
+                <UIcon name="i-heroicons-flag" class="w-12 h-12 text-red-600 mb-4 mx-auto" />
                 <h4 class="font-semibold mb-3">Set-Aside Contracts</h4>
                 <p class="text-gray-600 text-sm">Access to contracts specifically reserved for veteran-owned businesses</p>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard class="text-center p-6">
-                <Icon name="heroicons:bolt" class="w-12 h-12 text-red-600 mb-4 mx-auto" />
+              <UCard class="text-center p-6">
+                <UIcon name="i-heroicons-bolt" class="w-12 h-12 text-red-600 mb-4 mx-auto" />
                 <h4 class="font-semibold mb-3">Sole Source Awards</h4>
                 <p class="text-gray-600 text-sm">Eligible for sole-source contracts up to $5 million for SDVOSB ($4 million for VOSB)</p>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard class="text-center p-6">
-                <Icon name="heroicons:trophy" class="w-12 h-12 text-red-600 mb-4 mx-auto" />
+              <UCard class="text-center p-6">
+                <UIcon name="i-heroicons-trophy" class="w-12 h-12 text-red-600 mb-4 mx-auto" />
                 <h4 class="font-semibold mb-3">Competitive Advantage</h4>
                 <p class="text-gray-600 text-sm">Priority consideration in federal procurement competitions</p>
-              </BaseCard>
+              </UCard>
             </div>
           </div>
 
           <!-- Common Challenges -->
           <div>
             <h3 class="text-2xl font-bold mb-6">Common Verification Challenges</h3>
-            <BaseCard>
+            <UCard>
               <div class="p-6">
                 <div class="space-y-4">
                   <div class="flex items-start">
-                    <Icon name="heroicons:exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Ownership Documentation</h4>
                       <p class="text-gray-600 text-sm">Clearly documenting veteran ownership percentages and control mechanisms</p>
@@ -214,7 +214,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <Icon name="heroicons:exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Management Control</h4>
                       <p class="text-gray-600 text-sm">Demonstrating veteran involvement in day-to-day operations and strategic decisions</p>
@@ -222,7 +222,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <Icon name="heroicons:exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Size Standard Compliance</h4>
                       <p class="text-gray-600 text-sm">Ensuring the business meets small business size standards for its NAICS code</p>
@@ -230,7 +230,7 @@
                   </div>
                 </div>
               </div>
-            </BaseCard>
+            </UCard>
           </div>
 
           <!-- Next Steps -->
@@ -242,12 +242,12 @@
               Our team of experts understands the unique challenges veterans face in business and can guide you through the verification process.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-              <BaseButton variant="primary">
-                <NuxtLink to="/contact">Schedule Consultation</NuxtLink>
-              </BaseButton>
-              <BaseButton variant="outline">
+              <UButton color="primary" to="/contact">
+                Schedule Consultation
+              </UButton>
+              <UButton variant="outline">
                 Download VOSB Guide
-              </BaseButton>
+              </UButton>
             </div>
           </div>
         </div>

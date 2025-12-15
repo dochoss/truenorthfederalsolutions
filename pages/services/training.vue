@@ -3,7 +3,7 @@
     <!-- Service Header -->
     <section class="bg-blue-50 py-16">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <Icon name="heroicons:academic-cap" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
+        <UIcon name="i-heroicons-academic-cap" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
         <h1 class="text-4xl font-bold text-gray-900 mb-4">
           Training & Capacity Building
         </h1>
@@ -30,27 +30,27 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-4">What's Included</h3>
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Customized Government Contracting Training: In-person or virtual sessions tailored to your business and team needs</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Proposal Writing Best Practices: Improve your internal capacity to respond to opportunities with in-house skill development</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Procurement Systems Navigation: Learn how to effectively use platforms like SAM.gov, eBuy, FPDS, and more</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>FAR and compliance training modules</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Hands-on workshops and practical exercises</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Ongoing support and mentoring programs</span>
                 </li>
               </ul>
@@ -61,27 +61,27 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-4">Benefits</h3>
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Reduce learning curve and costly mistakes</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Build internal expertise and capabilities</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Improve proposal quality and win rates</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Ensure compliance and reduce risk</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Gain confidence in federal marketplace</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Accelerate business development success</span>
                 </li>
               </ul>
@@ -160,7 +160,7 @@
           <!-- Federal Contracting Fundamentals -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:book-open" class="w-8 h-8 text-blue-700" />
+              <UIcon name="i-heroicons-book-open" class="w-8 h-8 text-blue-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Federal Contracting Fundamentals</h3>
             <p class="text-gray-600 text-sm">
@@ -171,7 +171,7 @@
           <!-- Proposal Writing -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:pencil-square" class="w-8 h-8 text-green-700" />
+              <UIcon name="i-heroicons-pencil-square" class="w-8 h-8 text-green-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Proposal Writing Excellence</h3>
             <p class="text-gray-600 text-sm">
@@ -182,7 +182,7 @@
           <!-- FAR Navigation -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-purple-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:scale" class="w-8 h-8 text-purple-700" />
+              <UIcon name="i-heroicons-scale" class="w-8 h-8 text-purple-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">FAR Navigation & Compliance</h3>
             <p class="text-gray-600 text-sm">
@@ -193,7 +193,7 @@
           <!-- Systems Training -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-orange-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:computer-desktop" class="w-8 h-8 text-orange-700" />
+              <UIcon name="i-heroicons-computer-desktop" class="w-8 h-8 text-orange-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Procurement Systems</h3>
             <p class="text-gray-600 text-sm">
@@ -204,7 +204,7 @@
           <!-- Business Development -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-red-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:chart-bar-square" class="w-8 h-8 text-red-700" />
+              <UIcon name="i-heroicons-chart-bar-square" class="w-8 h-8 text-red-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Business Development Strategy</h3>
             <p class="text-gray-600 text-sm">
@@ -215,7 +215,7 @@
           <!-- Contract Management -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-indigo-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:clipboard-document-check" class="w-8 h-8 text-indigo-700" />
+              <UIcon name="i-heroicons-clipboard-document-check" class="w-8 h-8 text-indigo-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Contract Management</h3>
             <p class="text-gray-600 text-sm">
@@ -242,24 +242,24 @@
           <!-- In-Person Training -->
           <div class="bg-white rounded-lg p-8 shadow-sm">
             <div class="flex items-center mb-6">
-              <Icon name="heroicons:users" class="w-8 h-8 text-blue-700 mr-3" />
+              <UIcon name="i-heroicons-users" class="w-8 h-8 text-blue-700 mr-3" />
               <h3 class="text-xl font-semibold text-gray-900">In-Person Workshops</h3>
             </div>
             <ul class="space-y-3 text-gray-600">
               <li class="flex items-start">
-                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                <UIcon name="i-heroicons-check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                 <span>Interactive, hands-on learning experience</span>
               </li>
               <li class="flex items-start">
-                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                <UIcon name="i-heroicons-check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                 <span>Real-time Q&A and discussion</span>
               </li>
               <li class="flex items-start">
-                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                <UIcon name="i-heroicons-check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                 <span>Team building and collaboration</span>
               </li>
               <li class="flex items-start">
-                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                <UIcon name="i-heroicons-check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                 <span>Customized to your specific needs</span>
               </li>
             </ul>
@@ -268,24 +268,24 @@
           <!-- Virtual Training -->
           <div class="bg-white rounded-lg p-8 shadow-sm">
             <div class="flex items-center mb-6">
-              <Icon name="heroicons:video-camera" class="w-8 h-8 text-green-700 mr-3" />
+              <UIcon name="i-heroicons-video-camera" class="w-8 h-8 text-green-700 mr-3" />
               <h3 class="text-xl font-semibold text-gray-900">Virtual Training Sessions</h3>
             </div>
             <ul class="space-y-3 text-gray-600">
               <li class="flex items-start">
-                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                <UIcon name="i-heroicons-check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                 <span>Convenient remote participation</span>
               </li>
               <li class="flex items-start">
-                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                <UIcon name="i-heroicons-check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                 <span>Cost-effective for distributed teams</span>
               </li>
               <li class="flex items-start">
-                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                <UIcon name="i-heroicons-check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                 <span>Recorded sessions for future reference</span>
               </li>
               <li class="flex items-start">
-                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                <UIcon name="i-heroicons-check" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                 <span>Interactive tools and resources</span>
               </li>
             </ul>
@@ -308,14 +308,14 @@
             to="/contact"
             class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-700 rounded-md hover:bg-gray-100 transition-colors font-medium"
           >
-            <Icon name="heroicons:calendar-days" class="w-5 h-5 mr-2" />
+            <UIcon name="i-heroicons-calendar-days" class="w-5 h-5 mr-2" />
             Schedule Consultation
           </NuxtLink>
           <NuxtLink 
             to="/services"
             class="inline-flex items-center justify-center px-8 py-3 border border-white text-white rounded-md hover:bg-blue-600 transition-colors font-medium"
           >
-            <Icon name="heroicons:arrow-left" class="w-5 h-5 mr-2" />
+            <UIcon name="i-heroicons-arrow-left" class="w-5 h-5 mr-2" />
             All Services
           </NuxtLink>
         </div>

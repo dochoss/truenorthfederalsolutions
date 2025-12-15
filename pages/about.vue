@@ -4,7 +4,7 @@
     <section class="bg-white py-24">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <Icon name="heroicons:user-circle" class="w-16 h-16 text-blue-600 mx-auto mb-8" />
+          <UIcon name="i-heroicons-user-circle" class="w-16 h-16 text-blue-600 mx-auto mb-8" />
           <h1 class="text-4xl font-bold text-gray-900 mb-6">
             About True North Federal Solutions
           </h1>
@@ -95,7 +95,7 @@
     <!-- Call to Action -->
     <section class="py-16 bg-blue-50">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <Icon name="heroicons:phone" class="w-16 h-16 text-blue-600 mx-auto mb-6" />
+        <UIcon name="i-heroicons-phone" class="w-16 h-16 text-blue-600 mx-auto mb-6" />
         <h2 class="text-3xl font-bold text-gray-900 mb-4">
           Ready to Start Your Federal Contracting Journey?
         </h2>

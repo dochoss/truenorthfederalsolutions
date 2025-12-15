@@ -3,7 +3,7 @@
     <!-- Contact Header -->
     <section class="bg-blue-50 py-16">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <Icon name="heroicons:envelope" class="w-16 h-16 text-primary-700 mx-auto mb-6" />
+        <UIcon name="i-heroicons-envelope" class="w-16 h-16 text-primary-700 mx-auto mb-6" />
         <h1 class="text-4xl font-bold text-gray-900 mb-4">
           Get Started with Federal Contracting
         </h1>
@@ -22,109 +22,48 @@
             <h2 class="text-2xl font-bold text-gray-900 mb-6">
               Schedule Your Consultation
             </h2>
-            <form class="space-y-6">
+            <UForm :schema="contactSchema" :state="contactForm" class="space-y-6" @submit="onSubmit">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">
-                    First Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    required
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">
-                    Last Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    required
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  />
-                </div>
+                <UFormField label="First Name" name="firstName" required>
+                  <UInput v-model="contactForm.firstName" placeholder="John" />
+                </UFormField>
+                <UFormField label="Last Name" name="lastName" required>
+                  <UInput v-model="contactForm.lastName" placeholder="Doe" />
+                </UFormField>
               </div>
 
-              <div>
-                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              <UFormField label="Email Address" name="email" required>
+                <UInput v-model="contactForm.email" type="email" placeholder="john@company.com" />
+              </UFormField>
+
+              <UFormField label="Company Name" name="company" required>
+                <UInput v-model="contactForm.company" placeholder="Your Company LLC" />
+              </UFormField>
+
+              <UFormField label="Phone Number" name="phone">
+                <UInput v-model="contactForm.phone" type="tel" placeholder="(555) 123-4567" />
+              </UFormField>
+
+              <UFormField label="Primary Interest" name="interest" required>
+                <USelect 
+                  v-model="contactForm.interest" 
+                  :items="interestOptions"
+                  placeholder="Select your primary interest..."
                 />
-              </div>
+              </UFormField>
 
-              <div>
-                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">
-                  Company Name *
-                </label>
-                <input
-                  type="text"
-                  id="company"
-                  name="company"
-                  required
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
-
-              <div>
-                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                />
-              </div>
-
-              <div>
-                <label for="interest" class="block text-sm font-medium text-gray-700 mb-2">
-                  Primary Interest *
-                </label>
-                <select
-                  id="interest"
-                  name="interest"
-                  required
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                >
-                  <option value="">Select your primary interest...</option>
-                  <option value="contract-setup">Federal Contract Setup</option>
-                  <option value="proposal-development">Proposal Development</option>
-                  <option value="far-compliance">FAR Compliance</option>
-                  <option value="bid-no-bid">Bid/No-Bid Strategy</option>
-                  <option value="general-consulting">General Consulting</option>
-                  <option value="certification-help">Certification Assistance</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
-                  Tell us about your goals and challenges
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              <UFormField label="Tell us about your goals and challenges" name="message">
+                <UTextarea 
+                  v-model="contactForm.message" 
+                  :rows="4"
                   placeholder="Describe your current situation, goals, and how we can help..."
-                ></textarea>
-              </div>
+                />
+              </UFormField>
 
-              <BaseButton type="submit" variant="primary" :fullWidth="true">
+              <UButton type="submit" color="primary" block>
                 Schedule Consultation
-              </BaseButton>
-            </form>
+              </UButton>
+            </UForm>
           </div>
 
           <!-- Contact Information -->
@@ -135,7 +74,7 @@
             
             <div class="space-y-6">
               <div class="flex items-start space-x-4">
-                <Icon name="heroicons:clock" class="w-6 h-6 text-primary-700 mt-1" />
+                <UIcon name="i-heroicons-clock" class="w-6 h-6 text-primary-700 mt-1" />
                 <div>
                   <h3 class="font-semibold text-gray-900 mb-2">Response Time</h3>
                   <p class="text-gray-600">
@@ -145,7 +84,7 @@
               </div>
 
               <div class="flex items-start space-x-4">
-                <Icon name="heroicons:chat-bubble-left-right" class="w-6 h-6 text-primary-700 mt-1" />
+                <UIcon name="i-heroicons-chat-bubble-left-right" class="w-6 h-6 text-primary-700 mt-1" />
                 <div>
                   <h3 class="font-semibold text-gray-900 mb-2">Consultation Format</h3>
                   <p class="text-gray-600">
@@ -155,7 +94,7 @@
               </div>
 
               <div class="flex items-start space-x-4">
-                <Icon name="heroicons:shield-check" class="w-6 h-6 text-primary-700 mt-1" />
+                <UIcon name="i-heroicons-shield-check" class="w-6 h-6 text-primary-700 mt-1" />
                 <div>
                   <h3 class="font-semibold text-gray-900 mb-2">Confidentiality</h3>
                   <p class="text-gray-600">
@@ -165,7 +104,7 @@
               </div>
 
               <div class="flex items-start space-x-4">
-                <Icon name="heroicons:document-text" class="w-6 h-6 text-primary-700 mt-1" />
+                <UIcon name="i-heroicons-document-text" class="w-6 h-6 text-primary-700 mt-1" />
                 <div>
                   <h3 class="font-semibold text-gray-900 mb-2">Preparation</h3>
                   <p class="text-gray-600">
@@ -183,16 +122,17 @@
               <p class="text-gray-600 mb-4">
                 Get federal contracting insights, tips, and updates delivered to your inbox.
               </p>
-              <form class="flex space-x-2">
-                <input
-                  type="email"
+              <UForm :state="newsletterForm" class="flex space-x-2" @submit="onNewsletterSubmit">
+                <UInput 
+                  v-model="newsletterForm.email"
+                  type="email" 
                   placeholder="Enter your email"
-                  class="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  class="flex-1"
                 />
-                <BaseButton type="submit" variant="primary">
+                <UButton type="submit" color="primary">
                   Subscribe
-                </BaseButton>
-              </form>
+                </UButton>
+              </UForm>
             </div>
           </div>
         </div>
@@ -249,6 +189,8 @@
 </template>
 
 <script setup>
+import { z } from 'zod'
+
 // Set page meta for SEO
 definePageMeta({
   title: 'Contact - True North Federal Solutions',
@@ -269,4 +211,52 @@ useHead({
     }
   ]
 })
+
+// Contact form schema
+const contactSchema = z.object({
+  firstName: z.string().min(1, 'First name is required'),
+  lastName: z.string().min(1, 'Last name is required'),
+  email: z.string().email('Please enter a valid email address'),
+  company: z.string().min(1, 'Company name is required'),
+  phone: z.string().optional(),
+  interest: z.string().min(1, 'Please select your primary interest'),
+  message: z.string().optional()
+})
+
+// Contact form state
+const contactForm = reactive({
+  firstName: '',
+  lastName: '',
+  email: '',
+  company: '',
+  phone: '',
+  interest: '',
+  message: ''
+})
+
+// Interest options for select
+const interestOptions = [
+  { label: 'Federal Contract Setup', value: 'contract-setup' },
+  { label: 'Proposal Development', value: 'proposal-development' },
+  { label: 'FAR Compliance', value: 'far-compliance' },
+  { label: 'Bid/No-Bid Strategy', value: 'bid-no-bid' },
+  { label: 'General Consulting', value: 'general-consulting' },
+  { label: 'Certification Assistance', value: 'certification-help' }
+]
+
+// Newsletter form state
+const newsletterForm = reactive({
+  email: ''
+})
+
+// Form submission handlers
+async function onSubmit() {
+  // TODO: Implement form submission logic
+  console.log('Contact form submitted:', contactForm)
+}
+
+async function onNewsletterSubmit() {
+  // TODO: Implement newsletter subscription logic
+  console.log('Newsletter subscription:', newsletterForm.email)
+}
 </script>

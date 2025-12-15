@@ -1,5 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+    compatibilityDate: '2025-12-15',
     runtimeConfig: {
       // Private server-side only
       mailchimp: {
@@ -11,10 +12,15 @@ export default defineNuxtConfig({
       public: {}
     },
     modules: [
-      '@nuxtjs/tailwindcss',
-      '@nuxt/image',
-      'nuxt-icon'
+      '@nuxt/ui',
+      '@nuxt/image'
     ],
+    css: ['~/assets/css/main.css'],
+    ui: {
+      theme: {
+        colors: ['primary', 'secondary', 'accent', 'success', 'warning', 'error', 'info']
+      }
+    },
     app: {
       head: {
         link: [
@@ -28,11 +34,5 @@ export default defineNuxtConfig({
           { name: 'theme-color', content: '#ffffff' }
         ]
       }
-    },
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-      },
-    },
+    }
   })

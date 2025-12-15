@@ -16,10 +16,10 @@
 
         <div class="grid lg:grid-cols-2 gap-8">
           <!-- Main Pages -->
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <h3 class="text-xl font-bold mb-4 flex items-center">
-                <Icon name="heroicons:home" class="w-6 h-6 text-primary-600 mr-2" />
+                <UIcon name="i-heroicons-home" class="w-6 h-6 text-primary-600 mr-2" />
                 Main Pages
               </h3>
               <div class="space-y-3">
@@ -34,13 +34,13 @@
                 </NuxtLink>
               </div>
             </div>
-          </BaseCard>
+          </UCard>
 
           <!-- Services -->
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <h3 class="text-xl font-bold mb-4 flex items-center">
-                <Icon name="heroicons:briefcase" class="w-6 h-6 text-primary-600 mr-2" />
+                <UIcon name="i-heroicons-briefcase" class="w-6 h-6 text-primary-600 mr-2" />
                 Services
               </h3>
               <div class="space-y-3">
@@ -67,13 +67,13 @@
                 </div>
               </div>
             </div>
-          </BaseCard>
+          </UCard>
 
           <!-- Resources -->
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <h3 class="text-xl font-bold mb-4 flex items-center">
-                <Icon name="heroicons:book-open" class="w-6 h-6 text-primary-600 mr-2" />
+                <UIcon name="i-heroicons-book-open" class="w-6 h-6 text-primary-600 mr-2" />
                 Resources
               </h3>
               <div class="space-y-3">
@@ -110,13 +110,13 @@
                 </div>
               </div>
             </div>
-          </BaseCard>
+          </UCard>
 
           <!-- Legal & Utility -->
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <h3 class="text-xl font-bold mb-4 flex items-center">
-                <Icon name="heroicons:document-text" class="w-6 h-6 text-primary-600 mr-2" />
+                <UIcon name="i-heroicons-document-text" class="w-6 h-6 text-primary-600 mr-2" />
                 Legal & Utility
               </h3>
               <div class="space-y-3">
@@ -134,39 +134,39 @@
                 </NuxtLink>
               </div>
             </div>
-          </BaseCard>
+          </UCard>
         </div>
 
         <!-- Quick Links Section -->
         <div class="mt-12">
           <h3 class="text-2xl font-bold mb-6 text-center">Quick Links</h3>
           <div class="grid md:grid-cols-3 gap-6">
-            <BaseCard class="text-center p-6">
-              <Icon name="heroicons:rocket-launch" class="w-12 h-12 text-primary-600 mb-4 mx-auto" />
+            <UCard class="text-center p-6">
+              <UIcon name="i-heroicons-rocket-launch" class="w-12 h-12 text-primary-600 mb-4 mx-auto" />
               <h4 class="font-semibold mb-3">Get Started</h4>
               <p class="text-gray-600 text-sm mb-4">New to federal contracting? Start here.</p>
-              <BaseButton variant="outline" size="sm">
-                <NuxtLink to="/services">Explore Services</NuxtLink>
-              </BaseButton>
-            </BaseCard>
+              <UButton variant="outline" size="sm" to="/services">
+                Explore Services
+              </UButton>
+            </UCard>
 
-            <BaseCard class="text-center p-6">
-              <Icon name="heroicons:academic-cap" class="w-12 h-12 text-primary-600 mb-4 mx-auto" />
+            <UCard class="text-center p-6">
+              <UIcon name="i-heroicons-academic-cap" class="w-12 h-12 text-primary-600 mb-4 mx-auto" />
               <h4 class="font-semibold mb-3">Learn</h4>
               <p class="text-gray-600 text-sm mb-4">Access guides, articles, and resources.</p>
-              <BaseButton variant="outline" size="sm">
-                <NuxtLink to="/resources">View Resources</NuxtLink>
-              </BaseButton>
-            </BaseCard>
+              <UButton variant="outline" size="sm" to="/resources">
+                View Resources
+              </UButton>
+            </UCard>
 
-            <BaseCard class="text-center p-6">
-              <Icon name="heroicons:phone" class="w-12 h-12 text-primary-600 mb-4 mx-auto" />
+            <UCard class="text-center p-6">
+              <UIcon name="i-heroicons-phone" class="w-12 h-12 text-primary-600 mb-4 mx-auto" />
               <h4 class="font-semibold mb-3">Connect</h4>
               <p class="text-gray-600 text-sm mb-4">Ready to discuss your needs?</p>
-              <BaseButton variant="primary" size="sm">
-                <NuxtLink to="/contact">Contact Us</NuxtLink>
-              </BaseButton>
-            </BaseCard>
+              <UButton color="primary" size="sm" to="/contact">
+                Contact Us
+              </UButton>
+            </UCard>
           </div>
         </div>
 
@@ -177,12 +177,12 @@
             Use our search feature or contact us directly for assistance finding the right resources.
           </p>
           <div class="flex flex-wrap justify-center gap-4">
-            <BaseButton variant="outline">
+            <UButton variant="outline">
               Search Site
-            </BaseButton>
-            <BaseButton variant="primary">
-              <NuxtLink to="/contact">Contact Support</NuxtLink>
-            </BaseButton>
+            </UButton>
+            <UButton color="primary" to="/contact">
+              Contact Support
+            </UButton>
           </div>
         </div>
 

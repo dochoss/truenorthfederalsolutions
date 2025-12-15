@@ -19,20 +19,20 @@
             <!-- Contact Information -->
             <div class="space-y-3">
               <div class="flex items-center space-x-3">
-                <Icon name="heroicons:envelope" class="w-4 h-4 text-primary-400" />
+                <UIcon name="i-heroicons-envelope" class="w-4 h-4 text-primary-400" />
                 <a href="mailto:truenorthfederalconsulting@gmail.com"
                   class="text-secondary-300 hover:text-white transition-colors text-sm">
                   truenorthfederalconsulting@gmail.com
                 </a>
               </div>
               <div class="flex items-center space-x-3">
-                <Icon name="heroicons:phone" class="w-4 h-4 text-primary-400" />
+                <UIcon name="i-heroicons-phone" class="w-4 h-4 text-primary-400" />
                 <a href="tel:+1234567890" class="text-secondary-300 hover:text-white transition-colors text-sm">
                   (123) 456-7890
                 </a>
               </div>
               <div class="flex items-center space-x-3">
-                <Icon name="heroicons:map-pin" class="w-4 h-4 text-primary-400" />
+                <UIcon name="i-heroicons-map-pin" class="w-4 h-4 text-primary-400" />
                 <span class="text-secondary-300 text-sm">Serving Federal Agencies Nationwide</span>
               </div>
             </div>

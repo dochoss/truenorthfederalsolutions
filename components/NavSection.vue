@@ -26,7 +26,7 @@
               class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center"
               @click="toggleServicesDropdown">
               Services
-              <Icon name="heroicons:chevron-down" class="w-4 h-4 ml-1" />
+              <UIcon name="i-heroicons-chevron-down" class="w-4 h-4 ml-1" />
             </button>
             <div v-show="servicesDropdownOpen"
               class="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg z-50 border">
@@ -72,7 +72,7 @@
               class="text-secondary-700 hover:text-primary-700 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center"
               @click="toggleResourcesDropdown">
               Resources
-              <Icon name="heroicons:chevron-down" class="w-4 h-4 ml-1" />
+              <UIcon name="i-heroicons-chevron-down" class="w-4 h-4 ml-1" />
             </button>
             <div v-show="resourcesDropdownOpen"
               class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg z-50 border">
@@ -113,8 +113,8 @@
         <!-- Mobile menu button -->
         <div class="md:hidden flex items-center">
           <button @click="toggleMobileMenu" class="text-secondary-700 hover:text-primary-700 p-2">
-            <Icon name="heroicons:bars-3" v-show="!mobileMenuOpen" class="w-6 h-6" />
-            <Icon name="heroicons:x-mark" v-show="mobileMenuOpen" class="w-6 h-6" />
+            <UIcon name="i-heroicons-bars-3" v-show="!mobileMenuOpen" class="w-6 h-6" />
+            <UIcon name="i-heroicons-x-mark" v-show="mobileMenuOpen" class="w-6 h-6" />
           </button>
         </div>
       </div>
@@ -138,7 +138,7 @@
             <button @click="toggleMobileServices"
               class="w-full text-left text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between">
               Services
-              <Icon name="heroicons:chevron-down" class="w-4 h-4" :class="{ 'rotate-180': mobileServicesOpen }" />
+              <UIcon name="i-heroicons-chevron-down" class="w-4 h-4" :class="{ 'rotate-180': mobileServicesOpen }" />
             </button>
             <div v-show="mobileServicesOpen" class="pl-6 space-y-1">
               <NuxtLink to="/services"
@@ -179,7 +179,7 @@
             <button @click="toggleMobileResources"
               class="w-full text-left text-secondary-700 hover:text-primary-700 hover:bg-primary-50 px-3 py-2 rounded-md text-base font-medium flex items-center justify-between">
               Resources
-              <Icon name="heroicons:chevron-down" class="w-4 h-4" :class="{ 'rotate-180': mobileResourcesOpen }" />
+              <UIcon name="i-heroicons-chevron-down" class="w-4 h-4" :class="{ 'rotate-180': mobileResourcesOpen }" />
             </button>
             <div v-show="mobileResourcesOpen" class="pl-6 space-y-1">
               <NuxtLink to="/resources"

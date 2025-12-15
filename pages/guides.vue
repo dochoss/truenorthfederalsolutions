@@ -3,7 +3,7 @@
     <!-- Guides Header (compact, like Resources page) -->
     <BaseSection variant="secondary" spacing="lg" centered>
       <template #header>
-        <IconWrapper icon="heroicons:document-arrow-down" variant="success" size="xl" class="mx-auto mb-6" />
+        <UIcon name="i-heroicons-document-arrow-down" class="w-16 h-16 text-success-600 mx-auto mb-6" />
         <h1 class="text-4xl text-center font-bold text-secondary-900 mb-4">Guides & Templates</h1>
         <p class="text-xl text-center text-secondary-600 max-w-2xl mx-auto">
           Downloadable guides and templates to help you with federal contracting — available as PDFs for download.
@@ -25,7 +25,7 @@
           </div>
 
           <div v-else class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <BaseCard v-for="file in files" :key="file.url" class="flex flex-col justify-between">
+            <UCard v-for="file in files" :key="file.url" class="flex flex-col justify-between">
               <div class="p-6">
                 <div class="flex items-center mb-3">
                   <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2 py-1 rounded">Download</span>
@@ -37,11 +37,11 @@
                 <div class="flex items-center justify-between">
                   <span class="text-xs text-gray-500">PDF</span>
                   <a :href="file.url" :download="file.name" class="inline-block">
-                    <BaseButton variant="primary" size="sm" icon-right="heroicons:arrow-down-tray">Download</BaseButton>
+                    <UButton color="primary" size="sm" trailing-icon="i-heroicons-arrow-down-tray">Download</UButton>
                   </a>
                 </div>
               </div>
-            </BaseCard>
+            </UCard>
           </div>
         </div>
       </div>
@@ -53,9 +53,9 @@
         <div class="bg-emerald-50 rounded-lg p-8 mt-12 text-center">
           <h3 class="text-2xl font-bold text-emerald-900 mb-4">Need Custom Guidance?</h3>
           <p class="text-emerald-700 mb-6">Our experts can provide personalized guidance tailored to your specific situation and goals.</p>
-          <BaseButton variant="primary" size="lg">
-            <NuxtLink to="/contact">Schedule Consultation</NuxtLink>
-          </BaseButton>
+          <UButton color="primary" size="lg" to="/contact">
+            Schedule Consultation
+          </UButton>
         </div>
       </div>
     </BaseSection>
