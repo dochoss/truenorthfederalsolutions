@@ -17,3 +17,6 @@ deployment-token.txt
 
 # Ensure copilot instructions are tracked
 !.github/copilot-instructions.md
+
+# Playwright Screenshots and data
+.playwright-mcp/

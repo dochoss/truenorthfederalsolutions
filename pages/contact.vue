@@ -8,7 +8,8 @@
           Get Started with Federal Contracting
         </h1>
         <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-          Ready to navigate the federal contracting landscape? Schedule a consultation to discuss your business goals and learn how we can help you succeed.
+          Ready to navigate the federal contracting landscape? Schedule a consultation to discuss your business goals
+          and learn how we can help you succeed.
         </p>
       </div>
     </section>
@@ -25,29 +26,30 @@
             <UForm :schema="contactSchema" :state="contactForm" class="space-y-6" @submit="onSubmit">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <UFormField label="First Name" name="firstName" required>
-                  <UInput v-model="contactForm.firstName" placeholder="John" />
+                  <UInput v-model="contactForm.firstName" placeholder="John" size="lg" />
                 </UFormField>
                 <UFormField label="Last Name" name="lastName" required>
-                  <UInput v-model="contactForm.lastName" placeholder="Doe" />
+                  <UInput v-model="contactForm.lastName" placeholder="Doe" size="lg" />
                 </UFormField>
               </div>
 
               <UFormField label="Email Address" name="email" required>
-                <UInput v-model="contactForm.email" type="email" placeholder="john@company.com" />
+                <UInput v-model="contactForm.email" type="email" placeholder="john@company.com" size="lg" />
               </UFormField>
 
               <UFormField label="Company Name" name="company" required>
-                <UInput v-model="contactForm.company" placeholder="Your Company LLC" />
+                <UInput v-model="contactForm.company" placeholder="Your Company LLC" size="lg" />
               </UFormField>
 
               <UFormField label="Phone Number" name="phone">
-                <UInput v-model="contactForm.phone" type="tel" placeholder="(555) 123-4567" />
+                <UInput v-model="contactForm.phone" type="tel" placeholder="(555) 123-4567" size="lg" />
               </UFormField>
 
               <UFormField label="Primary Interest" name="interest" required>
                 <USelect 
                   v-model="contactForm.interest" 
                   :items="interestOptions"
+                  size="lg"
                   placeholder="Select your primary interest..."
                 />
               </UFormField>
@@ -55,12 +57,13 @@
               <UFormField label="Tell us about your goals and challenges" name="message">
                 <UTextarea 
                   v-model="contactForm.message" 
+                  size="lg"
                   :rows="4"
                   placeholder="Describe your current situation, goals, and how we can help..."
                 />
               </UFormField>
 
-              <UButton type="submit" color="primary" block>
+              <UButton type="submit" color="primary" variant="solid" size="lg" block>
                 Schedule Consultation
               </UButton>
             </UForm>
@@ -68,10 +71,6 @@
 
           <!-- Contact Information -->
           <div>
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">
-              Contact Information
-            </h2>
-            
             <div class="space-y-6">
               <div class="flex items-start space-x-4">
                 <UIcon name="i-heroicons-clock" class="w-6 h-6 text-primary-700 mt-1" />
@@ -108,7 +107,8 @@
                 <div>
                   <h3 class="font-semibold text-gray-900 mb-2">Preparation</h3>
                   <p class="text-gray-600">
-                    Come prepared with questions about your business goals, current challenges, and federal contracting interests.
+                    Come prepared with questions about your business goals, current challenges, and federal contracting
+                    interests.
                   </p>
                 </div>
               </div>
@@ -123,12 +123,7 @@
                 Get federal contracting insights, tips, and updates delivered to your inbox.
               </p>
               <UForm :state="newsletterForm" class="flex space-x-2" @submit="onNewsletterSubmit">
-                <UInput 
-                  v-model="newsletterForm.email"
-                  type="email" 
-                  placeholder="Enter your email"
-                  class="flex-1"
-                />
+                <UInput v-model="newsletterForm.email" type="email" placeholder="Enter your email" class="flex-1" />
                 <UButton type="submit" color="primary">
                   Subscribe
                 </UButton>
@@ -145,14 +140,16 @@
         <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">
           Frequently Asked Questions
         </h2>
-        
+
         <div class="space-y-6">
           <div class="bg-white rounded-lg p-6 shadow-sm">
             <h3 class="text-lg font-semibold text-gray-900 mb-3">
               What should I expect during the initial consultation?
             </h3>
             <p class="text-gray-600">
-              During your initial consultation, we'll assess your business readiness for federal contracting, discuss your goals, and identify the best path forward. We'll also answer your specific questions and provide preliminary guidance.
+              During your initial consultation, we'll assess your business readiness for federal contracting, discuss
+              your goals, and identify the best path forward. We'll also answer your specific questions and provide
+              preliminary guidance.
             </p>
           </div>
 
@@ -161,7 +158,8 @@
               Do you work with businesses of all sizes?
             </h3>
             <p class="text-gray-600">
-              Yes, we specialize in helping small and mid-size businesses navigate federal contracting. Whether you're just starting or looking to expand your federal presence, we can help.
+              Yes, we specialize in helping small and mid-size businesses navigate federal contracting. Whether you're
+              just starting or looking to expand your federal presence, we can help.
             </p>
           </div>
 
@@ -170,7 +168,8 @@
               What types of certifications do you help with?
             </h3>
             <p class="text-gray-600">
-              We assist with various certifications including WOSB (Woman-Owned Small Business), VOSB (Veteran-Owned Small Business), 8(a) Business Development, and other specialized certifications.
+              We assist with various certifications including WOSB (Woman-Owned Small Business), VOSB (Veteran-Owned
+              Small Business), 8(a) Business Development, and other specialized certifications.
             </p>
           </div>
 
@@ -179,7 +178,8 @@
               How long does the federal contracting setup process take?
             </h3>
             <p class="text-gray-600">
-              The timeline varies depending on your specific needs and the complexity of your business. Basic setup can take 4-8 weeks, while comprehensive preparation including certifications may take 3-6 months.
+              The timeline varies depending on your specific needs and the complexity of your business. Basic setup can
+              take 4-8 weeks, while comprehensive preparation including certifications may take 3-6 months.
             </p>
           </div>
         </div>
@@ -201,13 +201,13 @@ definePageMeta({
 useHead({
   title: 'Contact Us - True North Federal Solutions',
   meta: [
-    { 
-      name: 'description', 
-      content: 'Ready to start your federal contracting journey? Contact True North Federal Solutions for expert guidance on contract setup, proposal development, and FAR compliance.' 
+    {
+      name: 'description',
+      content: 'Ready to start your federal contracting journey? Contact True North Federal Solutions for expert guidance on contract setup, proposal development, and FAR compliance.'
     },
-    { 
-      name: 'keywords', 
-      content: 'federal contracting consultation, small business consulting, government contracts, proposal development, FAR compliance' 
+    {
+      name: 'keywords',
+      content: 'federal contracting consultation, small business consulting, government contracts, proposal development, FAR compliance'
     }
   ]
 })

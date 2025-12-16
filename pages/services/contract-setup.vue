@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Service Header -->
-    <section class="bg-blue-50 py-16">
+    <UPageSection class="bg-primary-900 py-16">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <UIcon name="i-heroicons-document-text" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
         <h1 class="text-4xl font-bold text-gray-900 mb-4">
@@ -11,7 +11,7 @@
           Get contract-ready with strategic setup and compliance tools. Full support for SAM.gov registration, NAICS optimization, and capability statement development.
         </p>
       </div>
-    </section>
+    </UPageSection>
 
     <!-- Service Details -->
     <section class="py-16 bg-white">

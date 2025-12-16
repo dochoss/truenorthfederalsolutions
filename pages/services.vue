@@ -1,27 +1,31 @@
 <template>
   <div>
     <!-- Services Header -->
-    <BaseSection variant="primary" spacing="lg" centered>
-      <template #header>
-        <UIcon name="i-heroicons-briefcase" class="block w-16 h-16 text-primary-200 mx-auto mb-6" />
-        <h1 class="text-4xl text-center font-bold text-secondary-100 mb-4">
-          Federal Contracting Services
-        </h1>
-        <p class="text-xl text-secondary-200 text-center max-w-2xl mx-auto">
-          Expert guidance to navigate the complex world of federal contracting. From initial setup to proposal
-          development, we're here to help your business succeed.
-        </p>
-      </template>
-    </BaseSection>
+    <UPageHero class="relative isolate overflow-hidden bg-primary-700" 
+      title="Federal Contracting Services" 
+      description="Expert guidance to navigate the complex world of federal contracting. From initial setup to proposal
+      development, we're here to help your business succeed." 
+      :ui="{
+        title: 'text-4xl sm:text-5xl md:text-6xl font-bold text-white',
+        description: 'text-sm sm:text-lg text-white max-w-3xl mx-auto'
+      }">
+      <NuxtImg src="/conference-table-2.png" alt="Team collaborating around a conference table"
+        class="absolute inset-0 -z-10 size-full object-cover brightness-[0.2]" />
+      <div class="absolute inset-0 bg-primary-700/40 -z-10"></div>
+    </UPageHero>
 
     <!-- Services Overview -->
-    <BaseSection title="Expert Federal Contracting Services"
-      subtitle="From initial setup to winning proposals, we provide comprehensive support for your federal contracting journey."
-      spacing="lg">
+    <UPageSection title="Expert Federal Contracting Services"
+      description="From initial setup to winning proposals, we provide comprehensive support for your federal contracting journey."
+      :ui="{
+        title: 'text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-secondary-900',
+        description: 'text-base sm:text-lg text-secondary-600'
+      }">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
         <!-- Contracting Readiness & Set-Up -->
         <NuxtLink to="/services/contract-setup">
-          <UCard variant="subtle" :class="{ 'h-full': true }" interactive padding="md" class="shadow-medium hover:shadow-lg transition-shadow">
+          <UCard variant="subtle" :class="{ 'h-full': true }" interactive padding="md"
+            class="shadow-medium hover:shadow-lg transition-shadow">
             <div class="text-center">
               <UIcon name="i-heroicons-cog-6-tooth" class="w-12 h-12 text-primary-600 mx-auto mb-6" />
               <h3 class="text-xl font-bold text-secondary-900 mb-4">Contracting Readiness & Set-Up</h3>
@@ -46,7 +50,8 @@
 
         <!-- Opportunity Identification and Market Intelligence -->
         <NuxtLink to="/services/market-intelligence">
-          <UCard variant="subtle" :class="{ 'h-full': true }" interactive padding="md" class="shadow-medium hover:shadow-lg transition-shadow">
+          <UCard variant="subtle" :class="{ 'h-full': true }" interactive padding="md"
+            class="shadow-medium hover:shadow-lg transition-shadow">
             <div class="text-center">
               <UIcon name="i-heroicons-magnifying-glass" class="w-12 h-12 text-primary-600 mx-auto mb-6" />
               <h3 class="text-xl font-bold text-secondary-900 mb-4">Opportunity Identification and Market Intelligence
@@ -69,7 +74,8 @@
 
         <!-- Proposal Development & Management -->
         <NuxtLink to="/services/proposal-development">
-          <UCard variant="subtle" :class="{ 'h-full': true }" interactive padding="md" class="shadow-medium hover:shadow-lg transition-shadow">
+          <UCard variant="subtle" :class="{ 'h-full': true }" interactive padding="md"
+            class="shadow-medium hover:shadow-lg transition-shadow">
             <div class="text-center">
               <UIcon name="i-heroicons-pencil-square" class="w-12 h-12 text-primary-600 mx-auto mb-6" />
               <h3 class="text-xl font-bold text-secondary-900 mb-4">Proposal Development & Management</h3>
@@ -96,7 +102,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         <!-- Compliance & Regulatory Support -->
         <NuxtLink to="/services/far-compliance">
-          <UCard variant="subtle" :class="{ 'h-full': true }" interactive padding="md" class="shadow-medium hover:shadow-lg transition-shadow">
+          <UCard variant="subtle" :class="{ 'h-full': true }" interactive padding="md"
+            class="shadow-medium hover:shadow-lg transition-shadow">
             <div class="text-center">
               <UIcon name="i-heroicons-shield-check" class="w-12 h-12 text-primary-600 mx-auto mb-6" />
               <h3 class="text-xl font-bold text-secondary-900 mb-4">Compliance & Regulatory Support</h3>
@@ -118,7 +125,8 @@
 
         <!-- Training & Capacity Building -->
         <NuxtLink to="/services/training">
-          <UCard variant="subtle" :class="{ 'h-full': true }" interactive padding="md" class="shadow-medium hover:shadow-lg transition-shadow">
+          <UCard variant="subtle" :class="{ 'h-full': true }" interactive padding="md"
+            class="shadow-medium hover:shadow-lg transition-shadow">
             <div class="text-center">
               <UIcon name="i-heroicons-academic-cap" class="w-12 h-12 text-primary-600 mx-auto mb-6" />
               <h3 class="text-xl font-bold text-secondary-900 mb-4">Training & Capacity Building</h3>
@@ -139,7 +147,7 @@
           </UCard>
         </NuxtLink>
       </div>
-    </BaseSection>
+    </UPageSection>
 
     <!-- Process Overview -->
     <BaseSection variant="secondary" title="Our Process" subtitle="A structured approach to federal contracting success"
@@ -196,7 +204,7 @@
     </BaseSection>
 
     <!-- CTA Section -->
-    <BaseSection variant="primary" spacing="lg" centered>
+    <UPageSection class="bg-primary-700">
       <template #header>
         <h2 class="text-3xl text-center font-bold text-white mb-4">
           Ready to Start Your Federal Contracting Journey?
@@ -217,7 +225,7 @@
           Explore Resources
         </UButton>
       </div>
-    </BaseSection>
+    </UPageSection>
   </div>
 </template>
 

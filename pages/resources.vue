@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Resources Header -->
-    <BaseSection variant="secondary" spacing="lg" centered>
+    <UPageSection variant="primary" spacing="lg" centered>
       <template #header>
         <UIcon name="i-heroicons-book-open" class="w-16 h-16 text-primary-600 mx-auto mb-6" />
         <h1 class="text-4xl text-center font-bold text-secondary-900 mb-4">
@@ -12,7 +12,7 @@
           landscape with confidence.
         </p>
       </template>
-    </BaseSection>
+    </UPageSection>
 
     <!-- Resource Categories -->
     <BaseSection spacing="lg">

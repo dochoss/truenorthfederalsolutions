@@ -1,23 +1,19 @@
 <template>
   <div>
     <!-- About Hero -->
-    <section class="bg-white py-24">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <UIcon name="i-heroicons-user-circle" class="w-16 h-16 text-blue-600 mx-auto mb-8" />
-          <h1 class="text-4xl font-bold text-gray-900 mb-6">
-            About True North Federal Solutions
-          </h1>
-          <p class="text-xl text-gray-600 leading-relaxed">
-            At True North Federal Solutions, our mission is to demystify federal contracting
-            for small businesses. Led by a former federal Contracting Officer with over 15
-            years of experience, we equip you with the tools, strategies, and insights needed
-            to become contract-ready, submit competitive proposals, and grow in the public
-            sector.
-          </p>
-        </div>
-      </div>
-    </section>
+    <UPageHero class="relative isolate overflow-hidden bg-primary-700" title="About True North Federal Solutions"
+      description="At True North Federal Solutions, our mission is to demystify federal contracting
+          for small businesses. Led by a former federal Contracting Officer with over 15
+          years of experience, we equip you with the tools, strategies, and insights needed
+          to become contract-ready, submit competitive proposals, and grow in the public
+          sector." :ui="{
+            title: 'text-4xl sm:text-5xl md:text-6xl font-bold text-white',
+            description: 'text-sm sm:text-lg text-white max-w-3xl mx-auto'
+          }">
+      <NuxtImg src="/conference-table-2.png" alt="Team collaborating around a conference table"
+        class="absolute inset-0 -z-10 size-full object-cover brightness-[0.2]" />
+      <div class="absolute inset-0 bg-primary-700/40 -z-10"></div>
+    </UPageHero>
 
     <!-- Meet the Founder -->
     <section class="py-16 bg-gray-50">
@@ -29,7 +25,7 @@
         <div class="bg-white rounded-lg p-8 shadow-sm mb-8">
           <div class="text-center mb-6">
             <h3 class="text-2xl font-bold text-gray-900 mb-2">Jennifer Peterson</h3>
-            <p class="text-lg text-blue-600 font-semibold mb-2">
+            <p class="text-lg text-primary-600 font-semibold mb-2">
               Founder & Principal Consultant | True North Federal Solutions
             </p>
             <p class="text-md text-gray-700 italic">
@@ -95,7 +91,7 @@
     <!-- Call to Action -->
     <section class="py-16 bg-blue-50">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <UIcon name="i-heroicons-phone" class="w-16 h-16 text-blue-600 mx-auto mb-6" />
+        <UIcon name="i-heroicons-phone" class="w-16 h-16 text-primary-600 mx-auto mb-6" />
         <h2 class="text-3xl font-bold text-gray-900 mb-4">
           Ready to Start Your Federal Contracting Journey?
         </h2>
@@ -112,9 +108,9 @@
               <p class="text-sm text-gray-700">✓ Understand certification opportunities</p>
               <p class="text-sm text-gray-700">✓ Develop a strategic roadmap for success</p>
             </div>
-            <div class="mt-6">
+            <div class="mt-6 text-center">
               <a href="/contact"
-                class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors font-medium inline-block">
+                class="bg-primary-600 text-white px-6 py-3 rounded-md hover:bg-primary-700 transition-colors font-medium inline-block">
                 Schedule Your Consultation
               </a>
             </div>
