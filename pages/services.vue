@@ -204,32 +204,38 @@
     </BaseSection>
 
     <!-- CTA Section -->
-    <UPageSection class="bg-primary-700">
-      <template #header>
-        <h2 class="text-3xl text-center font-bold text-white mb-4">
-          Ready to Start Your Federal Contracting Journey?
-        </h2>
-        <p class="text-xl text-center text-primary-100 mb-8 max-w-2xl mx-auto">
-          Schedule a consultation to discuss your business goals and learn how we can help you succeed in federal
-          contracting.
-        </p>
-      </template>
-
-      <div class="w-full flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-        <UButton color="neutral" variant="outline" size="xl" icon="i-heroicons-calendar-days" to="/contact"
-          class="hover:bg-gray-100 hover:text-primary-900 p-5">
-          Schedule Consultation
-        </UButton>
-        <UButton color="neutral" variant="outline" size="xl" icon="i-heroicons-book-open" to="/resources"
-          class="hover:bg-gray-100 hover:text-primary-900 p-5">
-          Explore Resources
-        </UButton>
-      </div>
-    </UPageSection>
+    <CTA
+      :title="ctaTitle"
+      :description="ctaDescription"
+      :links="ctaLinks"
+    />
   </div>
 </template>
 
 <script setup>
+const ctaTitle = 'Ready to Start Your Federal Contracting Journey?'
+const ctaDescription = 'Schedule a consultation to discuss your business goals and learn how we can help you succeed in federal contracting.'
+const ctaLinks = [
+  {
+    label: 'Schedule Consultation',
+    to: '/contact',
+    icon: 'i-heroicons-phone',
+    size: 'lg',
+    color: 'neutral',
+    variant: 'outline',
+    class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
+  },
+  {
+    label: 'Explore Resources',
+    to: '/resources',
+    icon: 'i-heroicons-book-open',
+    size: 'lg',
+    color: 'neutral',
+    variant: 'outline',
+    class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
+  }
+]
+
 // Set page meta for SEO
 definePageMeta({
   title: 'Services - True North Federal Solutions',

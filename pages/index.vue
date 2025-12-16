@@ -23,8 +23,8 @@
                   Get contract-ready with strategic setup and compliance tools. SAM.gov & State Registration Assistance,
                   NAICS & PSC Code Optimization, and Capability Statement Development.
                 </p>
-                <UButton color="primary" variant="ghost" size="sm" trailing-icon="i-heroicons-arrow-right"
-                  class="text-primary-600">
+                <UButton variant="outline" size="sm" trailing-icon="i-heroicons-arrow-right"
+                  class="bg-primary-700 text-primary-100 hover:text-primary-700 cursor-pointer">
                   Learn More
                 </UButton>
               </div>
@@ -44,7 +44,7 @@
                   Tracking, and Strategic Targeting Plans.
                 </p>
                 <UButton color="primary" variant="ghost" size="sm" trailing-icon="i-heroicons-arrow-right"
-                  class="text-primary-600">
+                  class="bg-primary-700 text-primary-100 hover:text-primary-700 cursor-pointer">
                   Learn More
                 </UButton>
               </div>
@@ -63,8 +63,8 @@
                   Bid/No-Bid
                   Strategy, and Submission Support & Formatting.
                 </p>
-                <UButton color="primary" variant="ghost" size="sm" trailing-icon="i-heroicons-arrow-right"
-                  class="text-primary-600">
+                <UButton variant="outline" size="sm" trailing-icon="i-heroicons-arrow-right"
+                  class="bg-primary-700 text-primary-100 hover:text-primary-700 cursor-pointer">
                   Learn More
                 </UButton>
               </div>
@@ -86,8 +86,8 @@
                   Risk
                   Mitigation, and Bonding Guidance.
                 </p>
-                <UButton color="primary" variant="ghost" size="sm" trailing-icon="i-heroicons-arrow-right"
-                  class="text-primary-600">
+                <UButton variant="outline" size="sm" trailing-icon="i-heroicons-arrow-right"
+                  class="bg-primary-700 text-primary-100 hover:text-primary-700 cursor-pointer">
                   Learn More
                 </UButton>
               </div>
@@ -105,8 +105,8 @@
                   Equip your team with the knowledge to compete and win. Customized Government Contracting Training,
                   Proposal Writing Best Practices, and Procurement Systems Navigation.
                 </p>
-                <UButton color="primary" variant="ghost" size="sm" trailing-icon="i-heroicons-arrow-right"
-                  class="text-primary-600">
+                <UButton variant="outline" size="sm" trailing-icon="i-heroicons-arrow-right"
+                  class="bg-primary-700 text-primary-100 hover:text-primary-700 cursor-pointer">
                   Learn More
                 </UButton>
               </div>
@@ -116,7 +116,7 @@
       </template>
     </UPageSection>
 
-    <section class="h-32 bg-primary-900"></section>
+    <section class="h-32 bg-primary-700"></section>
 
     <!-- Trust Indicators -->
     <div class="bg-secondary-50">
@@ -138,15 +138,9 @@
     </div>
 
     <!-- CTA Section -->
-    <div class="bg-primary-600">
-      <UPageSection title="Ready to Start Your Federal Contracting Journey?"
-        description="Schedule a consultation to discuss your business goals and learn how we can help you succeed."
-        :links="ctaLinks" :ui="{
-          title: 'text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-white',
-          description: 'text-base sm:text-lg text-primary-100',
-          links: 'flex flex-wrap gap-x-6 gap-y-3 justify-center'
-        }" />
-    </div>
+    <CTA title="Ready to Start Your Federal Contracting Journey?"
+      description="Schedule a consultation to discuss your business goals and learn how we can help you succeed."
+      :links="ctaLinks" />
   </div>
 </template>
 
@@ -177,7 +171,7 @@ const ctaLinks = [
     size: 'lg',
     color: 'neutral',
     variant: 'outline',
-    class: 'px-8 py-3 hover:bg-secondary-100 hover:text-secondary-900 text-lg'
+    class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
   },
   {
     label: 'Download Free Guide',
@@ -186,7 +180,7 @@ const ctaLinks = [
     size: 'lg',
     color: 'neutral',
     variant: 'outline',
-    class: 'px-8 py-3 hover:bg-secondary-100 hover:text-secondary-900 text-lg'
+    class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
   }
 ]
 

@@ -17,11 +17,11 @@
             </p>
 
             <!-- Contact Information -->
-            <div class="space-y-3">
-              <div class="flex items-center space-x-3">
+            <!-- <div class="space-y-3">
+              <div class="flex items-start gap-2">
                 <UIcon name="i-heroicons-envelope" class="w-4 h-4 text-primary-400" />
                 <a href="mailto:truenorthfederalconsulting@gmail.com"
-                  class="text-secondary-300 hover:text-white transition-colors text-sm">
+                  class="text-secondary-300 hover:text-white transition-colors text-sm break-all">
                   truenorthfederalconsulting@gmail.com
                 </a>
               </div>
@@ -35,8 +35,8 @@
                 <UIcon name="i-heroicons-map-pin" class="w-4 h-4 text-primary-400" />
                 <span class="text-secondary-300 text-sm">Serving Federal Agencies Nationwide</span>
               </div>
-            </div>
-          </div>
+            </div> -->
+          </div> 
 
           <!-- Services -->
           <div>
