@@ -214,28 +214,36 @@
                 </p>
               </div>
             </div>
-            <UForm :state="newsletterForm" class="flex flex-col sm:flex-row gap-3" @submit="onNewsletterSubmit">
-              <UInput 
-                v-model="newsletterForm.email" 
-                type="email" 
-                placeholder="Enter your email" 
-                class="flex-1"
-                size="lg"
-                color="primary"
-                variant="outline"
-              />
-              <UButton 
-                type="submit" 
-                color="primary"
-                variant="solid"
-                size="lg"
-                icon="i-heroicons-paper-airplane"
-                :loading="isSubscribing"
-                class="bg-primary-700 text-white hover:bg-primary-800 cursor-pointer"
-              >
-                Subscribe
-              </UButton>
-            </UForm>
+            <ClientOnly>
+              <UForm :state="newsletterForm" class="flex flex-col sm:flex-row gap-3" @submit="onNewsletterSubmit">
+                <UInput 
+                  v-model="newsletterForm.email" 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  class="flex-1"
+                  size="lg"
+                  color="primary"
+                  variant="outline"
+                />
+                <UButton 
+                  type="submit" 
+                  color="primary"
+                  variant="solid"
+                  size="lg"
+                  icon="i-heroicons-paper-airplane"
+                  :loading="isSubscribing"
+                  class="bg-primary-700 text-white hover:bg-primary-800 cursor-pointer"
+                >
+                  Subscribe
+                </UButton>
+              </UForm>
+              <template #fallback>
+                <div class="flex flex-col sm:flex-row gap-3">
+                  <div class="flex-1 h-12 bg-gray-100 rounded animate-pulse"></div>
+                  <div class="h-12 w-32 bg-gray-100 rounded animate-pulse"></div>
+                </div>
+              </template>
+            </ClientOnly>
           </UCard>
         </div>
       </div>
@@ -250,16 +258,23 @@
       }"
     >
       <div class="max-w-2xl w-full mx-auto space-y-4 font-semibold text-secondary-900">
-        <UAccordion 
-          :items="faqItems" 
-          multiple
-          :unmount-on-hide="false"
-          class="w-full"
-          :ui="{
-            label: 'font-semibold',
-            content: 'font-light text-secondary-700 text-sm'
-          }"
-        />
+        <ClientOnly>
+          <UAccordion 
+            :items="faqItems" 
+            multiple
+            :unmount-on-hide="false"
+            class="w-full"
+            :ui="{
+              label: 'font-semibold',
+              content: 'font-light text-secondary-700 text-sm'
+            }"
+          />
+          <template #fallback>
+            <div class="space-y-2">
+              <div v-for="i in 4" :key="i" class="h-14 bg-gray-100 rounded animate-pulse"></div>
+            </div>
+          </template>
+        </ClientOnly>
       </div>
     </UPageSection>
 
@@ -321,6 +336,12 @@ const contactForm = reactive({
 const isSubmitting = ref(false)
 const isSubscribing = ref(false)
 
+// Toast notifications
+const toast = useToast()
+
+// Runtime config
+const config = useRuntimeConfig()
+
 // Interest options for select
 const interestOptions = [
   { label: 'Federal Contract Setup', value: 'contract-setup' },
@@ -328,7 +349,8 @@ const interestOptions = [
   { label: 'FAR Compliance', value: 'far-compliance' },
   { label: 'Bid/No-Bid Strategy', value: 'bid-no-bid' },
   { label: 'General Consulting', value: 'general-consulting' },
-  { label: 'Certification Assistance', value: 'certification-help' }
+  { label: 'Certification Assistance', value: 'certification-help' },
+  { label: 'AI Tools for Contracting', value: 'ai-tools' }
 ]
 
 // FAQ items for accordion
@@ -360,9 +382,53 @@ const newsletterForm = reactive({
 async function onSubmit() {
   isSubmitting.value = true
   try {
-    // TODO: Implement form submission logic
-    console.log('Contact form submitted:', contactForm)
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    await $fetch(`${config.public.apiBaseUrl}/api/contact`, {
+      method: 'POST',
+      body: {
+        firstName: contactForm.firstName,
+        lastName: contactForm.lastName,
+        email: contactForm.email,
+        company: contactForm.company,
+        phone: contactForm.phone || null,
+        interest: contactForm.interest,
+        message: contactForm.message || null
+      }
+    })
+
+    toast.add({
+      title: 'Success!',
+      description: 'Thank you for your submission. We will be in touch soon.',
+      color: 'success',
+      icon: 'i-heroicons-check-circle',
+      ui: {
+        root: 'bg-green-100 border-l-4 border-green-500',
+        title: 'text-green-800 font-semibold',
+        description: 'text-green-700',
+        icon: 'text-green-600'
+      }
+    })
+
+    // Reset form
+    contactForm.firstName = ''
+    contactForm.lastName = ''
+    contactForm.email = ''
+    contactForm.company = ''
+    contactForm.phone = ''
+    contactForm.interest = ''
+    contactForm.message = ''
+  } catch (error) {
+    toast.add({
+      title: 'Error',
+      description: 'There was a problem submitting your request. Please try again.',
+      color: 'error',
+      icon: 'i-heroicons-exclamation-circle',
+      ui: {
+        root: 'bg-red-100 border-l-4 border-red-500',
+        title: 'text-red-800 font-semibold',
+        description: 'text-red-700',
+        icon: 'text-red-600'
+      }
+    })
   } finally {
     isSubmitting.value = false
   }

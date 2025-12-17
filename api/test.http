@@ -1,0 +1,35 @@
+### Test Contact Form Submission
+POST http://localhost:7071/api/contact
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john@company.com",
+  "company": "Test Company LLC",
+  "phone": "(555) 123-4567",
+  "interest": "contract-setup",
+  "message": "I'm interested in learning more about federal contracting opportunities."
+}
+
+### Test with minimal required fields
+POST http://localhost:7071/api/contact
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane@example.com",
+  "company": "Smith Consulting",
+  "interest": "proposal-development"
+}
+
+### Test missing required field (should return 400)
+POST http://localhost:7071/api/contact
+Content-Type: application/json
+
+{
+  "firstName": "Test",
+  "lastName": "User",
+  "email": "test@example.com"
+}
