@@ -132,7 +132,7 @@
               <div class="p-6">
                 <div class="space-y-6">
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-red-600 font-semibold">1</span>
                     </div>
                     <div>
@@ -142,7 +142,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-red-600 font-semibold">2</span>
                     </div>
                     <div>
@@ -152,7 +152,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-red-600 font-semibold">3</span>
                     </div>
                     <div>
@@ -162,7 +162,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-red-600 font-semibold">4</span>
                     </div>
                     <div>
@@ -206,7 +206,7 @@
               <div class="p-6">
                 <div class="space-y-4">
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Ownership Documentation</h4>
                       <p class="text-gray-600 text-sm">Clearly documenting veteran ownership percentages and control mechanisms</p>
@@ -214,7 +214,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Management Control</h4>
                       <p class="text-gray-600 text-sm">Demonstrating veteran involvement in day-to-day operations and strategic decisions</p>
@@ -222,7 +222,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Size Standard Compliance</h4>
                       <p class="text-gray-600 text-sm">Ensuring the business meets small business size standards for its NAICS code</p>

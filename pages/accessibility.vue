@@ -104,15 +104,15 @@
                 </p>
                 <ul class="space-y-3 text-gray-600">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 shrink-0" />
                     <span><strong>WCAG 2.1 Level AA:</strong> Web Content Accessibility Guidelines for web accessibility</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 shrink-0" />
                     <span><strong>Section 508:</strong> Federal standards for electronic accessibility</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 shrink-0" />
                     <span><strong>ADA Compliance:</strong> Americans with Disabilities Act requirements</span>
                   </li>
                 </ul>
@@ -162,14 +162,14 @@
                 </p>
                 <div class="space-y-3">
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-5 h-5 text-amber-500 mr-2 mt-0.5 shrink-0" />
                     <div>
                       <h4 class="font-medium">Third-party Content</h4>
                       <p class="text-gray-600 text-sm">Some embedded content from third-party providers may not meet our accessibility standards.</p>
                     </div>
                   </div>
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="w-5 h-5 text-amber-500 mr-2 mt-0.5 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-5 h-5 text-amber-500 mr-2 mt-0.5 shrink-0" />
                     <div>
                       <h4 class="font-medium">PDF Documents</h4>
                       <p class="text-gray-600 text-sm">Some older PDF documents may not be fully accessible. We are working to remediate these.</p>

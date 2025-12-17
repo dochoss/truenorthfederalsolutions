@@ -171,7 +171,7 @@
               <div class="p-6">
                 <div class="space-y-6">
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-green-600 font-semibold">1</span>
                     </div>
                     <div>
@@ -181,7 +181,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-green-600 font-semibold">2</span>
                     </div>
                     <div>
@@ -191,7 +191,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-green-600 font-semibold">3</span>
                     </div>
                     <div>
@@ -201,7 +201,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-green-600 font-semibold">4</span>
                     </div>
                     <div>
@@ -245,7 +245,7 @@
               <div class="p-6">
                 <div class="space-y-4">
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Complex Documentation</h4>
                       <p class="text-gray-600 text-sm">Extensive personal and business documentation requirements can be overwhelming</p>
@@ -253,7 +253,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Economic Disadvantage Proof</h4>
                       <p class="text-gray-600 text-sm">Demonstrating economic disadvantage while maintaining business viability</p>
@@ -261,7 +261,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Lengthy Review Process</h4>
                       <p class="text-gray-600 text-sm">Application review can take 90+ days with potential for additional documentation requests</p>

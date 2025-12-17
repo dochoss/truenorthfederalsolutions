@@ -53,7 +53,7 @@
           <h3 class="text-2xl font-bold text-purple-900 mb-6">Our Decision Framework</h3>
           <div class="space-y-6">
             <div class="flex items-start">
-              <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
+              <div class="shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
                 1
               </div>
               <div class="ml-4">
@@ -62,7 +62,7 @@
               </div>
             </div>
             <div class="flex items-start">
-              <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
+              <div class="shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
                 2
               </div>
               <div class="ml-4">
@@ -71,7 +71,7 @@
               </div>
             </div>
             <div class="flex items-start">
-              <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
+              <div class="shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
                 3
               </div>
               <div class="ml-4">
@@ -80,7 +80,7 @@
               </div>
             </div>
             <div class="flex items-start">
-              <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
+              <div class="shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
                 4
               </div>
               <div class="ml-4">

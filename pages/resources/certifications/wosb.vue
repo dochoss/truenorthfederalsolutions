@@ -98,7 +98,7 @@
               <div class="p-6">
                 <div class="space-y-6">
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-pink-600 font-semibold">1</span>
                     </div>
                     <div>
@@ -108,7 +108,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-pink-600 font-semibold">2</span>
                     </div>
                     <div>
@@ -118,7 +118,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-pink-600 font-semibold">3</span>
                     </div>
                     <div>
@@ -128,7 +128,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <div class="flex-shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                    <div class="shrink-0 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-4">
                       <span class="text-pink-600 font-semibold">4</span>
                     </div>
                     <div>
