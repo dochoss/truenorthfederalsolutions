@@ -1,14 +1,14 @@
 # GitHub Copilot Instructions
 
-This project is a template for Nuxt 3 projects using Tailwind CSS, Nuxt Tailwind module, NuxtIcon, and Nuxt Image. To ensure Copilot suggestions are consistent, modern, and leverage our stack, follow these guidelines:
+This project uses Nuxt 4 with Nuxt UI v4, which includes Tailwind CSS v4, NuxtIcon, and Nuxt Image. To ensure Copilot suggestions are consistent, modern, and leverage our stack, follow these guidelines:
 
 ---
 
 ## General Guidelines
 
-- **Always use Nuxt 3 conventions**: Prefer Nuxt’s auto-imports, composables, and directory structure. See [Nuxt Auto Imports](https://nuxt.com/docs/guide/concepts/auto-imports).
-- **Use Tailwind CSS for styling**: Do not use plain CSS or SCSS unless absolutely necessary. Reference [Tailwind CSS docs](https://tailwindcss.com/).
-- **Configure Tailwind via Nuxt module**: Use the [Nuxt Tailwind module](https://nuxt.com/modules/tailwindcss) for all Tailwind configuration and integration.
+- **Always use Nuxt 4 conventions**: Prefer Nuxt's auto-imports, composables, and directory structure. See [Nuxt Auto Imports](https://nuxt.com/docs/guide/concepts/auto-imports).
+- **Use Nuxt UI v4 for components**: Use Nuxt UI components (auto-imported with `U` prefix) for all UI elements. Reference [Nuxt UI Docs](https://ui.nuxt.com/).
+- **Use Tailwind CSS v4 for styling**: Tailwind v4 is included via Nuxt UI. Do not use plain CSS or SCSS unless absolutely necessary. Reference [Tailwind CSS docs](https://tailwindcss.com/).
 - **Use NuxtIcon for icons**: Do not use HeroIcons directly. Always use the [NuxtIcon module](https://nuxt.com/modules/icon) for icon components.
 - **Use Nuxt Image for images**: Prefer the [Nuxt Image module](https://nuxt.com/modules/image) for optimized images and responsive loading.
 
@@ -50,25 +50,22 @@ npm run dev
 
 ## Copilot-Specific Instructions
 
-### Nuxt 3
+### Nuxt 4
 
 - Use `<script setup>` syntax for all Vue components.
 - Order components with `<template>`, `<script setup>`, and `<style>` blocks in that order.
 - Use `NuxtLink` for internal navigation and `<a>` for external links.
-- Use Nuxt’s auto-imported composables (e.g., `useRoute`, `useFetch`) instead of manual imports.
+- Use Nuxt's auto-imported composables (e.g., `useRoute`, `useFetch`) instead of manual imports.
 - Place pages in the `/pages` directory and components in `/components`.
-- Use the `definePageMeta` and `defineNuxtComponent` helpers where appropriate.
+- Use the `definePageMeta` helper where appropriate.
 
-### Tailwind CSS
+### Tailwind CSS v4 (via Nuxt UI)
 
 - Use Tailwind utility classes for all styling.
 - Do not suggest inline styles or CSS modules.
-- Use the `@apply` directive in Tailwind for reusable class groups in component `<style>` blocks if needed.
-
-### Nuxt Tailwind Module
-
-- All Tailwind configuration should be in `tailwind.config.js` or via the Nuxt module options in `nuxt.config.ts`.
-- Use module features like JIT mode and custom theme extensions as needed.
+- Tailwind v4 is configured via `assets/css/main.css` using CSS-based configuration.
+- Theme customization uses CSS variables and the `@theme` directive.
+- Avoid `@apply` in Tailwind v4; prefer utility classes directly in templates.
 
 ### NuxtIcon
 
