@@ -98,8 +98,8 @@ const ctaLinks = [
     to: '/contact',
     icon: 'i-heroicons-calendar-days',
     size: 'lg',
-    color: 'neutral',
-    variant: 'outline',
+    color: 'primary',
+    variant: 'solid',
     class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
   },
   {
@@ -107,8 +107,8 @@ const ctaLinks = [
     to: '/resources',
     icon: 'i-heroicons-book-open',
     size: 'lg',
-    color: 'neutral',
-    variant: 'outline',
+    color: 'primary',
+    variant: 'solid',
     class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
   }
 ]

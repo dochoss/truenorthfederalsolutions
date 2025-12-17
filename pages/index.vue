@@ -169,17 +169,17 @@ const ctaLinks = [
     to: '/contact',
     icon: 'i-heroicons-phone',
     size: 'lg',
-    color: 'neutral',
-    variant: 'outline',
+    color: 'primary',
+    variant: 'solid',
     class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
   },
   {
-    label: 'Download Free Guide',
+    label: 'Download Free Guides',
     to: '/resources',
     icon: 'i-heroicons-document-text',
     size: 'lg',
-    color: 'neutral',
-    variant: 'outline',
+    color: 'primary',
+    variant: 'solid',
     class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
   }
 ]

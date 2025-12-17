@@ -1,12 +1,6 @@
 <template>
-  <UPageCTA
-    variant="naked"
-    :title="title"
-    :description="description"
-    :links="links"
-    :ui="ui"
-    class="bg-primary-700 rounded-none"
-  />
+  <UPageCTA variant="naked" :title="title" :description="description" :links="links" :ui="ui"
+    class="bg-primary-700 rounded-none" />
 </template>
 
 <script setup lang="ts">
@@ -28,16 +22,14 @@ const props = withDefaults(
         to: '/contact',
         icon: 'i-heroicons-calendar-days',
         size: 'lg',
-        color: 'primary',
-        variant: 'solid'
+        class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
       },
       {
-        label: 'Download Free Guide',
+        label: 'Download Free Guides',
         to: '/resources',
         icon: 'i-heroicons-document-text',
         size: 'lg',
-        color: 'neutral',
-        variant: 'outline'
+        class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
       }
     ]) as ButtonProps[]
   }
@@ -45,7 +37,7 @@ const props = withDefaults(
 
 const ui = {
   title: 'text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-white',
-  description: 'text-base sm:text-lg text-primary-100'
+  description: 'text-base sm:text-lg text-primary-50'
 }
 
 const { title, description, links } = toRefs(props)
