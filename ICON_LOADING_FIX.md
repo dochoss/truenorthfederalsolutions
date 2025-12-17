@@ -47,7 +47,7 @@ icon: {
 After the configuration change, the build output confirms icons are properly bundled:
 
 ```
-[info] Nuxt Icon client bundle consist of 58 icons with 25.32KB(uncompressed) in size
+[info] Nuxt Icon client bundle consists of 58 icons with 25.32KB(uncompressed) in size
 ```
 
 Server-side icon chunks:
