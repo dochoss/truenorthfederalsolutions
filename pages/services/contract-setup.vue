@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- Service Header -->
-    <section class="bg-blue-50 py-16">
+    <UPageSection class="bg-primary-900 py-16">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <Icon name="heroicons:document-text" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
+        <UIcon name="i-heroicons-document-text" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
         <h1 class="text-4xl font-bold text-gray-900 mb-4">
           Contracting Readiness & Set-Up
         </h1>
@@ -11,7 +11,7 @@
           Get contract-ready with strategic setup and compliance tools. Full support for SAM.gov registration, NAICS optimization, and capability statement development.
         </p>
       </div>
-    </section>
+    </UPageSection>
 
     <!-- Service Details -->
     <section class="py-16 bg-white">
@@ -30,27 +30,27 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-4">What's Included</h3>
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>SAM.gov & State Registration Assistance: Full review and setup for SAM.gov, Texas.gov, and other essential platforms</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>NAICS & PSC Code Optimization: Align your business classification codes to your current and future capabilities for maximum eligibility</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Capability Statement Development: Professionally crafted narrative, core competencies, differentiators, and past performance summaries tailored to your niche</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>CAGE code acquisition and verification</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Small business certification guidance and applications</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Compliance systems and documentation setup</span>
                 </li>
               </ul>
@@ -61,27 +61,27 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-4">Benefits</h3>
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Avoid common registration mistakes</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Maximize certification opportunities</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Ensure compliance from day one</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Save time and reduce frustration</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Expert guidance from experienced CO</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Position for competitive advantage</span>
                 </li>
               </ul>
@@ -160,7 +160,7 @@
           <!-- SAM Registration -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:identification" class="w-8 h-8 text-blue-700" />
+              <UIcon name="i-heroicons-identification" class="w-8 h-8 text-blue-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">SAM Registration</h3>
             <p class="text-gray-600 text-sm">
@@ -171,7 +171,7 @@
           <!-- CAGE Code -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:key" class="w-8 h-8 text-green-700" />
+              <UIcon name="i-heroicons-key" class="w-8 h-8 text-green-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">CAGE Code</h3>
             <p class="text-gray-600 text-sm">
@@ -182,7 +182,7 @@
           <!-- NAICS Strategy -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-purple-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:chart-pie" class="w-8 h-8 text-purple-700" />
+              <UIcon name="i-heroicons-chart-pie" class="w-8 h-8 text-purple-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">NAICS Strategy</h3>
             <p class="text-gray-600 text-sm">
@@ -193,7 +193,7 @@
           <!-- Certifications -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-orange-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:trophy" class="w-8 h-8 text-orange-700" />
+              <UIcon name="i-heroicons-trophy" class="w-8 h-8 text-orange-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Certifications</h3>
             <p class="text-gray-600 text-sm">
@@ -204,7 +204,7 @@
           <!-- Compliance -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-red-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:shield-check" class="w-8 h-8 text-red-700" />
+              <UIcon name="i-heroicons-shield-check" class="w-8 h-8 text-red-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Compliance Setup</h3>
             <p class="text-gray-600 text-sm">
@@ -215,7 +215,7 @@
           <!-- Banking -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-indigo-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:credit-card" class="w-8 h-8 text-indigo-700" />
+              <UIcon name="i-heroicons-credit-card" class="w-8 h-8 text-indigo-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Payment Setup</h3>
             <p class="text-gray-600 text-sm">
@@ -240,14 +240,14 @@
             to="/contact"
             class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-700 rounded-md hover:bg-gray-100 transition-colors font-medium"
           >
-            <Icon name="heroicons:calendar-days" class="w-5 h-5 mr-2" />
+            <UIcon name="i-heroicons-calendar-days" class="w-5 h-5 mr-2" />
             Schedule Consultation
           </NuxtLink>
           <NuxtLink 
             to="/services"
             class="inline-flex items-center justify-center px-8 py-3 border border-white text-white rounded-md hover:bg-blue-600 transition-colors font-medium"
           >
-            <Icon name="heroicons:arrow-left" class="w-5 h-5 mr-2" />
+            <UIcon name="i-heroicons-arrow-left" class="w-5 h-5 mr-2" />
             All Services
           </NuxtLink>
         </div>

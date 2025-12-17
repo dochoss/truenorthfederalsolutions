@@ -1,10 +1,26 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+    compatibilityDate: '2025-12-15',
+    runtimeConfig: {
+      // Private server-side only
+      mailchimp: {
+        apiKey: process.env.MAILCHIMP_API_KEY,
+        audienceId: process.env.MAILCHIMP_AUDIENCE_ID,
+        serverPrefix: process.env.MAILCHIMP_SERVER_PREFIX
+      },
+      // Public config (none needed for Mailchimp)
+      public: {}
+    },
     modules: [
-      '@nuxtjs/tailwindcss',
-      '@nuxt/image',
-      'nuxt-icon'
+      '@nuxt/ui',
+      '@nuxt/image'
     ],
+    css: ['~/assets/css/main.css'],
+    ui: {
+      theme: {
+        colors: ['primary', 'secondary', 'accent', 'success', 'warning', 'error', 'info']
+      }
+    },
     app: {
       head: {
         link: [
@@ -18,11 +34,5 @@ export default defineNuxtConfig({
           { name: 'theme-color', content: '#ffffff' }
         ]
       }
-    },
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-      },
-    },
+    }
   })

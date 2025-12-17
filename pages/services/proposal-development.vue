@@ -3,7 +3,7 @@
     <!-- Service Header -->
     <section class="bg-blue-50 py-16">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <Icon name="heroicons:pencil-square" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
+        <UIcon name="i-heroicons-pencil-square" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
         <h1 class="text-4xl font-bold text-gray-900 mb-4">
           Proposal Development & Management
         </h1>
@@ -30,27 +30,27 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-4">What's Included</h3>
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Proposal Writing & Management: Complete support for responding to RFPs/RFQs at both the state and federal levels</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Bid/No-Bid Strategy: We help you assess which opportunities are worth pursuing—saving you time and increasing win probability</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Submission Support & Formatting: Ensure your proposal is professionally formatted, complete, and compliant with all solicitation requirements</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Technical and price evaluation guidance</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Past performance documentation development</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Proposal team coordination and timeline management</span>
                 </li>
               </ul>
@@ -61,27 +61,27 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-4">Benefits</h3>
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Increase your proposal win rate significantly</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Save time and resources on unwinnable bids</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Ensure 100% compliance with solicitation requirements</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Professional presentation that stands out</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Expert guidance from contracting officer perspective</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Improved team efficiency and coordination</span>
                 </li>
               </ul>
@@ -174,7 +174,7 @@
           <!-- Proposal Writing -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:document-text" class="w-8 h-8 text-blue-700" />
+              <UIcon name="i-heroicons-document-text" class="w-8 h-8 text-blue-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Expert Writing</h3>
             <p class="text-gray-600 text-sm">
@@ -185,7 +185,7 @@
           <!-- Bid Strategy -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:light-bulb" class="w-8 h-8 text-green-700" />
+              <UIcon name="i-heroicons-light-bulb" class="w-8 h-8 text-green-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Strategic Analysis</h3>
             <p class="text-gray-600 text-sm">
@@ -196,7 +196,7 @@
           <!-- Compliance -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-purple-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:shield-check" class="w-8 h-8 text-purple-700" />
+              <UIcon name="i-heroicons-shield-check" class="w-8 h-8 text-purple-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Compliance Management</h3>
             <p class="text-gray-600 text-sm">
@@ -207,7 +207,7 @@
           <!-- Project Management -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-orange-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:clipboard-document-check" class="w-8 h-8 text-orange-700" />
+              <UIcon name="i-heroicons-clipboard-document-check" class="w-8 h-8 text-orange-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Project Management</h3>
             <p class="text-gray-600 text-sm">
@@ -218,7 +218,7 @@
           <!-- Quality Assurance -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-red-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:star" class="w-8 h-8 text-red-700" />
+              <UIcon name="i-heroicons-star" class="w-8 h-8 text-red-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Quality Assurance</h3>
             <p class="text-gray-600 text-sm">
@@ -229,7 +229,7 @@
           <!-- Formatting -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-indigo-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:document-arrow-up" class="w-8 h-8 text-indigo-700" />
+              <UIcon name="i-heroicons-document-arrow-up" class="w-8 h-8 text-indigo-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Professional Submission</h3>
             <p class="text-gray-600 text-sm">
@@ -254,14 +254,14 @@
             to="/contact"
             class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-700 rounded-md hover:bg-gray-100 transition-colors font-medium"
           >
-            <Icon name="heroicons:calendar-days" class="w-5 h-5 mr-2" />
+            <UIcon name="i-heroicons-calendar-days" class="w-5 h-5 mr-2" />
             Schedule Consultation
           </NuxtLink>
           <NuxtLink 
             to="/services"
             class="inline-flex items-center justify-center px-8 py-3 border border-white text-white rounded-md hover:bg-blue-600 transition-colors font-medium"
           >
-            <Icon name="heroicons:arrow-left" class="w-5 h-5 mr-2" />
+            <UIcon name="i-heroicons-arrow-left" class="w-5 h-5 mr-2" />
             All Services
           </NuxtLink>
         </div>

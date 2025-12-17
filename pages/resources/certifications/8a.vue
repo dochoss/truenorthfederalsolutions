@@ -6,7 +6,7 @@
       background-class="bg-gradient-to-r from-green-600 to-green-800"
     />
     
-    <BaseSection>
+    <UPageSection>
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">
@@ -18,7 +18,7 @@
         </div>
 
         <!-- Quick Stats -->
-        <BaseCard class="mb-12">
+        <UCard class="mb-12">
           <div class="p-8">
             <h3 class="text-2xl font-bold mb-6 text-center">8(a) Program Impact</h3>
             <div class="grid md:grid-cols-3 gap-8 text-center">
@@ -36,13 +36,13 @@
               </div>
             </div>
           </div>
-        </BaseCard>
+        </UCard>
 
         <!-- Program Overview -->
         <div class="space-y-12">
           <div>
             <h3 class="text-2xl font-bold mb-6">What is the 8(a) Program?</h3>
-            <BaseCard>
+            <UCard>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">
                   The 8(a) Business Development Program is a robust nine-year program created to help firms owned and controlled by socially and economically disadvantaged individuals. The program offers a broad scope of assistance including training, counseling, marketing assistance, and high-level executive development.
@@ -51,14 +51,14 @@
                   One of the program's most significant benefits is providing participating businesses with access to government contracting opportunities through set-aside contracts and sole-source awards.
                 </p>
               </div>
-            </BaseCard>
+            </UCard>
           </div>
 
           <!-- Program Phases -->
           <div>
             <h3 class="text-2xl font-bold mb-6">9-Year Program Structure</h3>
             <div class="space-y-6">
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <div class="flex items-center mb-4">
                     <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
@@ -76,9 +76,9 @@
                     <li>• Management and technical assistance</li>
                   </ul>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <div class="flex items-center mb-4">
                     <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
@@ -96,7 +96,7 @@
                     <li>• Graduate preparation activities</li>
                   </ul>
                 </div>
-              </BaseCard>
+              </UCard>
             </div>
           </div>
 
@@ -104,10 +104,10 @@
           <div>
             <h3 class="text-2xl font-bold mb-6">Eligibility Requirements</h3>
             <div class="grid md:grid-cols-2 gap-6">
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <Icon name="heroicons:user-group" class="w-6 h-6 text-green-600 mr-2" />
+                    <UIcon name="i-heroicons-user-group" class="w-6 h-6 text-green-600 mr-2" />
                     Social Disadvantage
                   </h4>
                   <ul class="space-y-2 text-gray-600">
@@ -116,12 +116,12 @@
                     <li>• Must have experienced bias or barriers to success</li>
                   </ul>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <Icon name="heroicons:currency-dollar" class="w-6 h-6 text-green-600 mr-2" />
+                    <UIcon name="i-heroicons-currency-dollar" class="w-6 h-6 text-green-600 mr-2" />
                     Economic Disadvantage
                   </h4>
                   <ul class="space-y-2 text-gray-600">
@@ -130,12 +130,12 @@
                     <li>• Fair market value of assets less than $6.5 million</li>
                   </ul>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <Icon name="heroicons:building-office" class="w-6 h-6 text-green-600 mr-2" />
+                    <UIcon name="i-heroicons-building-office" class="w-6 h-6 text-green-600 mr-2" />
                     Business Requirements
                   </h4>
                   <ul class="space-y-2 text-gray-600">
@@ -145,12 +145,12 @@
                     <li>• In business for at least 2 years</li>
                   </ul>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <Icon name="heroicons:check-circle" class="w-6 h-6 text-green-600 mr-2" />
+                    <UIcon name="i-heroicons-check-circle" class="w-6 h-6 text-green-600 mr-2" />
                     Additional Criteria
                   </h4>
                   <ul class="space-y-2 text-gray-600">
@@ -160,14 +160,14 @@
                     <li>• Not previously participated in 8(a)</li>
                   </ul>
                 </div>
-              </BaseCard>
+              </UCard>
             </div>
           </div>
 
           <!-- Application Process -->
           <div>
             <h3 class="text-2xl font-bold mb-6">Application Process</h3>
-            <BaseCard>
+            <UCard>
               <div class="p-6">
                 <div class="space-y-6">
                   <div class="flex items-start">
@@ -211,41 +211,41 @@
                   </div>
                 </div>
               </div>
-            </BaseCard>
+            </UCard>
           </div>
 
           <!-- Benefits -->
           <div>
             <h3 class="text-2xl font-bold mb-6">Program Benefits</h3>
             <div class="grid md:grid-cols-3 gap-6">
-              <BaseCard class="text-center p-6">
-                <Icon name="heroicons:target" class="w-12 h-12 text-green-600 mb-4 mx-auto" />
+              <UCard class="text-center p-6">
+                <UIcon name="i-heroicons-target" class="w-12 h-12 text-green-600 mb-4 mx-auto" />
                 <h4 class="font-semibold mb-3">Sole-Source Contracts</h4>
                 <p class="text-gray-600 text-sm">Up to $4.5 million for services and $7 million for manufacturing without competition</p>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard class="text-center p-6">
-                <Icon name="heroicons:academic-cap" class="w-12 h-12 text-green-600 mb-4 mx-auto" />
+              <UCard class="text-center p-6">
+                <UIcon name="i-heroicons-academic-cap" class="w-12 h-12 text-green-600 mb-4 mx-auto" />
                 <h4 class="font-semibold mb-3">Business Development</h4>
                 <p class="text-gray-600 text-sm">Comprehensive training, counseling, and mentorship opportunities</p>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard class="text-center p-6">
-                <Icon name="heroicons:users" class="w-12 h-12 text-green-600 mb-4 mx-auto" />
+              <UCard class="text-center p-6">
+                <UIcon name="i-heroicons-users" class="w-12 h-12 text-green-600 mb-4 mx-auto" />
                 <h4 class="font-semibold mb-3">Networking</h4>
                 <p class="text-gray-600 text-sm">Access to exclusive networking events and business relationships</p>
-              </BaseCard>
+              </UCard>
             </div>
           </div>
 
           <!-- Common Challenges -->
           <div>
             <h3 class="text-2xl font-bold mb-6">Common Application Challenges</h3>
-            <BaseCard>
+            <UCard>
               <div class="p-6">
                 <div class="space-y-4">
                   <div class="flex items-start">
-                    <Icon name="heroicons:exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Complex Documentation</h4>
                       <p class="text-gray-600 text-sm">Extensive personal and business documentation requirements can be overwhelming</p>
@@ -253,7 +253,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <Icon name="heroicons:exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Economic Disadvantage Proof</h4>
                       <p class="text-gray-600 text-sm">Demonstrating economic disadvantage while maintaining business viability</p>
@@ -261,7 +261,7 @@
                   </div>
                   
                   <div class="flex items-start">
-                    <Icon name="heroicons:exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle" class="w-6 h-6 text-amber-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 class="font-semibold mb-1">Lengthy Review Process</h4>
                       <p class="text-gray-600 text-sm">Application review can take 90+ days with potential for additional documentation requests</p>
@@ -269,7 +269,7 @@
                   </div>
                 </div>
               </div>
-            </BaseCard>
+            </UCard>
           </div>
 
           <!-- Next Steps -->
@@ -281,17 +281,17 @@
               The 8(a) application process is complex and detailed. Our experienced team can help you navigate the requirements and maximize your chances of acceptance.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-              <BaseButton variant="primary">
-                <NuxtLink to="/contact">Schedule Consultation</NuxtLink>
-              </BaseButton>
-              <BaseButton variant="outline">
+              <UButton color="primary" to="/contact">
+                Schedule Consultation
+              </UButton>
+              <UButton variant="outline">
                 Download 8(a) Guide
-              </BaseButton>
+              </UButton>
             </div>
           </div>
         </div>
       </div>
-    </BaseSection>
+    </UPageSection>
   </div>
 </template>
 

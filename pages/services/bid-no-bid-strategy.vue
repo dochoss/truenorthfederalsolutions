@@ -6,7 +6,7 @@
       background-class="bg-gradient-to-r from-purple-600 to-purple-800"
     />
     
-    <BaseSection>
+    <UPageSection>
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">
@@ -18,35 +18,35 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <BaseCard>
+          <UCard>
             <div class="p-6 text-center">
-              <Icon name="heroicons:magnifying-glass" class="w-12 h-12 text-purple-600 mb-4 mx-auto" />
+              <UIcon name="i-heroicons-magnifying-glass" class="w-12 h-12 text-purple-600 mb-4 mx-auto" />
               <h3 class="text-xl font-semibold mb-3">Market Analysis</h3>
               <p class="text-gray-600">
                 Comprehensive market research and competitive intelligence gathering.
               </p>
             </div>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard>
+          <UCard>
             <div class="p-6 text-center">
-              <Icon name="heroicons:calculator" class="w-12 h-12 text-purple-600 mb-4 mx-auto" />
+              <UIcon name="i-heroicons-calculator" class="w-12 h-12 text-purple-600 mb-4 mx-auto" />
               <h3 class="text-xl font-semibold mb-3">ROI Assessment</h3>
               <p class="text-gray-600">
                 Calculate potential return on investment for each opportunity.
               </p>
             </div>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard>
+          <UCard>
             <div class="p-6 text-center">
-              <Icon name="heroicons:chart-pie" class="w-12 h-12 text-purple-600 mb-4 mx-auto" />
+              <UIcon name="i-heroicons-chart-pie" class="w-12 h-12 text-purple-600 mb-4 mx-auto" />
               <h3 class="text-xl font-semibold mb-3">Win Probability</h3>
               <p class="text-gray-600">
                 Statistical analysis to determine likelihood of winning each bid.
               </p>
             </div>
-          </BaseCard>
+          </UCard>
         </div>
 
         <div class="bg-purple-50 rounded-lg p-8 mb-12">
@@ -92,65 +92,65 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 mb-12">
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-4 text-green-700">Benefits of Strategic Bidding</h3>
               <ul class="space-y-2">
                 <li class="flex items-center">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-2" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2" />
                   <span>Higher win rates</span>
                 </li>
                 <li class="flex items-center">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-2" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2" />
                   <span>Reduced proposal costs</span>
                 </li>
                 <li class="flex items-center">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-2" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2" />
                   <span>Better resource allocation</span>
                 </li>
                 <li class="flex items-center">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-2" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2" />
                   <span>Improved ROI</span>
                 </li>
               </ul>
             </div>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard>
+          <UCard>
             <div class="p-6">
               <h3 class="text-xl font-semibold mb-4 text-red-700">Risks of Poor Decisions</h3>
               <ul class="space-y-2">
                 <li class="flex items-center">
-                  <Icon name="heroicons:x-circle" class="w-5 h-5 text-red-600 mr-2" />
+                  <UIcon name="i-heroicons-x-circle" class="w-5 h-5 text-red-600 mr-2" />
                   <span>Wasted proposal investment</span>
                 </li>
                 <li class="flex items-center">
-                  <Icon name="heroicons:x-circle" class="w-5 h-5 text-red-600 mr-2" />
+                  <UIcon name="i-heroicons-x-circle" class="w-5 h-5 text-red-600 mr-2" />
                   <span>Missed profitable opportunities</span>
                 </li>
                 <li class="flex items-center">
-                  <Icon name="heroicons:x-circle" class="w-5 h-5 text-red-600 mr-2" />
+                  <UIcon name="i-heroicons-x-circle" class="w-5 h-5 text-red-600 mr-2" />
                   <span>Resource overextension</span>
                 </li>
                 <li class="flex items-center">
-                  <Icon name="heroicons:x-circle" class="w-5 h-5 text-red-600 mr-2" />
+                  <UIcon name="i-heroicons-x-circle" class="w-5 h-5 text-red-600 mr-2" />
                   <span>Lower win rates</span>
                 </li>
               </ul>
             </div>
-          </BaseCard>
+          </UCard>
         </div>
 
         <div class="text-center">
           <p class="text-lg text-gray-600 mb-8">
             Make smarter bidding decisions with expert strategy support
           </p>
-          <BaseButton variant="primary" size="lg">
-            <NuxtLink to="/contact">Request Strategy Session</NuxtLink>
-          </BaseButton>
+          <UButton color="primary" size="lg" to="/contact">
+            Request Strategy Session
+          </UButton>
         </div>
       </div>
-    </BaseSection>
+    </UPageSection>
   </div>
 </template>
 

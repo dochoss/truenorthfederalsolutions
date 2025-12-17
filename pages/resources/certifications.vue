@@ -6,7 +6,7 @@
       background-class="bg-gradient-to-r from-amber-600 to-amber-800"
     />
     
-    <BaseSection>
+    <UPageSection>
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">
@@ -18,7 +18,7 @@
         </div>
 
         <!-- Featured Certification -->
-        <BaseCard class="mb-12">
+        <UCard class="mb-12">
           <div class="p-8">
             <div class="flex items-center mb-4">
               <span class="bg-amber-100 text-amber-800 text-sm font-medium px-3 py-1 rounded-full">Featured Program</span>
@@ -45,20 +45,20 @@
               </div>
             </div>
             <div class="flex flex-wrap gap-4">
-              <BaseButton variant="primary">
+              <UButton color="primary">
                 Enroll Now - $2,495
-              </BaseButton>
-              <BaseButton variant="outline">
+              </UButton>
+              <UButton variant="outline">
                 View Curriculum
-              </BaseButton>
+              </UButton>
             </div>
           </div>
-        </BaseCard>
+        </UCard>
 
         <!-- Certification Categories -->
         <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <BaseCard class="text-center p-6">
-            <Icon name="heroicons:academic-cap" class="w-12 h-12 text-amber-600 mb-4 mx-auto" />
+          <UCard class="text-center p-6">
+            <UIcon name="i-heroicons-academic-cap" class="w-12 h-12 text-amber-600 mb-4 mx-auto" />
             <h3 class="text-xl font-semibold mb-3">Professional Certifications</h3>
             <p class="text-gray-600 mb-4">Comprehensive programs for career advancement</p>
             <ul class="text-sm text-gray-600 space-y-1">
@@ -67,10 +67,10 @@
               <li>• Career advancement</li>
               <li>• Networking opportunities</li>
             </ul>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard class="text-center p-6">
-            <Icon name="heroicons:bolt" class="w-12 h-12 text-amber-600 mb-4 mx-auto" />
+          <UCard class="text-center p-6">
+            <UIcon name="i-heroicons-bolt" class="w-12 h-12 text-amber-600 mb-4 mx-auto" />
             <h3 class="text-xl font-semibold mb-3">Skill-Based Courses</h3>
             <p class="text-gray-600 mb-4">Focused training on specific competencies</p>
             <ul class="text-sm text-gray-600 space-y-1">
@@ -79,10 +79,10 @@
               <li>• Immediate application</li>
               <li>• Certificate of completion</li>
             </ul>
-          </BaseCard>
+          </UCard>
 
-          <BaseCard class="text-center p-6">
-            <Icon name="heroicons:users" class="w-12 h-12 text-amber-600 mb-4 mx-auto" />
+          <UCard class="text-center p-6">
+            <UIcon name="i-heroicons-users" class="w-12 h-12 text-amber-600 mb-4 mx-auto" />
             <h3 class="text-xl font-semibold mb-3">Corporate Training</h3>
             <p class="text-gray-600 mb-4">Custom programs for teams and organizations</p>
             <ul class="text-sm text-gray-600 space-y-1">
@@ -91,7 +91,7 @@
               <li>• Team certification</li>
               <li>• Ongoing support</li>
             </ul>
-          </BaseCard>
+          </UCard>
         </div>
 
         <!-- Available Certifications -->
@@ -99,11 +99,11 @@
           <!-- Professional Certifications -->
           <div>
             <h3 class="text-2xl font-bold mb-6 flex items-center">
-              <Icon name="heroicons:star" class="w-8 h-8 text-amber-600 mr-3" />
+              <UIcon name="i-heroicons-star" class="w-8 h-8 text-amber-600 mr-3" />
               Professional Certifications
             </h3>
             <div class="grid md:grid-cols-2 gap-6">
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <div class="flex items-center justify-between mb-4">
                     <h4 class="text-lg font-semibold">Certified Federal Proposal Professional (CFPP)</h4>
@@ -115,12 +115,12 @@
                   <div class="text-sm text-gray-500 mb-4">
                     Duration: 6 months | Format: Online + Virtual Labs | Investment: $2,495
                   </div>
-                  <BaseButton variant="outline" size="sm" class="mr-2">Learn More</BaseButton>
-                  <BaseButton variant="primary" size="sm">Enroll Now</BaseButton>
+                  <UButton variant="outline" size="sm" class="mr-2">Learn More</UButton>
+                  <UButton color="primary" size="sm">Enroll Now</UButton>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <div class="flex items-center justify-between mb-4">
                     <h4 class="text-lg font-semibold">Federal Compliance Specialist (FCS)</h4>
@@ -132,12 +132,12 @@
                   <div class="text-sm text-gray-500 mb-4">
                     Duration: 4 months | Format: Hybrid | Investment: $1,995
                   </div>
-                  <BaseButton variant="outline" size="sm" class="mr-2">Join Waitlist</BaseButton>
-                  <BaseButton variant="outline" size="sm">Learn More</BaseButton>
+                  <UButton variant="outline" size="sm" class="mr-2">Join Waitlist</UButton>
+                  <UButton variant="outline" size="sm">Learn More</UButton>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <div class="flex items-center justify-between mb-4">
                     <h4 class="text-lg font-semibold">Government Contracts Manager (GCM)</h4>
@@ -149,12 +149,12 @@
                   <div class="text-sm text-gray-500 mb-4">
                     Duration: 8 months | Format: Executive Program | Investment: $3,995
                   </div>
-                  <BaseButton variant="outline" size="sm" class="mr-2">Express Interest</BaseButton>
-                  <BaseButton variant="outline" size="sm">Learn More</BaseButton>
+                  <UButton variant="outline" size="sm" class="mr-2">Express Interest</UButton>
+                  <UButton variant="outline" size="sm">Learn More</UButton>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <div class="flex items-center justify-between mb-4">
                     <h4 class="text-lg font-semibold">Federal Business Developer (FBD)</h4>
@@ -166,73 +166,73 @@
                   <div class="text-sm text-gray-500 mb-4">
                     Duration: 5 months | Format: Virtual Cohort | Investment: $2,195
                   </div>
-                  <BaseButton variant="outline" size="sm" class="mr-2">Learn More</BaseButton>
-                  <BaseButton variant="primary" size="sm">Enroll Now</BaseButton>
+                  <UButton variant="outline" size="sm" class="mr-2">Learn More</UButton>
+                  <UButton color="primary" size="sm">Enroll Now</UButton>
                 </div>
-              </BaseCard>
+              </UCard>
             </div>
           </div>
 
           <!-- Skill-Based Courses -->
           <div>
             <h3 class="text-2xl font-bold mb-6 flex items-center">
-              <Icon name="heroicons:lightning-bolt" class="w-8 h-8 text-amber-600 mr-3" />
+              <UIcon name="i-heroicons-lightning-bolt" class="w-8 h-8 text-amber-600 mr-3" />
               Skill-Based Courses
             </h3>
             <div class="grid md:grid-cols-3 gap-6">
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-3">RFP Analysis Mastery</h4>
                   <p class="text-gray-600 mb-4">Learn to decode complex RFPs and identify winning strategies.</p>
                   <div class="text-sm text-gray-500 mb-4">2 weeks | $495</div>
-                  <BaseButton variant="outline" size="sm">Enroll</BaseButton>
+                  <UButton variant="outline" size="sm">Enroll</UButton>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-3">Technical Writing for Proposals</h4>
                   <p class="text-gray-600 mb-4">Master the art of clear, compelling technical communication.</p>
                   <div class="text-sm text-gray-500 mb-4">3 weeks | $695</div>
-                  <BaseButton variant="outline" size="sm">Enroll</BaseButton>
+                  <UButton variant="outline" size="sm">Enroll</UButton>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-3">Cost Proposal Development</h4>
                   <p class="text-gray-600 mb-4">Build accurate, competitive cost proposals that win contracts.</p>
                   <div class="text-sm text-gray-500 mb-4">4 weeks | $895</div>
-                  <BaseButton variant="outline" size="sm">Enroll</BaseButton>
+                  <UButton variant="outline" size="sm">Enroll</UButton>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-3">Past Performance Storytelling</h4>
                   <p class="text-gray-600 mb-4">Craft compelling narratives that demonstrate your capabilities.</p>
                   <div class="text-sm text-gray-500 mb-4">2 weeks | $495</div>
-                  <BaseButton variant="outline" size="sm">Enroll</BaseButton>
+                  <UButton variant="outline" size="sm">Enroll</UButton>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-3">Federal Market Research</h4>
                   <p class="text-gray-600 mb-4">Identify opportunities and understand your competitive landscape.</p>
                   <div class="text-sm text-gray-500 mb-4">3 weeks | $695</div>
-                  <BaseButton variant="outline" size="sm">Enroll</BaseButton>
+                  <UButton variant="outline" size="sm">Enroll</UButton>
                 </div>
-              </BaseCard>
+              </UCard>
 
-              <BaseCard>
+              <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-3">Bid/No-Bid Decision Making</h4>
                   <p class="text-gray-600 mb-4">Make strategic decisions about which opportunities to pursue.</p>
                   <div class="text-sm text-gray-500 mb-4">1 week | $395</div>
-                  <BaseButton variant="outline" size="sm">Enroll</BaseButton>
+                  <UButton variant="outline" size="sm">Enroll</UButton>
                 </div>
-              </BaseCard>
+              </UCard>
             </div>
           </div>
         </div>
@@ -244,22 +244,22 @@
           </h3>
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="text-center">
-              <Icon name="heroicons:arrow-trending-up" class="w-12 h-12 text-amber-600 mb-3 mx-auto" />
+              <UIcon name="i-heroicons-arrow-trending-up" class="w-12 h-12 text-amber-600 mb-3 mx-auto" />
               <h4 class="font-semibold text-amber-900 mb-2">Career Advancement</h4>
               <p class="text-amber-700 text-sm">Stand out in a competitive job market</p>
             </div>
             <div class="text-center">
-              <Icon name="heroicons:currency-dollar" class="w-12 h-12 text-amber-600 mb-3 mx-auto" />
+              <UIcon name="i-heroicons-currency-dollar" class="w-12 h-12 text-amber-600 mb-3 mx-auto" />
               <h4 class="font-semibold text-amber-900 mb-2">Higher Earning Potential</h4>
               <p class="text-amber-700 text-sm">Certified professionals earn 20% more on average</p>
             </div>
             <div class="text-center">
-              <Icon name="heroicons:shield-check" class="w-12 h-12 text-amber-600 mb-3 mx-auto" />
+              <UIcon name="i-heroicons-shield-check" class="w-12 h-12 text-amber-600 mb-3 mx-auto" />
               <h4 class="font-semibold text-amber-900 mb-2">Industry Recognition</h4>
               <p class="text-amber-700 text-sm">Gain credibility with clients and employers</p>
             </div>
             <div class="text-center">
-              <Icon name="heroicons:users" class="w-12 h-12 text-amber-600 mb-3 mx-auto" />
+              <UIcon name="i-heroicons-users" class="w-12 h-12 text-amber-600 mb-3 mx-auto" />
               <h4 class="font-semibold text-amber-900 mb-2">Professional Network</h4>
               <p class="text-amber-700 text-sm">Connect with like-minded professionals</p>
             </div>
@@ -273,16 +273,16 @@
             Join hundreds of professionals who have accelerated their careers with our certification programs
           </p>
           <div class="flex flex-wrap justify-center gap-4">
-            <BaseButton variant="primary" size="lg">
-              <NuxtLink to="/contact">Schedule Consultation</NuxtLink>
-            </BaseButton>
-            <BaseButton variant="outline" size="lg">
+            <UButton color="primary" size="lg" to="/contact">
+              Schedule Consultation
+            </UButton>
+            <UButton variant="outline" size="lg">
               Download Program Catalog
-            </BaseButton>
+            </UButton>
           </div>
         </div>
       </div>
-    </BaseSection>
+    </UPageSection>
   </div>
 </template>
 

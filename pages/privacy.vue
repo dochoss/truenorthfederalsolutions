@@ -1,6 +1,6 @@
 <template>
   <div>
-    <BaseSection>
+    <UPageSection>
       <div class="max-w-4xl mx-auto">
         <h1 class="text-4xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
 
@@ -118,12 +118,12 @@
         </div>
 
         <div class="mt-12 text-center">
-          <BaseButton variant="outline">
-            <NuxtLink to="/">Return to Home</NuxtLink>
-          </BaseButton>
+          <UButton variant="outline" to="/">
+            Return to Home
+          </UButton>
         </div>
       </div>
-    </BaseSection>
+    </UPageSection>
   </div>
 </template>
 

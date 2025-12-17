@@ -14,6 +14,56 @@ This file tracks work completed and plans future work for the True North Federal
  - [x] Remove server-side `server/api/guides.get.ts` (not compatible with GitHub Pages) - 2025-08-16
  - [x] Generated `public/guides/index.json` from existing PDFs (verified locally) - 2025-08-16
 
+---
+
+## ✅ COMPLETED: Nuxt UI v4.2.1 Migration (2025-06-16)
+
+Successfully migrated from custom components to idiomatic Nuxt UI v4.2.1 usage.
+
+### Phase 1: Install Nuxt UI & Configure Theme ✅
+- [x] Updated `package.json` — installed `@nuxt/ui@4.2.1`, removed `@nuxtjs/tailwindcss`, `nuxt-icon`, `nuxt-headlessui`, `@tailwindcss/forms`
+- [x] Updated `nuxt.config.ts` — modules now `['@nuxt/ui', '@nuxt/image']`, added `css: ['~/assets/css/main.css']`
+- [x] Created `assets/css/main.css` — Tailwind/Nuxt UI imports + `@theme` block with custom colors
+- [x] Created `app.vue` — wraps `<NuxtLayout>` with `<UApp>`
+- [x] Created `app.config.ts` — mapped semantic colors (primary, error, neutral, accent)
+- [x] Deleted `tailwind.config.js` (Tailwind v4 uses CSS-first config)
+- [x] Upgraded Nuxt from 3.17.4 → 4.2.2 (required for Nuxt UI v4)
+
+### Phase 2: Migrate Icons & Buttons ✅
+- [x] Replaced `<Icon>` → `<UIcon>` globally (~65 usages)
+- [x] Replaced `<BaseButton>` → `<UButton>` in all pages/components
+- [x] Deleted `BaseButton.vue` and `IconWrapper.vue`
+
+### Phase 3: Migrate Forms ✅
+- [x] Refactored `contact.vue` — uses `<UForm>`, `<UFormField>`, `<UInput>`, `<USelect>`, `<UTextarea>` with Zod schema validation
+- [x] Newsletter forms kept as-is (custom Mailchimp integration)
+- [x] Deleted `FormInput.vue`
+
+### Phase 4: Migrate Cards & Sections ✅
+- [x] Replaced `<BaseCard>` → `<UCard>` with slots across all pages
+- [x] Kept `UPageSection.vue` as layout utility (no Nuxt UI equivalent)
+- [x] Deleted `BaseCard.vue`
+
+### Phase 5: Migrate Navigation & Layout ✅
+- [x] Kept custom `NavSection.vue` (already uses UIcon, custom dropdowns work well)
+- [x] Updated `Hero.vue` — uses `<UIcon>` and `<UButton>`
+- [x] Updated `FooterSection.vue` — uses `<UIcon>`
+- [x] Updated `Social.vue` — uses `<UIcon>` directly
+
+### Phase 6: Cleanup & Polish ✅
+- [x] Audited all pages — no remaining wrapper usage
+- [x] App compiles and runs successfully on Nuxt 4.2.2 with Nuxt UI 4.2.1
+
+**Components Retained (site-specific, no Nuxt UI equivalent):**
+- `UPageSection.vue` — Layout wrapper for page sections
+- `NavSection.vue` — Site navigation with custom dropdown behavior
+- `FooterSection.vue` — Site footer layout
+- `Hero.vue` — Hero component
+- `Social.vue` — Social media links
+- `NewsletterForm.vue` / `NewsletterFormMailchimpStatic.client.vue` — Mailchimp integration
+
+---
+
 ## In Progress
 
 - [ ] Update README.md to reflect business project instead of template

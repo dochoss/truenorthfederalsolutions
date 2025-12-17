@@ -3,7 +3,7 @@
     <!-- Service Header -->
     <section class="bg-blue-50 py-16">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <Icon name="heroicons:magnifying-glass" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
+        <UIcon name="i-heroicons-magnifying-glass" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
         <h1 class="text-4xl font-bold text-gray-900 mb-4">
           Opportunity Identification and Market Intelligence
         </h1>
@@ -30,27 +30,27 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-4">What's Included</h3>
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Bid matchmaking services and opportunity screening</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Market trend analysis and forecasting</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Competitive landscape assessment</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Strategic targeting plans and roadmaps</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Opportunity tracking and monitoring systems</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Agency spending patterns and procurement forecasts</span>
                 </li>
               </ul>
@@ -61,27 +61,27 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-4">Benefits</h3>
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Target the most winnable opportunities</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Get ahead of your competition</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Reduce wasted bid and proposal efforts</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Understand market timing and trends</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Build strategic partnerships and teaming</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Maximize ROI on business development</span>
                 </li>
               </ul>
@@ -160,7 +160,7 @@
           <!-- Bid Matchmaking -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:puzzle-piece" class="w-8 h-8 text-blue-700" />
+              <UIcon name="i-heroicons-puzzle-piece" class="w-8 h-8 text-blue-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Bid Matchmaking</h3>
             <p class="text-gray-600 text-sm">
@@ -171,7 +171,7 @@
           <!-- Market Analysis -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:chart-bar" class="w-8 h-8 text-green-700" />
+              <UIcon name="i-heroicons-chart-bar" class="w-8 h-8 text-green-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Market Analysis</h3>
             <p class="text-gray-600 text-sm">
@@ -182,7 +182,7 @@
           <!-- Competitive Intelligence -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-purple-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:eye" class="w-8 h-8 text-purple-700" />
+              <UIcon name="i-heroicons-eye" class="w-8 h-8 text-purple-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Competitive Intelligence</h3>
             <p class="text-gray-600 text-sm">
@@ -193,7 +193,7 @@
           <!-- Opportunity Tracking -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-orange-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:clipboard-document-list" class="w-8 h-8 text-orange-700" />
+              <UIcon name="i-heroicons-clipboard-document-list" class="w-8 h-8 text-orange-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Opportunity Tracking</h3>
             <p class="text-gray-600 text-sm">
@@ -204,7 +204,7 @@
           <!-- Strategic Planning -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-red-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:map" class="w-8 h-8 text-red-700" />
+              <UIcon name="i-heroicons-map" class="w-8 h-8 text-red-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Strategic Planning</h3>
             <p class="text-gray-600 text-sm">
@@ -215,7 +215,7 @@
           <!-- Forecasting -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-indigo-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:crystal-ball" class="w-8 h-8 text-indigo-700" />
+              <UIcon name="i-heroicons-crystal-ball" class="w-8 h-8 text-indigo-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Procurement Forecasting</h3>
             <p class="text-gray-600 text-sm">
@@ -240,14 +240,14 @@
             to="/contact"
             class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-700 rounded-md hover:bg-gray-100 transition-colors font-medium"
           >
-            <Icon name="heroicons:calendar-days" class="w-5 h-5 mr-2" />
+            <UIcon name="i-heroicons-calendar-days" class="w-5 h-5 mr-2" />
             Schedule Consultation
           </NuxtLink>
           <NuxtLink 
             to="/services"
             class="inline-flex items-center justify-center px-8 py-3 border border-white text-white rounded-md hover:bg-blue-600 transition-colors font-medium"
           >
-            <Icon name="heroicons:arrow-left" class="w-5 h-5 mr-2" />
+            <UIcon name="i-heroicons-arrow-left" class="w-5 h-5 mr-2" />
             All Services
           </NuxtLink>
         </div>

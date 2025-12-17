@@ -3,7 +3,7 @@
     <!-- Service Header -->
     <section class="bg-blue-50 py-16">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <Icon name="heroicons:shield-check" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
+        <UIcon name="i-heroicons-shield-check" class="w-16 h-16 text-blue-700 mx-auto mb-6" />
         <h1 class="text-4xl font-bold text-gray-900 mb-4">
           Compliance & Regulatory Support
         </h1>
@@ -30,27 +30,27 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-4">What's Included</h3>
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>FAR Compliance Consulting: Interpret, apply, and integrate Federal Acquisition Regulations into your processes</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Contract Risk Mitigation: Avoid costly mistakes with expert guidance on regulatory traps, certifications, and performance clauses</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Bonding Guidance: Understand and meet bonding requirements to qualify for public sector contracts</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>State and local regulatory compliance support</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Contract terms and conditions review</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-3 mt-0.5" />
                   <span>Ongoing compliance monitoring and support</span>
                 </li>
               </ul>
@@ -61,27 +61,27 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-4">Benefits</h3>
               <ul class="space-y-3 text-gray-600">
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Avoid costly compliance violations and penalties</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Reduce contract performance risks</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Build confidence in regulatory requirements</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Ensure eligibility for larger contract opportunities</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Expert guidance from experienced contracting officer</span>
                 </li>
                 <li class="flex items-start">
-                  <Icon name="heroicons:star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
+                  <UIcon name="i-heroicons-star" class="w-5 h-5 text-yellow-500 mr-3 mt-0.5" />
                   <span>Proactive risk identification and mitigation</span>
                 </li>
               </ul>
@@ -174,7 +174,7 @@
           <!-- FAR Compliance -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:document-text" class="w-8 h-8 text-blue-700" />
+              <UIcon name="i-heroicons-document-text" class="w-8 h-8 text-blue-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">FAR Compliance</h3>
             <p class="text-gray-600 text-sm">
@@ -185,7 +185,7 @@
           <!-- Risk Mitigation -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-green-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:shield-exclamation" class="w-8 h-8 text-green-700" />
+              <UIcon name="i-heroicons-shield-exclamation" class="w-8 h-8 text-green-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Risk Mitigation</h3>
             <p class="text-gray-600 text-sm">
@@ -196,7 +196,7 @@
           <!-- Bonding -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-purple-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:currency-dollar" class="w-8 h-8 text-purple-700" />
+              <UIcon name="i-heroicons-currency-dollar" class="w-8 h-8 text-purple-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Bonding Guidance</h3>
             <p class="text-gray-600 text-sm">
@@ -207,7 +207,7 @@
           <!-- Contract Review -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-orange-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:clipboard-document-check" class="w-8 h-8 text-orange-700" />
+              <UIcon name="i-heroicons-clipboard-document-check" class="w-8 h-8 text-orange-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Contract Review</h3>
             <p class="text-gray-600 text-sm">
@@ -218,7 +218,7 @@
           <!-- Training -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-red-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:academic-cap" class="w-8 h-8 text-red-700" />
+              <UIcon name="i-heroicons-academic-cap" class="w-8 h-8 text-red-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Compliance Training</h3>
             <p class="text-gray-600 text-sm">
@@ -229,7 +229,7 @@
           <!-- Monitoring -->
           <div class="text-center">
             <div class="flex items-center justify-center w-16 h-16 bg-indigo-100 rounded-lg mx-auto mb-4">
-              <Icon name="heroicons:eye" class="w-8 h-8 text-indigo-700" />
+              <UIcon name="i-heroicons-eye" class="w-8 h-8 text-indigo-700" />
             </div>
             <h3 class="text-lg font-semibold text-gray-900 mb-3">Ongoing Monitoring</h3>
             <p class="text-gray-600 text-sm">
@@ -254,14 +254,14 @@
             to="/contact"
             class="inline-flex items-center justify-center px-8 py-3 bg-white text-blue-700 rounded-md hover:bg-gray-100 transition-colors font-medium"
           >
-            <Icon name="heroicons:calendar-days" class="w-5 h-5 mr-2" />
+            <UIcon name="i-heroicons-calendar-days" class="w-5 h-5 mr-2" />
             Schedule Consultation
           </NuxtLink>
           <NuxtLink 
             to="/services"
             class="inline-flex items-center justify-center px-8 py-3 border border-white text-white rounded-md hover:bg-blue-600 transition-colors font-medium"
           >
-            <Icon name="heroicons:arrow-left" class="w-5 h-5 mr-2" />
+            <UIcon name="i-heroicons-arrow-left" class="w-5 h-5 mr-2" />
             All Services
           </NuxtLink>
         </div>

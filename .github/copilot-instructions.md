@@ -88,15 +88,23 @@ npm run dev
 
 ```vue
 <template>
-  <div class="p-8 bg-white rounded-lg shadow">
-    <Icon name="heroicons-outline:home" class="w-6 h-6 text-blue-500" />
-    <h1 class="text-2xl font-bold">Welcome</h1>
+  <UCard class="max-w-md">
+    <template #header>
+      <div class="flex items-center gap-2">
+        <Icon name="heroicons:home" class="size-6 text-primary" />
+        <h1 class="text-2xl font-bold">Welcome</h1>
+      </div>
+    </template>
     <NuxtImg src="/images/example.jpg" width="400" height="300" class="rounded" />
-  </div>
+    <template #footer>
+      <UButton color="primary">Get Started</UButton>
+    </template>
+  </UCard>
 </template>
 
 <script setup>
 // No need to import Nuxt composables or components manually
+// Nuxt UI components are auto-imported with U prefix
 </script>
 ```
 
@@ -117,8 +125,8 @@ npm run dev
 ---
 
 **References:**
-- [Nuxt 3 Docs](https://nuxt.com/docs/guide/concepts/auto-imports)
+- [Nuxt 4 Docs](https://nuxt.com/docs/4.x/getting-started/introduction)
+- [Nuxt UI Docs](https://ui.nuxt.com/)
 - [Tailwind CSS Docs](https://tailwindcss.com/)
-- [Nuxt Tailwind Module](https://nuxt.com/modules/tailwindcss)
-- [NuxtIcon Module](https://nuxt.com/modules/icon)
+- [Nuxt Icon Module](https://nuxt.com/modules/icon)
 - [Nuxt Image Module](https://nuxt.com/modules/image)

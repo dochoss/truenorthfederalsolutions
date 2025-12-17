@@ -1,64 +1,66 @@
 <template>
   <div>
-    <!-- Guides Header (compact, like Resources page) -->
-    <BaseSection variant="secondary" spacing="lg" centered>
-      <template #header>
-        <IconWrapper icon="heroicons:document-arrow-down" variant="success" size="xl" class="mx-auto mb-6" />
-        <h1 class="text-4xl text-center font-bold text-secondary-900 mb-4">Guides & Templates</h1>
-        <p class="text-xl text-center text-secondary-600 max-w-2xl mx-auto">
-          Downloadable guides and templates to help you with federal contracting — available as PDFs for download.
-        </p>
-      </template>
-    </BaseSection>
+    <!-- Page Header -->
+    <UPageHero class="relative isolate overflow-hidden bg-primary-700" title="Guides & Templates"
+      description="Downloadable guides and templates to help you with federal contracting — available as PDFs for download."
+      :ui="{
+        title: 'text-4xl sm:text-5xl md:text-6xl font-bold text-white',
+        description: 'text-sm sm:text-lg text-white max-w-3xl mx-auto'
+      }">
+      <NuxtImg src="/conference-table-2.png" alt="Team collaborating around a conference table"
+        class="absolute inset-0 -z-10 size-full object-cover brightness-[0.2]" />
+      <div class="absolute inset-0 bg-primary-700/40 -z-10"></div>
+    </UPageHero>
 
-    <!-- Available Downloads (dynamically lists PDFs from /public/guides) -->
-    <BaseSection spacing="lg">
+    <!-- Available Downloads -->
+    <UPageSection class="bg-white">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-2xl font-bold text-gray-900 mb-4">Available Downloads</h2>
-  <p class="text-gray-600 mb-6">Explore practical guides and editable templates designed to help you plan, prepare, and win federal contracting opportunities.</p>
+        <div class="mb-8">
+          <h2 class="text-2xl font-bold text-secondary-900 mb-2">Available Downloads</h2>
+          <p class="text-secondary-600">
+            Explore practical guides and editable templates designed to help you plan, prepare, and win federal
+            contracting opportunities.
+          </p>
+        </div>
 
-        <div v-if="loading" class="text-center py-8">Loading available guides...</div>
+        <div v-if="loading" class="text-center py-8 text-secondary-600">
+          Loading available guides...
+        </div>
 
         <div v-else>
-          <div v-if="files.length === 0" class="text-center py-8 text-gray-600">
-            No guides available. Place PDFs into <code>/public/guides</code> to make them available for download.
+          <div v-if="files.length === 0" class="text-center py-12">
+            <UIcon name="i-heroicons-document-text" class="w-12 h-12 text-secondary-400 mx-auto mb-4" />
+            <p class="text-secondary-600">No guides available yet. Check back soon!</p>
           </div>
 
           <div v-else class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <BaseCard v-for="file in files" :key="file.url" class="flex flex-col justify-between">
-              <div class="p-6">
-                <div class="flex items-center mb-3">
-                  <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2 py-1 rounded">Download</span>
-                </div>
-                <h4 class="text-lg font-semibold mb-2 truncate">{{ file.name }}</h4>
-                <p class="text-gray-600 text-sm mb-4">PDF — Click download to save a copy.</p>
+            <UCard v-for="file in files" :key="file.url" variant="outline" class="flex flex-col bg-white"
+              :ui="{ body: 'flex-1 flex flex-col' }">
+              <div class="flex-1">
+                <h4 class="text-lg font-semibold text-secondary-900 mb-2 truncate">{{ file.name }}</h4>
+                <p class="text-secondary-600 text-sm">PDF — Click download to save a copy.</p>
               </div>
-              <div class="p-4 border-t">
+
+              <template #footer>
                 <div class="flex items-center justify-between">
-                  <span class="text-xs text-gray-500">PDF</span>
-                  <a :href="file.url" :download="file.name" class="inline-block">
-                    <BaseButton variant="primary" size="sm" icon-right="heroicons:arrow-down-tray">Download</BaseButton>
+                  <span class="text-xs text-secondary-500">PDF</span>
+                  <a :href="file.url" :download="file.name">
+                    <UButton size="sm" trailing-icon="i-heroicons-arrow-down-tray"
+                      class="bg-primary-700 text-white hover:bg-primary-800">
+                      Download
+                    </UButton>
                   </a>
                 </div>
-              </div>
-            </BaseCard>
+              </template>
+            </UCard>
           </div>
         </div>
       </div>
-    </BaseSection>
+    </UPageSection>
 
-    <!-- The rest of the existing guides content isn't strictly necessary here; keep a CTA -->
-    <BaseSection>
-      <div class="max-w-6xl mx-auto text-center">
-        <div class="bg-emerald-50 rounded-lg p-8 mt-12 text-center">
-          <h3 class="text-2xl font-bold text-emerald-900 mb-4">Need Custom Guidance?</h3>
-          <p class="text-emerald-700 mb-6">Our experts can provide personalized guidance tailored to your specific situation and goals.</p>
-          <BaseButton variant="primary" size="lg">
-            <NuxtLink to="/contact">Schedule Consultation</NuxtLink>
-          </BaseButton>
-        </div>
-      </div>
-    </BaseSection>
+    <!-- CTA Section -->
+    <CTA title="Need Custom Guidance?"
+      description="Our experts can provide personalized guidance tailored to your specific situation and goals." />
   </div>
 </template>
 
@@ -71,9 +73,7 @@ const loading = ref(true)
 async function loadGuides() {
   loading.value = true
   try {
-    // Use a pre-generated static index so this works on static hosts (GitHub Pages)
     const res = await $fetch('/guides/index.json')
-    // Keep the same shape { files: [...] } for minimal changes
     files.value = res?.files || []
   } catch (e) {
     files.value = []

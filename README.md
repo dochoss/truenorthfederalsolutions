@@ -29,22 +29,50 @@ This digital platform combines a professional consulting website with AI-driven 
 
 Built with modern, scalable technologies optimized for performance and user experience:
 
-- **[Nuxt 3](https://nuxt.com/docs/getting-started/introduction)** - Vue.js framework for SSR and static generation
-- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework for rapid development
-- **[NuxtIcon](https://nuxt.com/modules/icon)** - Comprehensive icon library including government/business icons
+- **[Nuxt 4](https://nuxt.com/docs/getting-started/introduction)** - Vue.js framework for SSR and static generation
+- **[Nuxt UI v4](https://ui.nuxt.com/)** - Comprehensive UI component library with Tailwind CSS v4 integration
+- **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework with CSS-first configuration
+- **[Nuxt Icon](https://nuxt.com/modules/icon)** - Icon library with Heroicons and Simple Icons
 - **[Nuxt Image](https://nuxt.com/modules/image)** - Optimized image handling and performance
-- **[Headless CMS](https://strapi.io/)** - Content management for resources and blog posts
-- **[OpenAI API](https://openai.com/api/)** - AI-powered assessment and recommendation tools
-- **[Azure Static Web Apps](https://azure.microsoft.com/services/app-service/static/)** - Scalable hosting and serverless functions
+- **[Zod](https://zod.dev/)** - TypeScript-first schema validation
+- **[Mailchimp](https://mailchimp.com/)** - Newsletter subscription management
+- **[GitHub Pages](https://pages.github.com/)** - Static site hosting with CI/CD
 
 ## 📋 Project Documentation
 
 This project follows structured planning and development practices:
 
 - **[📊 PRD.md](./PRD.md)** - Product Requirements Document outlining features and specifications
-- **[📅 PROJECT_PLAN.md](./PROJECT_PLAN.md)** - Comprehensive project roadmap with phases and milestones
 - **[✅ TASKLIST.md](./TASKLIST.md)** - Current tasks and development progress tracking
 - **[🤖 .github/copilot-instructions.md](./.github/copilot-instructions.md)** - Development guidelines for GitHub Copilot
+
+## 📚 Downloadable Guides
+
+The platform provides downloadable PDF guides for visitors. The guides system automatically generates an index of available files.
+
+### How It Works
+
+1. **Add PDF files** to the `public/guides/` directory
+2. **Run the generator** to create the index:
+   ```bash
+   npm run generate-guides
+   ```
+3. The script scans `public/guides/` for PDF files and generates `public/guides/index.json`
+
+### Automatic Generation
+
+The guide index is automatically regenerated during build processes via npm lifecycle hooks:
+- `prebuild` - Runs before `npm run build`
+- `pregenerate` - Runs before `npm run generate`
+
+### Files
+
+- **[scripts/generate-guides.js](./scripts/generate-guides.js)** - Node.js script that scans for PDFs and generates the index
+- **[public/guides/index.json](./public/guides/index.json)** - Generated JSON index consumed by the guides page
+
+### Base URL Handling
+
+The generator respects `NUXT_APP_BASE_URL` or `BASE_URL` environment variables for deployment to subdirectory paths (e.g., GitHub Pages). URLs are automatically prefixed with the correct base path.
 
 ## 🏗 Development Phases
 
