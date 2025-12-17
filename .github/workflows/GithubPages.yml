@@ -43,12 +43,12 @@ jobs:
       - name: Generate guides index
         run: npm run generate-guides
         env:
-          NUXT_APP_BASE_URL: "/truenorthfederalsolutions/"
+          NUXT_APP_BASE_URL: "/"
       - name: Static HTML export with Nuxt
         # run: npm run generate
-        # CHANGE BASE URL HERE if your site is not at the root of the domain
-        # For example, if your site is at https://dot.github.io/dotdotcom/, set the base URL to /dotdotcom/
-        run: NUXT_APP_BASE_URL=/truenorthfederalsolutions/ npx nuxt build --preset github_pages
+        # With a custom domain (www.truenorthfederalsolutions.com), use root base URL
+        # Only use /repo-name/ if serving from username.github.io/repo-name/
+        run: NUXT_APP_BASE_URL=/ npx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
