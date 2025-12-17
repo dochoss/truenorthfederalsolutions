@@ -6,7 +6,7 @@
       background-class="bg-gradient-to-r from-blue-600 to-blue-800"
     />
     
-    <BaseSection>
+    <UPageSection>
       <div class="max-w-4xl mx-auto">
         <div class="space-y-12">
           <!-- Our Commitment -->
@@ -229,7 +229,7 @@
           </div>
         </div>
       </div>
-    </BaseSection>
+    </UPageSection>
   </div>
 </template>
 

@@ -3,7 +3,7 @@
     <Hero title="Site Map" subtitle="Navigate all areas of True North Federal Solutions"
       background-class="bg-gradient-to-r from-gray-600 to-gray-800" />
 
-    <BaseSection>
+    <UPageSection>
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">
@@ -191,7 +191,7 @@
           <p>Site Map last updated: December 2024</p>
         </div>
       </div>
-    </BaseSection>
+    </UPageSection>
   </div>
 </template>
 

@@ -150,7 +150,7 @@
     </UPageSection>
 
     <!-- Process Overview -->
-    <BaseSection variant="secondary" title="Our Process" subtitle="A structured approach to federal contracting success"
+    <UPageSection variant="secondary" title="Our Process" subtitle="A structured approach to federal contracting success"
       spacing="lg">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Step 1 -->
@@ -201,7 +201,7 @@
           </p>
         </div>
       </div>
-    </BaseSection>
+    </UPageSection>
 
     <!-- CTA Section -->
     <CTA

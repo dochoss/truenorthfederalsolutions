@@ -6,7 +6,7 @@
       background-class="bg-gradient-to-r from-amber-600 to-amber-800"
     />
     
-    <BaseSection>
+    <UPageSection>
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">
@@ -282,7 +282,7 @@
           </div>
         </div>
       </div>
-    </BaseSection>
+    </UPageSection>
   </div>
 </template>
 

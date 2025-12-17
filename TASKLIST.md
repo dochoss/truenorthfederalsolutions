@@ -41,7 +41,7 @@ Successfully migrated from custom components to idiomatic Nuxt UI v4.2.1 usage.
 
 ### Phase 4: Migrate Cards & Sections ✅
 - [x] Replaced `<BaseCard>` → `<UCard>` with slots across all pages
-- [x] Kept `BaseSection.vue` as layout utility (no Nuxt UI equivalent)
+- [x] Kept `UPageSection.vue` as layout utility (no Nuxt UI equivalent)
 - [x] Deleted `BaseCard.vue`
 
 ### Phase 5: Migrate Navigation & Layout ✅
@@ -55,7 +55,7 @@ Successfully migrated from custom components to idiomatic Nuxt UI v4.2.1 usage.
 - [x] App compiles and runs successfully on Nuxt 4.2.2 with Nuxt UI 4.2.1
 
 **Components Retained (site-specific, no Nuxt UI equivalent):**
-- `BaseSection.vue` — Layout wrapper for page sections
+- `UPageSection.vue` — Layout wrapper for page sections
 - `NavSection.vue` — Site navigation with custom dropdown behavior
 - `FooterSection.vue` — Site footer layout
 - `Hero.vue` — Hero component

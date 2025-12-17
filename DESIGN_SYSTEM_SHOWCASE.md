@@ -91,10 +91,10 @@ This document demonstrates the True North Federal Solutions design system implem
 </BaseCard>
 ```
 
-### BaseSection Component
+### UPageSection Component
 ```vue
 <!-- Section with title and subtitle -->
-<BaseSection 
+<UPageSection 
   title="Our Services" 
   subtitle="Comprehensive federal contracting support"
   variant="default"
@@ -104,10 +104,10 @@ This document demonstrates the True North Federal Solutions design system implem
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
     <!-- Grid content -->
   </div>
-</BaseSection>
+</UPageSection>
 
 <!-- Primary variant section -->
-<BaseSection variant="primary" spacing="xl" centered>
+<UPageSection variant="primary" spacing="xl" centered>
   <template #header>
     <h1 class="text-4xl font-bold text-white">
       Ready to Get Started?
@@ -117,7 +117,7 @@ This document demonstrates the True North Federal Solutions design system implem
   <BaseButton variant="secondary" size="lg">
     Contact Us
   </BaseButton>
-</BaseSection>
+</UPageSection>
 ```
 
 ### IconWrapper Component
@@ -169,19 +169,19 @@ This document demonstrates the True North Federal Solutions design system implem
     <NavSection />
     
     <!-- Hero section -->
-    <BaseSection variant="primary" spacing="xl" centered>
+    <UPageSection variant="primary" spacing="xl" centered>
       <!-- Hero content -->
-    </BaseSection>
+    </UPageSection>
     
     <!-- Content sections -->
-    <BaseSection title="Section Title" subtitle="Section subtitle" spacing="lg">
+    <UPageSection title="Section Title" subtitle="Section subtitle" spacing="lg">
       <!-- Section content -->
-    </BaseSection>
+    </UPageSection>
     
     <!-- CTA section -->
-    <BaseSection variant="primary" spacing="lg" centered>
+    <UPageSection variant="primary" spacing="lg" centered>
       <!-- Call to action content -->
-    </BaseSection>
+    </UPageSection>
     
     <FooterSection />
   </div>

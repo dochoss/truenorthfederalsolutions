@@ -144,7 +144,7 @@ True North Federal Solutions specializes in federal contracting consulting, help
 See the `/components` directory for implementation examples of:
 - `BaseButton.vue` - Standard button components
 - `BaseCard.vue` - Card layout components
-- `BaseSection.vue` - Section wrapper components
+- `UPageSection.vue` - Section wrapper components
 - `BaseModal.vue` - Modal and overlay components
 - `FormInput.vue` - Form input components
 - `IconButton.vue` - Icon-only button components
