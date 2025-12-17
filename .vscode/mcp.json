@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    {
+      "id": "clarity-project-id",
+      "type": "promptString",
+      "description": "Enter the Clarity Project Id",
+      "password": true
+    }
+  ],
+  "servers": {
+    "microsoft/clarity-mcp-server": {
+      "command": "npx",
+      "args": [
+        "@microsoft/clarity-mcp-server",
+        "--clarity_api_token=${input:clarity-project-id}"
+      ]
+    }
+  }
+}

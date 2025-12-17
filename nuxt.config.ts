@@ -8,8 +8,10 @@ export default defineNuxtConfig({
         audienceId: process.env.MAILCHIMP_AUDIENCE_ID,
         serverPrefix: process.env.MAILCHIMP_SERVER_PREFIX
       },
-      // Public config (none needed for Mailchimp)
-      public: {}
+      // Public config
+      public: {
+        clarityProjectId: process.env.NUXT_PUBLIC_CLARITY_PROJECT_ID || ''
+      }
     },
     modules: [
       '@nuxt/ui',
