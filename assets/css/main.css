@@ -134,21 +134,20 @@
   100% { transform: translateY(0); opacity: 1; }
 }
 
-/* Force white background on form inputs (fixes Edge dark bg issue) */
-/* Edge may apply color-scheme: dark to inputs, this overrides it */
-input:not([type="checkbox"]):not([type="radio"]),
-textarea,
-select {
-  background-color: #ffffff !important;
-  color-scheme: light only !important;
-  -webkit-appearance: none;
+/* Set Nuxt UI semantic color variables for light mode */
+:root {
+  --ui-bg: var(--color-white);
+  --ui-bg-elevated: var(--color-secondary-50);
+  --ui-bg-accented: var(--color-secondary-100);
+  --ui-bg-inverted: var(--color-secondary-900);
+  --ui-text-default: var(--color-secondary-900);
+  --ui-text-highlighted: var(--color-secondary-900);
+  --ui-text-muted: var(--color-secondary-600);
+  --ui-text-dimmed: var(--color-secondary-400);
+  --ui-border-default: var(--color-secondary-200);
+  --ui-border-accented: var(--color-secondary-300);
+  color-scheme: light;
 }
 
-/* Ensure Nuxt UI bg-default class renders white for form controls */
-input.bg-default,
-textarea.bg-default,
-select.bg-default,
-button.bg-default {
-  background-color: #ffffff !important;
-}
+
 

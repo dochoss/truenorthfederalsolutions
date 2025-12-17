@@ -25,94 +25,98 @@
           </h2>
           <UForm :schema="contactSchema" :state="contactForm" class="space-y-5" @submit="onSubmit">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <UFormField label="First Name" name="firstName" required :ui="{ label: 'text-secondary-700 font-medium' }">
+              <UFormField label="First Name" name="firstName" required :ui="{ label: 'text-secondary-700 font-medium', error: 'text-red-500' }">
                 <template #default="{ error }">
                   <UInput 
                     v-model="contactForm.firstName" 
                     placeholder="John" 
                     size="lg"
-                    :color="error ? 'error' : 'neutral'"
+                    :color="error ? 'error' : 'primary'"
                     variant="outline"
-                    class="[&_input]:bg-white! w-full"
+                    class="w-full"
                   />
                 </template>
               </UFormField>
-              <UFormField label="Last Name" name="lastName" required :ui="{ label: 'text-secondary-700 font-medium' }">
+              <UFormField label="Last Name" name="lastName" required :ui="{ label: 'text-secondary-700 font-medium', error: 'text-red-500' }">
                 <template #default="{ error }">
                   <UInput 
                     v-model="contactForm.lastName" 
                     placeholder="Doe" 
                     size="lg"
-                    :color="error ? 'error' : 'neutral'"
+                    :color="error ? 'error' : 'primary'"
                     variant="outline"
-                    class="[&_input]:bg-white! w-full"
+                    class="w-full"
                   />
                 </template>
               </UFormField>
             </div>
 
-            <UFormField label="Email Address" name="email" required :ui="{ label: 'text-secondary-700 font-medium' }">
+            <UFormField label="Email Address" name="email" required :ui="{ label: 'text-secondary-700 font-medium', error: 'text-red-500' }">
               <template #default="{ error }">
                 <UInput 
                   v-model="contactForm.email" 
                   type="email" 
                   placeholder="john@company.com" 
                   size="lg"
-                  :color="error ? 'error' : 'neutral'"
+                  :color="error ? 'error' : 'primary'"
                   variant="outline"
-                  class="[&_input]:bg-white! w-full"
+                  class="w-full"
                 />
               </template>
             </UFormField>
 
-            <UFormField label="Company Name" name="company" required :ui="{ label: 'text-secondary-700 font-medium' }">
+            <UFormField label="Company Name" name="company" required :ui="{ label: 'text-secondary-700 font-medium', error: 'text-red-500' }">
               <template #default="{ error }">
                 <UInput 
                   v-model="contactForm.company" 
                   placeholder="Your Company LLC" 
                   size="lg"
-                  :color="error ? 'error' : 'neutral'"
+                  :color="error ? 'error' : 'primary'"
                   variant="outline"
-                  class="[&_input]:bg-white! w-full"
+                  class="w-full"
                 />
               </template>
             </UFormField>
 
-            <UFormField label="Phone Number" name="phone" :ui="{ label: 'text-secondary-700 font-medium' }">
+            <UFormField label="Phone Number" name="phone" :ui="{ label: 'text-secondary-700 font-medium', error: 'text-red-500' }">
               <UInput 
                 v-model="contactForm.phone" 
                 type="tel" 
                 placeholder="(555) 123-4567" 
                 size="lg"
-                color="neutral"
+                color="primary"
                 variant="outline"
-                class="[&_input]:bg-white! w-full"
+                class="w-full"
               />
             </UFormField>
 
-            <UFormField label="Primary Interest" name="interest" required :ui="{ label: 'text-secondary-700 font-medium' }">
+            <UFormField label="Primary Interest" name="interest" required :ui="{ label: 'text-secondary-700 font-medium', error: 'text-red-500' }">
               <template #default="{ error }">
                 <USelect 
                   v-model="contactForm.interest" 
                   :items="interestOptions"
                   size="lg"
                   placeholder="Select your primary interest..."
-                  :color="error ? 'error' : 'neutral'"
+                  :color="error ? 'error' : 'primary'"
                   variant="outline"
-                  class="[&_button]:bg-white! w-full"
+                  class="w-full"
+                  :ui="{ 
+                    item: 'text-secondary-700 data-highlighted:text-secondary-900 data-highlighted:bg-secondary-100',
+                    itemLabel: 'text-secondary-700'
+                  }"
                 />
               </template>
             </UFormField>
 
-            <UFormField label="Tell us about your goals and challenges" name="message" :ui="{ label: 'text-secondary-700 font-medium' }">
+            <UFormField label="Tell us about your goals and challenges" name="message" :ui="{ label: 'text-secondary-700 font-medium', error: 'text-red-500' }">
               <UTextarea 
                 v-model="contactForm.message" 
                 size="lg"
                 :rows="4"
                 placeholder="Describe your current situation, goals, and how we can help..."
-                color="neutral"
+                color="primary"
                 variant="outline"
-                class="[&_textarea]:bg-white! w-full"
+                class="w-full"
               />
             </UFormField>
 
@@ -215,9 +219,9 @@
                 v-model="newsletterForm.email" 
                 type="email" 
                 placeholder="Enter your email" 
-                class="flex-1 [&_input]:!bg-white"
+                class="flex-1"
                 size="lg"
-                color="neutral"
+                color="primary"
                 variant="outline"
               />
               <UButton 

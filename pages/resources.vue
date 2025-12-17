@@ -64,7 +64,7 @@
     </UPageSection>
 
     <!-- Featured Resources -->
-    <UPageSection class="bg-secondary-50" title="Featured Resources"
+    <UPageSection class="bg-secondary-50 md:-mt-24 lg:-mt-32" title="Featured Resources"
       description="Popular downloads and essential guides for federal contracting success" :ui="{
         title: 'text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-secondary-900',
         description: 'text-base sm:text-lg text-secondary-600'
@@ -129,7 +129,7 @@
               </div>
             </div>
           </div>
-          <UButton icon="i-heroicons-bell" to="/contact" class="bg-primary-700 text-white hover:bg-primary-800">
+          <UButton icon="i-heroicons-bell" size="xl" to="/contact" class="bg-primary-700 text-white hover:bg-primary-800">
             Get Notified When Available
           </UButton>
         </div>

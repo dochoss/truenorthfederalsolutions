@@ -1,8 +1,7 @@
 <template>
   <div>
     <!-- Page Header -->
-    <UPageHero class="relative isolate overflow-hidden bg-primary-700"
-      title="Guides & Templates"
+    <UPageHero class="relative isolate overflow-hidden bg-primary-700" title="Guides & Templates"
       description="Downloadable guides and templates to help you with federal contracting — available as PDFs for download."
       :ui="{
         title: 'text-4xl sm:text-5xl md:text-6xl font-bold text-white',
@@ -19,7 +18,8 @@
         <div class="mb-8">
           <h2 class="text-2xl font-bold text-secondary-900 mb-2">Available Downloads</h2>
           <p class="text-secondary-600">
-            Explore practical guides and editable templates designed to help you plan, prepare, and win federal contracting opportunities.
+            Explore practical guides and editable templates designed to help you plan, prepare, and win federal
+            contracting opportunities.
           </p>
         </div>
 
@@ -34,20 +34,8 @@
           </div>
 
           <div v-else class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <UCard
-              v-for="file in files"
-              :key="file.url"
-              variant="outline"
-              class="flex flex-col bg-white"
-              :ui="{ body: 'flex-1 flex flex-col' }"
-            >
-              <template #header>
-                <div class="flex items-center justify-between">
-                  <UBadge color="primary" variant="subtle">Download</UBadge>
-                  <UIcon name="i-heroicons-document-text" class="w-5 h-5 text-primary-600" />
-                </div>
-              </template>
-
+            <UCard v-for="file in files" :key="file.url" variant="outline" class="flex flex-col bg-white"
+              :ui="{ body: 'flex-1 flex flex-col' }">
               <div class="flex-1">
                 <h4 class="text-lg font-semibold text-secondary-900 mb-2 truncate">{{ file.name }}</h4>
                 <p class="text-secondary-600 text-sm">PDF — Click download to save a copy.</p>
@@ -57,11 +45,8 @@
                 <div class="flex items-center justify-between">
                   <span class="text-xs text-secondary-500">PDF</span>
                   <a :href="file.url" :download="file.name">
-                    <UButton
-                      size="sm"
-                      trailing-icon="i-heroicons-arrow-down-tray"
-                      class="bg-primary-700 text-white hover:bg-primary-800"
-                    >
+                    <UButton size="sm" trailing-icon="i-heroicons-arrow-down-tray"
+                      class="bg-primary-700 text-white hover:bg-primary-800">
                       Download
                     </UButton>
                   </a>
@@ -74,11 +59,8 @@
     </UPageSection>
 
     <!-- CTA Section -->
-    <CTA
-      title="Need Custom Guidance?"
-      description="Our experts can provide personalized guidance tailored to your specific situation and goals."
-      :links="ctaLinks"
-    />
+    <CTA title="Need Custom Guidance?"
+      description="Our experts can provide personalized guidance tailored to your specific situation and goals." />
   </div>
 </template>
 
@@ -87,27 +69,6 @@ import { ref, onMounted } from 'vue'
 
 const files = ref([])
 const loading = ref(true)
-
-const ctaLinks = [
-  {
-    label: 'Schedule Consultation',
-    to: '/contact',
-    icon: 'i-heroicons-calendar-days',
-    size: 'lg',
-    color: 'neutral',
-    variant: 'outline',
-    class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
-  },
-  {
-    label: 'View All Resources',
-    to: '/resources',
-    icon: 'i-heroicons-folder-open',
-    size: 'lg',
-    color: 'neutral',
-    variant: 'outline',
-    class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
-  }
-]
 
 async function loadGuides() {
   loading.value = true

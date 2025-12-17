@@ -1,11 +1,8 @@
 <template>
   <div>
     <!-- Services Header -->
-    <UPageHero class="relative isolate overflow-hidden bg-primary-700" 
-      title="Federal Contracting Services" 
-      description="Expert guidance to navigate the complex world of federal contracting. From initial setup to proposal
-      development, we're here to help your business succeed." 
-      :ui="{
+    <UPageHero class="relative isolate overflow-hidden bg-primary-700" title="Federal Contracting Services" description="Expert guidance to navigate the complex world of federal contracting. From initial setup to proposal
+      development, we're here to help your business succeed." :ui="{
         title: 'text-4xl sm:text-5xl md:text-6xl font-bold text-white',
         description: 'text-sm sm:text-lg text-white max-w-3xl mx-auto'
       }">
@@ -21,7 +18,7 @@
         title: 'text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-secondary-900',
         description: 'text-base sm:text-lg text-secondary-600'
       }">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Contracting Readiness & Set-Up -->
         <NuxtLink to="/services/contract-setup">
           <UCard variant="subtle" :class="{ 'h-full': true }" interactive padding="md"
@@ -150,8 +147,8 @@
     </UPageSection>
 
     <!-- Process Overview -->
-    <UPageSection variant="secondary" title="Our Process" subtitle="A structured approach to federal contracting success"
-      spacing="lg">
+    <UPageSection variant="secondary" title="Our Process" class="md:-mt-24 lg:-mt-32"
+      subtitle="A structured approach to federal contracting success">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Step 1 -->
         <div class="text-center">
@@ -204,38 +201,12 @@
     </UPageSection>
 
     <!-- CTA Section -->
-    <CTA
-      :title="ctaTitle"
-      :description="ctaDescription"
-      :links="ctaLinks"
-    />
+    <CTA title="Ready to Start Your Federal Contracting Journey?" 
+      description="Schedule a consultation to discuss your business goals and learn how we can help you succeed in federal contracting." />
   </div>
 </template>
 
 <script setup>
-const ctaTitle = 'Ready to Start Your Federal Contracting Journey?'
-const ctaDescription = 'Schedule a consultation to discuss your business goals and learn how we can help you succeed in federal contracting.'
-const ctaLinks = [
-  {
-    label: 'Schedule Consultation',
-    to: '/contact',
-    icon: 'i-heroicons-phone',
-    size: 'lg',
-    color: 'neutral',
-    variant: 'outline',
-    class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
-  },
-  {
-    label: 'Explore Resources',
-    to: '/resources',
-    icon: 'i-heroicons-book-open',
-    size: 'lg',
-    color: 'neutral',
-    variant: 'outline',
-    class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
-  }
-]
-
 // Set page meta for SEO
 definePageMeta({
   title: 'Services - True North Federal Solutions',
