@@ -16,6 +16,15 @@ export default defineNuxtConfig({
       '@nuxt/image'
     ],
     css: ['~/assets/css/main.css'],
+    icon: {
+      serverBundle: {
+        collections: ['heroicons', 'simple-icons']
+      },
+      clientBundle: {
+        scan: true,
+        sizeLimitKb: 256
+      }
+    },
     ui: {
       theme: {
         colors: ['primary', 'secondary', 'accent', 'success', 'warning', 'error', 'info']
