@@ -3,6 +3,7 @@ using Microsoft.Azure.Functions.Worker.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Hosting;
+using Azure.Communication.Email;
 
 var builder = FunctionsApplication.CreateBuilder(args);
 
@@ -22,6 +23,12 @@ builder.Services.AddSingleton<CosmosClient>(sp =>
             PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
         }
     });
+});
+
+builder.Services.AddSingleton<EmailClient>(sp =>
+{
+    var connectionString = Environment.GetEnvironmentVariable("AcsConnectionString");
+    return new EmailClient(connectionString);
 });
 
 builder.Build().Run();

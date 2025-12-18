@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
+using Azure;
+using Azure.Communication.Email;
 
 namespace TrueNorthFederalSolutions.Api;
 
@@ -31,26 +33,18 @@ public record ContactFormDocument(
   [property: JsonPropertyName("submittedAt")] DateTime SubmittedAt
 );
 
-public class ContactFormOutput
-{
-  [ServiceBusOutput("contact-form", Connection = "ServiceBusConnection")]
-  public string? ServiceBusMessage { get; set; }
-
-  [HttpResult]
-  public IActionResult? HttpResponse { get; set; }
-}
-
-public class ContactForm(CosmosClient cosmosClient, ILogger<ContactForm> logger)
+public class ContactForm(CosmosClient cosmosClient, EmailClient emailClient, ILogger<ContactForm> logger)
 {
   private const string DatabaseName = "truenorth";
   private const string ContainerName = "contact-form";
+  private const string SenderAddress = "DoNotReply@fdeebfa4-9bf6-4b04-aac8-f43546c1b9a9.azurecomm.net";
+  private const string NotificationRecipient = "boclifton@gmail.com";
 
   [Function("ContactForm")]
-  public async Task<ContactFormOutput> Run(
+  public async Task<IActionResult> Run(
     [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "contact")] HttpRequest req)
   {
     logger.LogInformation("Processing contact form submission");
-    var output = new ContactFormOutput();
 
     try
     {
@@ -65,8 +59,7 @@ public class ContactForm(CosmosClient cosmosClient, ILogger<ContactForm> logger)
       if (contactRequest is null)
       {
         logger.LogWarning("Invalid request body received");
-        output.HttpResponse = new BadRequestObjectResult(new { error = "Invalid request body" });
-        return output;
+        return new BadRequestObjectResult(new { error = "Invalid request body" });
       }
 
       // Validate required fields
@@ -77,8 +70,7 @@ public class ContactForm(CosmosClient cosmosClient, ILogger<ContactForm> logger)
           string.IsNullOrWhiteSpace(contactRequest.Interest))
       {
         logger.LogWarning("Missing required fields in contact form");
-        output.HttpResponse = new BadRequestObjectResult(new { error = "Missing required fields" });
-        return output;
+        return new BadRequestObjectResult(new { error = "Missing required fields" });
       }
 
       // Create document for Cosmos DB
@@ -111,42 +103,85 @@ public class ContactForm(CosmosClient cosmosClient, ILogger<ContactForm> logger)
         response.RequestCharge
       );
 
-      // Send the document to Service Bus queue for further processing
-      var messageJson = JsonSerializer.Serialize(document);
-      output.ServiceBusMessage = messageJson;
-      output.HttpResponse = new OkObjectResult(new
+      // Send email notification
+      await SendEmailNotificationAsync(document);
+
+      logger.LogInformation("Email notification sent for contact form. Id: {Id}", document.Id);
+
+      return new OkObjectResult(new
       {
         success = true,
         message = "Thank you for your submission. We will be in touch soon."
       });
-
-      logger.LogInformation("Contact form message sent to Service Bus queue. Id: {Id}", document.Id);
-
-      return output;
     }
     catch (CosmosException ex)
     {
       logger.LogError(ex, "Cosmos DB error: {StatusCode} - {Message}", ex.StatusCode, ex.Message);
-      output.HttpResponse = new ObjectResult(new { error = "Failed to save contact form" })
+      return new ObjectResult(new { error = "Failed to save contact form" })
       {
         StatusCode = (int)HttpStatusCode.InternalServerError
       };
-      return output;
     }
     catch (JsonException ex)
     {
       logger.LogWarning(ex, "JSON parsing error");
-      output.HttpResponse = new BadRequestObjectResult(new { error = "Invalid JSON format" });
-      return output;
+      return new BadRequestObjectResult(new { error = "Invalid JSON format" });
     }
     catch (Exception ex)
     {
       logger.LogError(ex, "Unexpected error processing contact form");
-      output.HttpResponse = new ObjectResult(new { error = "An unexpected error occurred" })
+      return new ObjectResult(new { error = "An unexpected error occurred" })
       {
         StatusCode = (int)HttpStatusCode.InternalServerError
       };
-      return output;
     }
+  }
+
+  private async Task SendEmailNotificationAsync(ContactFormDocument document)
+  {
+    var subject = $"New Contact Form Submission from {document.FirstName} {document.LastName}";
+    var htmlContent = $@"
+      <html>
+        <body>
+          <h2>New Contact Form Submission</h2>
+          <table style='border-collapse: collapse; width: 100%; max-width: 600px;'>
+            <tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Name</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{document.FirstName} {document.LastName}</td></tr>
+            <tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Email</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{document.Email}</td></tr>
+            <tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Company</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{document.Company}</td></tr>
+            <tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Phone</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{document.Phone ?? "N/A"}</td></tr>
+            <tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Interest</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{document.Interest}</td></tr>
+            <tr><td style='padding: 8px; border: 1px solid #ddd;'><strong>Message</strong></td><td style='padding: 8px; border: 1px solid #ddd;'>{document.Message ?? "N/A"}</td></tr>
+          </table>
+          <p style='margin-top: 16px; color: #666;'>Submitted at: {document.SubmittedAt:yyyy-MM-dd HH:mm:ss} UTC</p>
+          <p style='color: #666;'>Submission ID: {document.Id}</p>
+        </body>
+      </html>";
+
+    var plainTextContent = $@"
+New Contact Form Submission
+
+Name: {document.FirstName} {document.LastName}
+Email: {document.Email}
+Company: {document.Company}
+Phone: {document.Phone ?? "N/A"}
+Interest: {document.Interest}
+Message: {document.Message ?? "N/A"}
+
+Submitted at: {document.SubmittedAt:yyyy-MM-dd HH:mm:ss} UTC
+Submission ID: {document.Id}";
+
+    var emailMessage = new EmailMessage(
+      senderAddress: SenderAddress,
+      content: new EmailContent(subject)
+      {
+        PlainText = plainTextContent,
+        Html = htmlContent
+      },
+      recipients: new EmailRecipients(
+      [
+        new(NotificationRecipient)
+      ]));
+
+    await emailClient.SendAsync(WaitUntil.Completed, emailMessage);
   }
 }
