@@ -31,16 +31,26 @@ public record ContactFormDocument(
   [property: JsonPropertyName("submittedAt")] DateTime SubmittedAt
 );
 
+public class ContactFormOutput
+{
+  [ServiceBusOutput("contact-form", Connection = "ServiceBusConnection")]
+  public string? ServiceBusMessage { get; set; }
+
+  [HttpResult]
+  public IActionResult? HttpResponse { get; set; }
+}
+
 public class ContactForm(CosmosClient cosmosClient, ILogger<ContactForm> logger)
 {
   private const string DatabaseName = "truenorth";
   private const string ContainerName = "contact-form";
 
   [Function("ContactForm")]
-  public async Task<IActionResult> Run(
+  public async Task<ContactFormOutput> Run(
     [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "contact")] HttpRequest req)
   {
     logger.LogInformation("Processing contact form submission");
+    var output = new ContactFormOutput();
 
     try
     {
@@ -55,7 +65,8 @@ public class ContactForm(CosmosClient cosmosClient, ILogger<ContactForm> logger)
       if (contactRequest is null)
       {
         logger.LogWarning("Invalid request body received");
-        return new BadRequestObjectResult(new { error = "Invalid request body" });
+        output.HttpResponse = new BadRequestObjectResult(new { error = "Invalid request body" });
+        return output;
       }
 
       // Validate required fields
@@ -66,7 +77,8 @@ public class ContactForm(CosmosClient cosmosClient, ILogger<ContactForm> logger)
           string.IsNullOrWhiteSpace(contactRequest.Interest))
       {
         logger.LogWarning("Missing required fields in contact form");
-        return new BadRequestObjectResult(new { error = "Missing required fields" });
+        output.HttpResponse = new BadRequestObjectResult(new { error = "Missing required fields" });
+        return output;
       }
 
       // Create document for Cosmos DB
@@ -99,32 +111,42 @@ public class ContactForm(CosmosClient cosmosClient, ILogger<ContactForm> logger)
         response.RequestCharge
       );
 
-      return new OkObjectResult(new
+      // Send the document to Service Bus queue for further processing
+      var messageJson = JsonSerializer.Serialize(document);
+      output.ServiceBusMessage = messageJson;
+      output.HttpResponse = new OkObjectResult(new
       {
         success = true,
         message = "Thank you for your submission. We will be in touch soon."
       });
+
+      logger.LogInformation("Contact form message sent to Service Bus queue. Id: {Id}", document.Id);
+
+      return output;
     }
     catch (CosmosException ex)
     {
       logger.LogError(ex, "Cosmos DB error: {StatusCode} - {Message}", ex.StatusCode, ex.Message);
-      return new ObjectResult(new { error = "Failed to save contact form" })
+      output.HttpResponse = new ObjectResult(new { error = "Failed to save contact form" })
       {
         StatusCode = (int)HttpStatusCode.InternalServerError
       };
+      return output;
     }
     catch (JsonException ex)
     {
       logger.LogWarning(ex, "JSON parsing error");
-      return new BadRequestObjectResult(new { error = "Invalid JSON format" });
+      output.HttpResponse = new BadRequestObjectResult(new { error = "Invalid JSON format" });
+      return output;
     }
     catch (Exception ex)
     {
       logger.LogError(ex, "Unexpected error processing contact form");
-      return new ObjectResult(new { error = "An unexpected error occurred" })
+      output.HttpResponse = new ObjectResult(new { error = "An unexpected error occurred" })
       {
         StatusCode = (int)HttpStatusCode.InternalServerError
       };
+      return output;
     }
   }
 }
