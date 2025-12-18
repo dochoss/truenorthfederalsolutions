@@ -182,6 +182,8 @@ Submission ID: {document.Id}";
         new(NotificationRecipient)
       ]));
 
-    await emailClient.SendAsync(WaitUntil.Completed, emailMessage);
+    // Use WaitUntil.Started to return immediately after the email is queued
+    // rather than waiting for full delivery (which can take 10+ seconds)
+    await emailClient.SendAsync(WaitUntil.Started, emailMessage);
   }
 }
