@@ -29,7 +29,8 @@ export default defineNuxtConfig({
     },
     clientBundle: {
       scan: true,
-      sizeLimitKb: 256
+      sizeLimitKb: 512,
+      icons: ['lucide:chevron-down', 'lucide:check', 'lucide:loader', 'lucide:x']
     }
   },
 
