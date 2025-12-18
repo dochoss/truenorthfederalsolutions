@@ -37,7 +37,7 @@ public class ContactForm(CosmosClient cosmosClient, EmailClient emailClient, ILo
 {
   private const string DatabaseName = "truenorth";
   private const string ContainerName = "contact-form";
-  private const string SenderAddress = "DoNotReply@fdeebfa4-9bf6-4b04-aac8-f43546c1b9a9.azurecomm.net";
+  private const string SenderAddress = "DoNotReply@truenorthfederalsolutions.com";
   private const string NotificationRecipient = "boclifton@gmail.com";
 
   [Function("ContactForm")]
