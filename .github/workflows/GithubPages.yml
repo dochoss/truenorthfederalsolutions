@@ -48,7 +48,10 @@ jobs:
         # run: npm run generate
         # With a custom domain (www.truenorthfederalsolutions.com), use root base URL
         # Only use /repo-name/ if serving from username.github.io/repo-name/
-        run: NUXT_APP_BASE_URL=/ npx nuxt build --preset github_pages
+        run: npx nuxt build --preset github_pages
+        env:
+          NUXT_APP_BASE_URL: /
+          NUXT_PUBLIC_API_BASE_URL: https://contact-form-func-dkbqbzfccmg7dahu.centralus-01.azurewebsites.net
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
