@@ -1,3 +1,8 @@
+# Deployment Status
+[![Build and deploy Azure Function App](https://github.com/dochoss/truenorthfederalsolutions/actions/workflows/function-production-deploy.yml/badge.svg?branch=main)](https://github.com/dochoss/truenorthfederalsolutions/actions/workflows/function-production-deploy.yml)
+
+[![Deploy Nuxt site to Pages](https://github.com/dochoss/truenorthfederalsolutions/actions/workflows/GithubPages.yml/badge.svg?branch=main)](https://github.com/dochoss/truenorthfederalsolutions/actions/workflows/GithubPages.yml)
+
 # True North Federal Solutions - Digital Platform
 
 A comprehensive digital platform for True North Federal Solutions LLC, a woman- and veteran-owned consulting firm specializing in federal contracting guidance for small and mid-size businesses.
