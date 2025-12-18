@@ -128,6 +128,7 @@
               variant="solid"
               icon="i-heroicons-calendar-days"
               :loading="isSubmitting"
+              loading-icon="i-lucide-loader"
               class="bg-primary-700 text-white hover:bg-primary-800 cursor-pointer py-4"
             >
               Schedule Consultation
