@@ -25,7 +25,7 @@ export default defineNuxtConfig({
 
   icon: {
     serverBundle: {
-      collections: ['heroicons', 'simple-icons']
+      collections: ['heroicons', 'simple-icons', 'lucide']
     },
     clientBundle: {
       scan: true,
