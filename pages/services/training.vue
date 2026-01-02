@@ -173,7 +173,7 @@
               <h3 class="text-2xl font-bold text-gray-900">Foundation (Setup & Readiness)</h3>
             </div>
             <p class="text-lg font-semibold text-blue-700 mb-4 italic">
-              "Can you legally and strategically do business with the Government?"
+              "Can you legally and strategically do business with the government?"
             </p>
             <ul class="space-y-2 text-gray-700 mb-4">
               <li class="flex items-start">
