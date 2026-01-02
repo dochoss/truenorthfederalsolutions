@@ -21,7 +21,7 @@
           <!-- Updated tagline -->
           <p
             class="mt-3 text-base text-primary-100 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-            Expert guidance for federal, state, and local government contracting — We Know the Rules, So You Can Win the Work.
+            We Know the Rules, So You Can Win the Work.
           </p>
 
           <!-- CTA Buttons -->
