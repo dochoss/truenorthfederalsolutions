@@ -4,8 +4,8 @@
     <Hero />
 
     <!-- Services Overview -->
-    <UPageSection title="Expert Federal Contracting Services"
-      description="From initial setup to winning proposals, we provide comprehensive support for your federal contracting journey."
+    <UPageSection title="Expert Local, State & Federal Contracting Services"
+      description="From initial setup to winning proposals, we provide comprehensive support for your government contracting journey across all levels."
       :ui="{
         title: 'text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-secondary-900',
         description: 'text-base sm:text-lg text-secondary-600'
@@ -138,7 +138,7 @@
     </div>
 
     <!-- CTA Section -->
-    <CTA title="Ready to Start Your Federal Contracting Journey?"
+    <CTA title="Ready to Start Your Local, State, or Federal Journey?"
       description="Schedule a consultation to discuss your business goals and learn how we can help you succeed."
       :links="ctaLinks" />
   </div>
@@ -147,8 +147,8 @@
 <script setup>
 const whyChooseFeatures = [
   {
-    title: 'Decades of Real-World Experience',
-    description: 'Over 15 years of hands-on federal contracting expertise',
+    title: 'Over 15 Years of Hands-On Contracting Experience',
+    description: 'Real-world expertise in federal, state, and local government contracting',
     icon: 'i-heroicons-star'
   },
   {
@@ -158,7 +158,7 @@ const whyChooseFeatures = [
   },
   {
     title: 'Results That Matter',
-    description: 'Helping small businesses successfully enter and compete in federal markets',
+    description: 'Helping small businesses successfully enter and compete in local, state, and federal markets',
     icon: 'i-heroicons-trophy'
   }
 ]
@@ -187,20 +187,20 @@ const ctaLinks = [
 // Set page meta for SEO
 definePageMeta({
   title: 'Home - True North Federal Solutions',
-  description: 'Expert federal contracting consulting services. Navigate government procurement with confidence. 15+ years of contracting officer experience.'
+  description: 'Expert government contracting consulting services for federal, state, and local opportunities. Navigate government procurement with confidence. 15+ years of contracting officer experience.'
 })
 
 // Set head for SEO
 useHead({
-  title: 'Federal Contracting Experts - True North Federal Solutions',
+  title: 'Government Contracting Experts - True North Federal Solutions',
   meta: [
     {
       name: 'description',
-      content: 'Expert federal contracting consulting from experienced contracting officers. Contract setup, proposal development, FAR compliance, and strategic guidance.'
+      content: 'Expert government contracting consulting from experienced contracting officers. Federal, state, and local contract setup, proposal development, compliance, and strategic guidance.'
     },
     {
       name: 'keywords',
-      content: 'federal contracting, government contracts, small business, consulting, proposal development, FAR compliance, contracting officer'
+      content: 'government contracting, federal contracting, state contracting, local contracting, small business, consulting, proposal development, compliance, contracting officer'
     }
   ]
 })

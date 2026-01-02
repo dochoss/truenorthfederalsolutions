@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Services Header -->
-    <UPageHero class="relative isolate overflow-hidden bg-primary-700" title="Federal Contracting Services" description="Expert guidance to navigate the complex world of federal contracting. From initial setup to proposal
+    <UPageHero class="relative isolate overflow-hidden bg-primary-700" title="Government Contracting Services" description="Expert guidance to navigate the complex world of federal, state, and local government contracting. From initial setup to proposal
       development, we're here to help your business succeed." :ui="{
         title: 'text-4xl sm:text-5xl md:text-6xl font-bold text-white',
         description: 'text-sm sm:text-lg text-white max-w-3xl mx-auto'
@@ -12,8 +12,8 @@
     </UPageHero>
 
     <!-- Services Overview -->
-    <UPageSection title="Expert Federal Contracting Services"
-      description="From initial setup to winning proposals, we provide comprehensive support for your federal contracting journey."
+    <UPageSection title="Expert Local, State & Federal Contracting Services"
+      description="From initial setup to winning proposals, we provide comprehensive support for your government contracting journey across all levels."
       :ui="{
         title: 'text-3xl sm:text-4xl lg:text-5xl text-pretty tracking-tight font-bold text-secondary-900',
         description: 'text-base sm:text-lg text-secondary-600'
@@ -31,7 +31,7 @@
               </p>
               <div class="text-left text-sm text-secondary-600 space-y-2 mb-6">
                 <p class="font-medium">• SAM.gov & State Registration Assistance:</p>
-                <p class="pl-4">Full review and setup for SAM.gov, Texas.gov, and other essential platforms.</p>
+                <p class="pl-4">Full review and setup for SAM.gov, state vendor portals (Texas.gov, etc.), and other essential platforms.</p>
                 <p class="font-medium">• NAICS & PSC Code Optimization:</p>
                 <p class="pl-4">Align your business classification codes to your current and future capabilities for
                   maximum
@@ -105,11 +105,13 @@
               <UIcon name="i-heroicons-shield-check" class="w-12 h-12 text-primary-600 mx-auto mb-6" />
               <h3 class="text-xl font-bold text-secondary-900 mb-4">Compliance & Regulatory Support</h3>
               <p class="text-secondary-600 mb-6">
-                Navigate the FAR and state-specific requirements with confidence.
+                Navigate federal and state-specific requirements with confidence.
               </p>
               <div class="text-left text-sm text-secondary-600 space-y-2 mb-6">
                 <p class="font-medium">• FAR Compliance Consulting:</p>
                 <p class="pl-4">Interpret, apply, and integrate Federal Acquisition Regulations into your processes.</p>
+                <p class="font-medium">• State Compliance Support:</p>
+                <p class="pl-4">Navigate state-specific procurement requirements and regulations.</p>
                 <p class="font-medium">• Contract Risk Mitigation:</p>
                 <p class="pl-4">Avoid costly mistakes with expert guidance on regulatory traps, certifications, and
                   performance clauses.</p>
@@ -158,7 +160,7 @@
           </div>
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">Assessment</h3>
           <p class="text-secondary-600 text-sm">
-            Evaluate your business readiness and identify opportunities for federal contracting success.
+            Evaluate your business readiness and identify opportunities for government contracting success across federal, state, and local levels.
           </p>
         </div>
 
@@ -194,15 +196,15 @@
           </div>
           <h3 class="text-lg font-semibold text-secondary-900 mb-3">Success</h3>
           <p class="text-secondary-600 text-sm">
-            Ongoing support to help you win contracts and grow your federal business successfully.
+            Ongoing support to help you win contracts and grow your government business successfully.
           </p>
         </div>
       </div>
     </UPageSection>
 
     <!-- CTA Section -->
-    <CTA title="Ready to Start Your Federal Contracting Journey?" 
-      description="Schedule a consultation to discuss your business goals and learn how we can help you succeed in federal contracting." />
+    <CTA title="Ready to Start Your Local, State, or Federal Journey?" 
+      description="Schedule a consultation to discuss your business goals and learn how we can help you succeed in government contracting." />
   </div>
 </template>
 
@@ -210,20 +212,20 @@
 // Set page meta for SEO
 definePageMeta({
   title: 'Services - True North Federal Solutions',
-  description: 'Expert federal contracting services including contract setup, proposal development, FAR compliance, and bid/no-bid strategy consulting.'
+  description: 'Expert government contracting services including federal, state, and local contract setup, proposal development, compliance support, and bid/no-bid strategy consulting.'
 })
 
 // Set head for SEO
 useHead({
-  title: 'Federal Contracting Services - True North Federal Solutions',
+  title: 'Government Contracting Services - True North Federal Solutions',
   meta: [
     {
       name: 'description',
-      content: 'Professional federal contracting services for small businesses. Expert guidance on contract setup, proposal development, FAR compliance, and strategic consulting.'
+      content: 'Professional government contracting services for small businesses. Expert guidance on federal, state, and local contract setup, proposal development, compliance, and strategic consulting.'
     },
     {
       name: 'keywords',
-      content: 'federal contracting services, small business consulting, government contracts, proposal development, FAR compliance, bid strategy'
+      content: 'government contracting services, federal contracting, state contracting, local contracting, small business consulting, proposal development, compliance, bid strategy'
     }
   ]
 })
