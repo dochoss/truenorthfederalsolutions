@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- About Hero -->
-    <UPageHero class="relative isolate overflow-hidden bg-primary-700" title="About True North Federal Solutions"
+    <UPageHero class="relative isolate overflow-hidden bg-primary-700 md:min-h-125" title="About True North Federal Solutions"
       description="At True North Federal Solutions, our mission is to demystify federal contracting
           for small businesses. Led by a former federal Contracting Officer with over 15
           years of experience, we equip you with the tools, strategies, and insights needed
