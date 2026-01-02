@@ -308,7 +308,7 @@ Add these settings for Tailwind CSS IntelliSense:
   },
   "tailwindCSS.classAttributes": ["class", "ui"],
   "tailwindCSS.experimental.classRegex": [
-    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+    ["ui:\\s*{([^}]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ]
 }
 ```
