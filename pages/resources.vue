@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Resources Header -->
-    <UPageHero class="relative isolate overflow-hidden bg-primary-700" title="Government Contracting Resources"
+    <UPageHero class="relative isolate overflow-hidden bg-primary-700 md:min-h-125" title="Government Contracting Resources"
       description="Access comprehensive guides, templates, and educational content to help you navigate the federal, state, and local government contracting landscape with confidence."
       :ui="{
         title: 'text-4xl sm:text-5xl md:text-6xl font-bold text-white',
