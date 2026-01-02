@@ -164,181 +164,43 @@
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <!-- Pillar 1: Foundation -->
-          <div class="bg-blue-50 rounded-lg p-8 shadow-sm">
+          <UCard
+            v-for="pillar in trainingPillars"
+            :key="pillar.number"
+            :class="[pillar.bgColor, 'shadow-sm']"
+            :ui="{ body: 'p-8' }"
+          >
             <div class="flex items-center mb-4">
-              <div class="flex items-center justify-center w-12 h-12 bg-blue-700 text-white rounded-lg mr-4">
-                <span class="text-xl font-bold">1</span>
+              <div :class="['flex items-center justify-center w-12 h-12 text-white rounded-lg mr-4', pillar.badgeColor]">
+                <span class="text-xl font-bold">{{ pillar.number }}</span>
               </div>
-              <h3 class="text-2xl font-bold text-gray-900">Foundation (Setup & Readiness)</h3>
+              <h3 class="text-2xl font-bold text-gray-900">{{ pillar.title }}</h3>
             </div>
-            <p class="text-lg font-semibold text-blue-700 mb-4 italic">
-              "Can you legally and strategically do business with the government?"
+            <p :class="['text-lg font-semibold mb-4 italic', pillar.questionColor]">
+              "{{ pillar.question }}"
             </p>
             <ul class="space-y-2 text-gray-700 mb-4">
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Business entity & compliance basics</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>SAM.gov registration and maintenance</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>UEI, CAGE, NAICS selection & optimization</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>State vendor registrations (TX, local portals, agencies)</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Capability statements (what they are and how to use them)</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Readiness self-assessment (are you actually contract-ready?)</span>
+              <li v-for="(topic, index) in pillar.topics" :key="index" class="flex items-start gap-2">
+                <UIcon name="i-heroicons-check-circle" :class="['w-5 h-5 flex-shrink-0 mt-0.5', pillar.iconColor]" />
+                <span>{{ topic }}</span>
               </li>
             </ul>
-            <div class="bg-blue-100 rounded-lg p-4">
-              <p class="text-sm font-semibold text-blue-900">
-                🎯 Outcome: Businesses are compliant, visible, and positioned correctly.
-              </p>
-            </div>
-          </div>
-
-          <!-- Pillar 2: Opportunity Identification -->
-          <div class="bg-green-50 rounded-lg p-8 shadow-sm">
-            <div class="flex items-center mb-4">
-              <div class="flex items-center justify-center w-12 h-12 bg-green-700 text-white rounded-lg mr-4">
-                <span class="text-xl font-bold">2</span>
-              </div>
-              <h3 class="text-2xl font-bold text-gray-900">Opportunity Identification</h3>
-            </div>
-            <p class="text-lg font-semibold text-green-700 mb-4 italic">
-              "Where are the real opportunities for me?"
-            </p>
-            <ul class="space-y-2 text-gray-700 mb-4">
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Federal vs State vs Local opportunities</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>How to read solicitations (RFP, RFQ, IFB)</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Bid/No-Bid decision frameworks</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Market research & competitor analysis</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Using SAM.gov, state portals, and agency forecasting</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Subcontracting & teaming strategies</span>
-              </li>
-            </ul>
-            <div class="bg-green-100 rounded-lg p-4">
-              <p class="text-sm font-semibold text-green-900">
-                🎯 Outcome: Businesses stop chasing everything and pursue winnable work.
-              </p>
-            </div>
-          </div>
-
-          <!-- Pillar 3: Proposal & Pricing Execution -->
-          <div class="bg-purple-50 rounded-lg p-8 shadow-sm">
-            <div class="flex items-center mb-4">
-              <div class="flex items-center justify-center w-12 h-12 bg-purple-700 text-white rounded-lg mr-4">
-                <span class="text-xl font-bold">3</span>
-              </div>
-              <h3 class="text-2xl font-bold text-gray-900">Proposal & Pricing Execution</h3>
-            </div>
-            <p class="text-lg font-semibold text-purple-700 mb-4 italic">
-              "How do I submit something that actually wins?"
-            </p>
-            <ul class="space-y-2 text-gray-700 mb-4">
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Proposal structure by solicitation type</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Compliance matrices</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Writing to evaluation criteria</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Past performance strategies (even with little/no experience)</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Pricing strategy (labor, services, margins, realism)</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Common proposal mistakes that kill bids</span>
-              </li>
-            </ul>
-            <div class="bg-purple-100 rounded-lg p-4">
-              <p class="text-sm font-semibold text-purple-900">
-                🎯 Outcome: Clients submit compliant, competitive, professional proposals.
-              </p>
-            </div>
-          </div>
-
-          <!-- Pillar 4: Post-Award & Growth -->
-          <div class="bg-orange-50 rounded-lg p-8 shadow-sm">
-            <div class="flex items-center mb-4">
-              <div class="flex items-center justify-center w-12 h-12 bg-orange-700 text-white rounded-lg mr-4">
-                <span class="text-xl font-bold">4</span>
-              </div>
-              <h3 class="text-2xl font-bold text-gray-900">Post-Award & Growth</h3>
-            </div>
-            <p class="text-lg font-semibold text-orange-700 mb-4 italic">
-              "How do I keep the contract and grow?"
-            </p>
-            <ul class="space-y-2 text-gray-700 mb-4">
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Contract administration basics</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Invoicing & payment systems</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Modifications & renewals</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Contractor performance (CPARS / state equivalents)</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Scaling: multiple contracts, subs, bonding readiness</span>
-              </li>
-              <li class="flex items-start">
-                <span class="mr-2">•</span>
-                <span>Transitioning from subcontractor → prime</span>
-              </li>
-            </ul>
-            <div class="bg-orange-100 rounded-lg p-4">
-              <p class="text-sm font-semibold text-orange-900">
-                🎯 Outcome: Businesses don't just win once — they build sustainable revenue.
-              </p>
-            </div>
-          </div>
+            <UAlert
+              :color="pillar.alertColor"
+              variant="soft"
+              :ui="{ rounded: 'rounded-lg' }"
+            >
+              <template #title>
+                <span class="flex items-center gap-2">
+                  <UIcon name="i-heroicons-target" class="w-4 h-4" />
+                  <span class="font-semibold">Outcome:</span>
+                </span>
+              </template>
+              <template #description>
+                {{ pillar.outcome }}
+              </template>
+            </UAlert>
+          </UCard>
         </div>
 
         <!-- Training Availability Note -->
@@ -531,6 +393,86 @@
 </template>
 
 <script setup>
+// Training Pillars Data
+const trainingPillars = [
+  {
+    number: 1,
+    title: 'Foundation (Setup & Readiness)',
+    question: 'Can you legally and strategically do business with the government?',
+    topics: [
+      'Business entity & compliance basics',
+      'SAM.gov registration and maintenance',
+      'UEI, CAGE, NAICS selection & optimization',
+      'State vendor registrations (TX, local portals, agencies)',
+      'Capability statements (what they are and how to use them)',
+      'Readiness self-assessment (are you actually contract-ready?)'
+    ],
+    outcome: 'Businesses are compliant, visible, and positioned correctly.',
+    bgColor: 'bg-blue-50',
+    badgeColor: 'bg-blue-700',
+    questionColor: 'text-blue-700',
+    iconColor: 'text-blue-600',
+    alertColor: 'primary'
+  },
+  {
+    number: 2,
+    title: 'Opportunity Identification',
+    question: 'Where are the real opportunities for me?',
+    topics: [
+      'Federal vs State vs Local opportunities',
+      'How to read solicitations (RFP, RFQ, IFB)',
+      'Bid/No-Bid decision frameworks',
+      'Market research & competitor analysis',
+      'Using SAM.gov, state portals, and agency forecasting',
+      'Subcontracting & teaming strategies'
+    ],
+    outcome: 'Businesses stop chasing everything and pursue winnable work.',
+    bgColor: 'bg-green-50',
+    badgeColor: 'bg-green-700',
+    questionColor: 'text-green-700',
+    iconColor: 'text-green-600',
+    alertColor: 'success'
+  },
+  {
+    number: 3,
+    title: 'Proposal & Pricing Execution',
+    question: 'How do I submit something that actually wins?',
+    topics: [
+      'Proposal structure by solicitation type',
+      'Compliance matrices',
+      'Writing to evaluation criteria',
+      'Past performance strategies (even with little/no experience)',
+      'Pricing strategy (labor, services, margins, realism)',
+      'Common proposal mistakes that kill bids'
+    ],
+    outcome: 'Clients submit compliant, competitive, professional proposals.',
+    bgColor: 'bg-purple-50',
+    badgeColor: 'bg-purple-700',
+    questionColor: 'text-purple-700',
+    iconColor: 'text-purple-600',
+    alertColor: 'secondary'
+  },
+  {
+    number: 4,
+    title: 'Post-Award & Growth',
+    question: 'How do I keep the contract and grow?',
+    topics: [
+      'Contract administration basics',
+      'Invoicing & payment systems',
+      'Modifications & renewals',
+      'Contractor performance (CPARS / state equivalents)',
+      'Scaling: multiple contracts, subs, bonding readiness',
+      'Transitioning from subcontractor → prime'
+    ],
+    outcome: 'Businesses don\'t just win once — they build sustainable revenue.',
+    bgColor: 'bg-orange-50',
+    badgeColor: 'bg-orange-700',
+    questionColor: 'text-orange-700',
+    iconColor: 'text-orange-600',
+    alertColor: 'warning'
+  }
+]
+
 // Set page meta for SEO
 definePageMeta({
   title: 'Training & Capacity Building - True North Federal Solutions',
