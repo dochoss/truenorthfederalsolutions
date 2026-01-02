@@ -46,7 +46,7 @@
                   <span class="text-xs text-secondary-500">PDF</span>
                   <a :href="file.url" :download="file.name">
                     <UButton size="sm" trailing-icon="i-heroicons-arrow-down-tray"
-                      class="bg-primary-700 text-white hover:bg-primary-800">
+                      class="bg-primary-700 text-white hover:bg-primary-800 cursor-pointer">
                       Download
                     </UButton>
                   </a>

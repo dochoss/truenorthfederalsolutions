@@ -20,3 +20,8 @@ deployment-token.txt
 
 # Playwright Screenshots and data
 .playwright-mcp/
+
+# Local Azurite emulator data
+__azurite_db_*__.json
+__blobstorage__/
+__queuestorage__/
