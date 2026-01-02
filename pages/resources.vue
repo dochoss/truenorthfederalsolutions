@@ -189,42 +189,41 @@
         </UCard>
 
         <!-- Cooperative Purchasing Guide -->
-        <UCard variant="subtle" class="h-full hover:shadow-md transition-shadow bg-secondary-50 flex flex-col">
+        <UCard
+          v-for="resource in [
+            {
+              icon: 'i-heroicons-user-group',
+              title: 'Cooperative Purchasing Guide',
+              description: 'Understanding cooperative purchasing agreements and how to leverage them for state and local contracts.',
+              badge: 'Advanced Guide',
+              cta: 'Coming Soon'
+            },
+            {
+              icon: 'i-heroicons-shield-check',
+              title: 'State Compliance Requirements',
+              description: 'Overview of state-specific compliance requirements, certifications, and regulatory differences from federal contracting.',
+              badge: 'Compliance Guide',
+              cta: 'Coming Soon'
+            }
+          ]"
+          :key="resource.title"
+          variant="subtle"
+          class="h-full hover:shadow-md transition-shadow bg-secondary-50 flex flex-col"
+        >
           <template #header>
             <div class="flex flex-col items-center justify-center text-center p-4">
-              <UIcon name="i-heroicons-user-group" class="w-8 h-8 text-primary-700 mb-3" />
-              <h3 class="text-lg font-semibold text-secondary-900">Cooperative Purchasing Guide</h3>
+              <UIcon :name="resource.icon" class="w-8 h-8 text-primary-700 mb-3" />
+              <h3 class="text-lg font-semibold text-secondary-900">{{ resource.title }}</h3>
             </div>
           </template>
           <p class="text-secondary-600 text-sm mb-4">
-            Understanding cooperative purchasing agreements and how to leverage them for state and local contracts.
+            {{ resource.description }}
           </p>
           <template #footer>
             <div class="flex items-center justify-between mt-auto">
-              <span class="text-xs text-secondary-500">Advanced Guide</span>
+              <span class="text-xs text-secondary-500">{{ resource.badge }}</span>
               <UButton variant="ghost" size="sm" class="text-primary-700 hover:text-primary-50 hover:bg-primary-700">
-                Coming Soon
-              </UButton>
-            </div>
-          </template>
-        </UCard>
-
-        <!-- State Compliance Requirements -->
-        <UCard variant="subtle" class="h-full hover:shadow-md transition-shadow bg-secondary-50 flex flex-col">
-          <template #header>
-            <div class="flex flex-col items-center justify-center text-center p-4">
-              <UIcon name="i-heroicons-shield-check" class="w-8 h-8 text-primary-700 mb-3" />
-              <h3 class="text-lg font-semibold text-secondary-900">State Compliance Requirements</h3>
-            </div>
-          </template>
-          <p class="text-secondary-600 text-sm mb-4">
-            Overview of state-specific compliance requirements, certifications, and regulatory differences from federal contracting.
-          </p>
-          <template #footer>
-            <div class="flex items-center justify-between mt-auto">
-              <span class="text-xs text-secondary-500">Compliance Guide</span>
-              <UButton variant="ghost" size="sm" class="text-primary-700 hover:text-primary-50 hover:bg-primary-700">
-                Coming Soon
+                {{ resource.cta }}
               </UButton>
             </div>
           </template>
