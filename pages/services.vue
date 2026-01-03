@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Services Header -->
-    <UPageHero class="relative isolate overflow-hidden bg-primary-700" title="Government Contracting Services" description="Expert guidance to navigate the complex world of federal, state, and local government contracting. From initial setup to proposal
+    <UPageHero class="relative isolate overflow-hidden bg-primary-700 md:min-h-125" title="Government Contracting Services" description="Expert guidance to navigate the complex world of federal, state, and local government contracting. From initial setup to proposal
       development, we're here to help your business succeed." :ui="{
         title: 'text-4xl sm:text-5xl md:text-6xl font-bold text-white',
         description: 'text-sm sm:text-lg text-white max-w-3xl mx-auto'

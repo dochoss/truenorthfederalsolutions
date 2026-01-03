@@ -1,14 +1,14 @@
 <template>
   <div>
     <!-- Contact Header -->
-    <UPageHero class="relative isolate overflow-hidden bg-primary-700"
+    <UPageHero class="relative isolate overflow-hidden bg-primary-700 md:min-h-125"
       title="Get Started with Federal Contracting"
       description="Ready to navigate the federal contracting landscape? Schedule a consultation to discuss your business goals and learn how we can help you succeed."
       :ui="{
         title: 'text-4xl sm:text-5xl md:text-6xl font-bold text-white',
         description: 'text-sm sm:text-lg text-primary-100 max-w-3xl mx-auto'
       }">
-      <NuxtImg src="/conference-table-2.png" alt="Team collaborating around a conference table"
+      <NuxtImg src="/monument-1.png" alt="Team collaborating around a conference table"
         class="absolute inset-0 -z-10 size-full object-cover brightness-[0.2]" />
       <div class="absolute inset-0 bg-primary-700/40 -z-10"></div>
     </UPageHero>
