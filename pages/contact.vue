@@ -201,7 +201,7 @@
           </div>
 
           <!-- Newsletter Signup -->
-          <UCard variant="outline" class="mt-8 border-primary-200 bg-primary-50">
+          <!-- <UCard variant="outline" class="mt-8 border-primary-200 bg-primary-50">
             <div class="flex items-start gap-4 mb-4">
               <div class="shrink-0 w-10 h-10 bg-primary-700 rounded-lg flex items-center justify-center">
                 <UIcon name="i-heroicons-envelope" class="w-5 h-5 text-white" />
@@ -245,7 +245,7 @@
                 </div>
               </template>
             </ClientOnly>
-          </UCard>
+          </UCard> -->
         </div>
       </div>
     </UPageSection>
