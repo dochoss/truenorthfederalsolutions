@@ -62,7 +62,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env:
           NUXT_APP_BASE_URL: /
-          NUXT_PUBLIC_API_BASE_URL: https://contact-form-func-dkbqbzfccmg7dahu.centralus-01.azurewebsites.net
+          NUXT_PUBLIC_API_BASE_URL: /api
           NUXT_PUBLIC_CLARITY_PROJECT_ID: ${{ secrets.NUXT_PUBLIC_CLARITY_PROJECT_ID }}
 
   close_pull_request_job:
