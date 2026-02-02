@@ -38,7 +38,7 @@ public class ContactForm(CosmosClient cosmosClient, EmailClient emailClient, ILo
   private const string DatabaseName = "truenorth";
   private const string ContainerName = "contact-form";
   private const string SenderAddress = "DoNotReply@truenorthfederalsolutions.com";
-  private const string NotificationRecipient = "truenorthfederalsolutions@gmail.com";
+  private const string NotificationRecipient = "info@truenorthfederalsolutions.com";
 
   [Function("ContactForm")]
   public async Task<IActionResult> Run(

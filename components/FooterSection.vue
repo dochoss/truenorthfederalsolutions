@@ -3,16 +3,20 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Main Footer Content -->
       <div class="py-12 lg:py-16">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div
+             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <!-- Company Information -->
           <div class="lg:col-span-1">
             <div class="flex items-center space-x-2 mb-4">
-              <NuxtImg src="/logo-side.svg" :placeholder="img(`/logo-side.svg`, { h: 50, f: 'png', q: 50 })"
-                alt="True North Federal Solutions Logo" class="h-20 w-full bg-white rounded-lg p-2" />
+              <NuxtImg src="/logo-side.svg"
+                       :placeholder="img(`/logo-side.svg`, { h: 50, f: 'png', q: 50 })"
+                       alt="True North Federal Solutions Logo"
+                       class="h-20 w-full bg-white rounded-lg p-2" />
               <!-- <span class="mt-2 text-white font-bold text-lg">True North <br /> Federal Solutions</span> -->
             </div>
             <p class="text-secondary-300 text-sm leading-relaxed mb-6">
-              Expert federal contracting guidance from a seasoned contracting officer with 15+ years of experience.
+              Expert federal contracting guidance from a seasoned contracting
+              officer with 15+ years of experience.
               Navigate government procurement with confidence.
             </p>
 
@@ -20,9 +24,9 @@
             <!-- <div class="space-y-3">
               <div class="flex items-start gap-2">
                 <UIcon name="i-heroicons-envelope" class="w-4 h-4 text-primary-400" />
-                <a href="mailto:truenorthfederalconsulting@gmail.com"
+                <a href="mailto:info@truenorthfederalconsulting.com"
                   class="text-secondary-300 hover:text-white transition-colors text-sm break-all">
-                  truenorthfederalconsulting@gmail.com
+                  info@truenorthfederalconsulting.com
                 </a>
               </div>
               <div class="flex items-center space-x-3">
@@ -36,45 +40,47 @@
                 <span class="text-secondary-300 text-sm">Serving Federal Agencies Nationwide</span>
               </div>
             </div> -->
-          </div> 
+          </div>
 
           <!-- Services -->
           <div>
-            <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Services</h3>
+            <h3
+                class="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+              Services</h3>
             <ul class="space-y-3">
               <li>
                 <NuxtLink to="/services/contract-setup"
-                  class="text-secondary-300 hover:text-white transition-colors text-sm">
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Contracting Readiness & Set-Up
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/services/market-intelligence"
-                  class="text-secondary-300 hover:text-white transition-colors text-sm">
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Opportunity Identification
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/services/proposal-development"
-                  class="text-secondary-300 hover:text-white transition-colors text-sm">
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Proposal Development & Management
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/services/far-compliance"
-                  class="text-secondary-300 hover:text-white transition-colors text-sm">
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Compliance & Regulatory Support
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/services/training"
-                  class="text-secondary-300 hover:text-white transition-colors text-sm">
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Training & Capacity Building
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/services"
-                  class="text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium">
+                          class="text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium">
                   View All Services →
                 </NuxtLink>
               </li>
@@ -83,27 +89,31 @@
 
           <!-- Resources -->
           <div>
-            <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Resources</h3>
+            <h3
+                class="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+              Resources</h3>
             <ul class="space-y-3">
               <li>
-                <NuxtLink to="/guides" class="text-secondary-300 hover:text-white transition-colors text-sm">
+                <NuxtLink to="/guides"
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Federal Contracting Guides
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/resources/certifications"
-                  class="text-secondary-300 hover:text-white transition-colors text-sm">
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Certifications & Training
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/resources/blog" class="text-secondary-300 hover:text-white transition-colors text-sm">
+                <NuxtLink to="/resources/blog"
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Industry Insights
                 </NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/resources"
-                  class="text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium">
+                          class="text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium">
                   All Resources →
                 </NuxtLink>
               </li>
@@ -112,32 +122,39 @@
 
           <!-- Company -->
           <div>
-            <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Company</h3>
+            <h3
+                class="text-white font-semibold text-sm uppercase tracking-wider mb-4">
+              Company</h3>
             <ul class="space-y-3">
               <li>
-                <NuxtLink to="/about" class="text-secondary-300 hover:text-white transition-colors text-sm">
+                <NuxtLink to="/about"
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   About Us
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/contact" class="text-secondary-300 hover:text-white transition-colors text-sm">
+                <NuxtLink to="/contact"
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Contact
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/privacy" class="text-secondary-300 hover:text-white transition-colors text-sm">
+                <NuxtLink to="/privacy"
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Privacy Policy
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/terms" class="text-secondary-300 hover:text-white transition-colors text-sm">
+                <NuxtLink to="/terms"
+                          class="text-secondary-300 hover:text-white transition-colors text-sm">
                   Terms of Service
                 </NuxtLink>
               </li>
             </ul>
 
             <div class="mt-6">
-              <h4 class="text-white font-medium text-sm mb-3">Connect With Us</h4>
+              <h4 class="text-white font-medium text-sm mb-3">Connect With Us
+              </h4>
               <Social />
             </div>
           </div>
@@ -149,7 +166,8 @@
         <div class="md:flex md:items-center md:justify-between">
           <div class="flex flex-col md:flex-row md:items-center md:space-x-6">
             <p class="text-secondary-400 text-sm">
-              © {{ currentYear }} True North Federal Solutions. All rights reserved.
+              © {{ currentYear }} True North Federal Solutions. All rights
+              reserved.
             </p>
             <div class="flex items-center space-x-4 mt-2 md:mt-0">
               <span class="text-secondary-500 text-xs">

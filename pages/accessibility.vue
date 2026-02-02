@@ -1,24 +1,30 @@
 <template>
   <div>
-    <Hero 
-      title="Accessibility Statement"
-      subtitle="Our commitment to making federal contracting guidance accessible to everyone"
-      background-class="bg-gradient-to-r from-blue-600 to-blue-800"
-    />
-    
+    <Hero title="Accessibility Statement"
+          subtitle="Our commitment to making federal contracting guidance accessible to everyone"
+          background-class="bg-gradient-to-r from-blue-600 to-blue-800" />
+
     <UPageSection>
       <div class="max-w-4xl mx-auto">
         <div class="space-y-12">
           <!-- Our Commitment -->
           <div>
-            <h2 class="text-3xl font-bold mb-6">Our Commitment to Accessibility</h2>
+            <h2 class="text-3xl font-bold mb-6">Our Commitment to Accessibility
+            </h2>
             <UCard>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">
-                  True North Federal Solutions is committed to ensuring that our website is accessible to everyone, including individuals with disabilities. We believe that everyone should have equal access to information and resources about federal contracting opportunities.
+                  True North Federal Solutions is committed to ensuring that our
+                  website is accessible to everyone, including individuals with
+                  disabilities. We believe that everyone should have equal
+                  access to information and resources about federal contracting
+                  opportunities.
                 </p>
                 <p class="text-gray-600">
-                  We are continuously working to improve the accessibility of our website and ensure it meets or exceeds the standards outlined in the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.
+                  We are continuously working to improve the accessibility of
+                  our website and ensure it meets or exceeds the standards
+                  outlined in the Web Content Accessibility Guidelines (WCAG)
+                  2.1 Level AA.
                 </p>
               </div>
             </UCard>
@@ -31,7 +37,8 @@
               <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <UIcon name="i-heroicons-eye" class="w-6 h-6 text-blue-600 mr-2" />
+                    <UIcon name="i-heroicons-eye"
+                           class="w-6 h-6 text-blue-600 mr-2" />
                     Visual Accessibility
                   </h4>
                   <ul class="space-y-2 text-gray-600">
@@ -47,7 +54,8 @@
               <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <UIcon name="i-heroicons-computer-desktop" class="w-6 h-6 text-blue-600 mr-2" />
+                    <UIcon name="i-heroicons-computer-desktop"
+                           class="w-6 h-6 text-blue-600 mr-2" />
                     Technical Accessibility
                   </h4>
                   <ul class="space-y-2 text-gray-600">
@@ -63,7 +71,8 @@
               <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <UIcon name="i-heroicons-document-text" class="w-6 h-6 text-blue-600 mr-2" />
+                    <UIcon name="i-heroicons-document-text"
+                           class="w-6 h-6 text-blue-600 mr-2" />
                     Content Accessibility
                   </h4>
                   <ul class="space-y-2 text-gray-600">
@@ -79,7 +88,8 @@
               <UCard>
                 <div class="p-6">
                   <h4 class="text-lg font-semibold mb-4 flex items-center">
-                    <UIcon name="i-heroicons-cog-6-tooth" class="w-6 h-6 text-blue-600 mr-2" />
+                    <UIcon name="i-heroicons-cog-6-tooth"
+                           class="w-6 h-6 text-blue-600 mr-2" />
                     User Controls
                   </h4>
                   <ul class="space-y-2 text-gray-600">
@@ -100,20 +110,27 @@
             <UCard>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">
-                  Our website strives to conform to the following accessibility standards:
+                  Our website strives to conform to the following accessibility
+                  standards:
                 </p>
                 <ul class="space-y-3 text-gray-600">
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 shrink-0" />
-                    <span><strong>WCAG 2.1 Level AA:</strong> Web Content Accessibility Guidelines for web accessibility</span>
+                    <UIcon name="i-heroicons-check-circle"
+                           class="w-5 h-5 text-green-600 mr-2 mt-0.5 shrink-0" />
+                    <span><strong>WCAG 2.1 Level AA:</strong> Web Content
+                      Accessibility Guidelines for web accessibility</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 shrink-0" />
-                    <span><strong>Section 508:</strong> Federal standards for electronic accessibility</span>
+                    <UIcon name="i-heroicons-check-circle"
+                           class="w-5 h-5 text-green-600 mr-2 mt-0.5 shrink-0" />
+                    <span><strong>Section 508:</strong> Federal standards for
+                      electronic accessibility</span>
                   </li>
                   <li class="flex items-start">
-                    <UIcon name="i-heroicons-check-circle" class="w-5 h-5 text-green-600 mr-2 mt-0.5 shrink-0" />
-                    <span><strong>ADA Compliance:</strong> Americans with Disabilities Act requirements</span>
+                    <UIcon name="i-heroicons-check-circle"
+                           class="w-5 h-5 text-green-600 mr-2 mt-0.5 shrink-0" />
+                    <span><strong>ADA Compliance:</strong> Americans with
+                      Disabilities Act requirements</span>
                   </li>
                 </ul>
               </div>
@@ -122,11 +139,13 @@
 
           <!-- Assistive Technologies -->
           <div>
-            <h3 class="text-2xl font-bold mb-6">Supported Assistive Technologies</h3>
+            <h3 class="text-2xl font-bold mb-6">Supported Assistive Technologies
+            </h3>
             <UCard>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">
-                  Our website has been tested with the following assistive technologies:
+                  Our website has been tested with the following assistive
+                  technologies:
                 </p>
                 <div class="grid md:grid-cols-2 gap-4">
                   <div>
@@ -158,21 +177,28 @@
             <UCard>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">
-                  We are aware of the following accessibility issues and are working to address them:
+                  We are aware of the following accessibility issues and are
+                  working to address them:
                 </p>
                 <div class="space-y-3">
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="w-5 h-5 text-amber-500 mr-2 mt-0.5 shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle"
+                           class="w-5 h-5 text-amber-500 mr-2 mt-0.5 shrink-0" />
                     <div>
                       <h4 class="font-medium">Third-party Content</h4>
-                      <p class="text-gray-600 text-sm">Some embedded content from third-party providers may not meet our accessibility standards.</p>
+                      <p class="text-gray-600 text-sm">Some embedded content
+                        from third-party providers may not meet our
+                        accessibility standards.</p>
                     </div>
                   </div>
                   <div class="flex items-start">
-                    <UIcon name="i-heroicons-exclamation-triangle" class="w-5 h-5 text-amber-500 mr-2 mt-0.5 shrink-0" />
+                    <UIcon name="i-heroicons-exclamation-triangle"
+                           class="w-5 h-5 text-amber-500 mr-2 mt-0.5 shrink-0" />
                     <div>
                       <h4 class="font-medium">PDF Documents</h4>
-                      <p class="text-gray-600 text-sm">Some older PDF documents may not be fully accessible. We are working to remediate these.</p>
+                      <p class="text-gray-600 text-sm">Some older PDF documents
+                        may not be fully accessible. We are working to remediate
+                        these.</p>
                     </div>
                   </div>
                 </div>
@@ -186,18 +212,22 @@
             <UCard>
               <div class="p-6">
                 <p class="text-gray-600 mb-4">
-                  We welcome your feedback on the accessibility of our website. If you encounter any accessibility barriers or have suggestions for improvement, please contact us:
+                  We welcome your feedback on the accessibility of our website.
+                  If you encounter any accessibility barriers or have
+                  suggestions for improvement, please contact us:
                 </p>
                 <div class="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 class="font-semibold mb-2">Contact Information</h4>
                     <ul class="space-y-2 text-gray-600">
                       <li class="flex items-center">
-                        <UIcon name="i-heroicons-envelope" class="w-4 h-4 mr-2" />
-                        truenorthfederalconsulting@gmail.com
+                        <UIcon name="i-heroicons-envelope"
+                               class="w-4 h-4 mr-2" />
+                        info@truenorthfederalconsulting.com
                       </li>
                       <li class="flex items-center">
-                        <UIcon name="i-heroicons-phone" class="w-4 h-4 mr-2" />
+                        <UIcon name="i-heroicons-phone"
+                               class="w-4 h-4 mr-2" />
                         (555) 123-4567
                       </li>
                     </ul>
@@ -205,7 +235,9 @@
                   <div>
                     <h4 class="font-semibold mb-2">Response Time</h4>
                     <p class="text-gray-600 text-sm">
-                      We aim to respond to accessibility feedback within 2 business days and resolve issues within 10 business days when possible.
+                      We aim to respond to accessibility feedback within 2
+                      business days and resolve issues within 10 business days
+                      when possible.
                     </p>
                   </div>
                 </div>
@@ -219,10 +251,13 @@
               Our Ongoing Commitment
             </h3>
             <p class="text-blue-700 text-center mb-6">
-              Accessibility is an ongoing effort. We regularly audit our website, provide staff training, and update our practices to ensure everyone can access our federal contracting resources.
+              Accessibility is an ongoing effort. We regularly audit our
+              website, provide staff training, and update our practices to
+              ensure everyone can access our federal contracting resources.
             </p>
             <div class="text-center">
-              <UButton color="primary" to="/contact">
+              <UButton color="primary"
+                       to="/contact">
                 Report Accessibility Issue
               </UButton>
             </div>
