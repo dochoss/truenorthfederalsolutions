@@ -7,6 +7,7 @@ This file tracks work completed and plans future work for the True North Federal
 - [x] Create PRD.md - Product Requirements Document
 - [x] Create PROJECT_PLAN.md - Comprehensive project roadmap and planning
 - [x] Update TASKLIST.md - Transform to business-specific task tracking
+ - [x] Fix Azure Function Flex Consumption deployment workflow (`function-production-deploy.yml`): switch to .NET 8 publish output and remove unsupported slot deployment - 2026-02-12
  - [x] Implement Guides & Templates static listing (client now fetches `/guides/index.json`) - 2025-08-16
  - [x] Add `scripts/generate-guides.js` to produce `public/guides/index.json` at build time - 2025-08-16
  - [x] Update `package.json` with `generate-guides` script and prebuild/pregenerate hooks - 2025-08-16
