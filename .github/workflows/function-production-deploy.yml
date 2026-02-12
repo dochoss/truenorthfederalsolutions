@@ -8,13 +8,13 @@ on:
     branches:
       - main
     paths:
-      - 'api/**'
-      - '.github/workflows/function-production-deploy.yml'
+      - "api/**"
+      - ".github/workflows/function-production-deploy.yml"
   workflow_dispatch:
 
 env:
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: 'api'
-  DOTNET_VERSION: '8.0.x'
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: "api"
+  DOTNET_VERSION: "8.0.x"
 
 jobs:
   build-and-deploy:
@@ -50,5 +50,5 @@ jobs:
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'contact-form-func'
-          package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/publish'
+          app-name: "contact-form-func"
+          package: "${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/publish"
