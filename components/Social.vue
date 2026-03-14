@@ -11,7 +11,7 @@
                 <UIcon name="i-simple-icons-linkedin"
                        class="w-5 h-5" />
             </a>
-            <a href="mailto:info@truenorthfederalconsulting.com"
+            <a href="mailto:info@truenorthfederalsolutions.com"
                class="text-secondary-400 hover:text-primary-700 transition-colors"
                aria-label="Email Contact">
                 <UIcon name="i-heroicons-envelope"

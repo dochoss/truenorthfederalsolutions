@@ -24,9 +24,9 @@
             <!-- <div class="space-y-3">
               <div class="flex items-start gap-2">
                 <UIcon name="i-heroicons-envelope" class="w-4 h-4 text-primary-400" />
-                <a href="mailto:info@truenorthfederalconsulting.com"
+                <a href="mailto:info@truenorthfederalsolutions.com"
                   class="text-secondary-300 hover:text-white transition-colors text-sm break-all">
-                  info@truenorthfederalconsulting.com
+                  info@truenorthfederalsolutions.com
                 </a>
               </div>
               <div class="flex items-center space-x-3">

@@ -223,7 +223,7 @@
                       <li class="flex items-center">
                         <UIcon name="i-heroicons-envelope"
                                class="w-4 h-4 mr-2" />
-                        info@truenorthfederalconsulting.com
+                        info@truenorthfederalsolutions.com
                       </li>
                       <li class="flex items-center">
                         <UIcon name="i-heroicons-phone"
