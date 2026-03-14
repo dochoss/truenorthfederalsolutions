@@ -1,6 +1,10 @@
 <template>
-  <UPageCTA variant="naked" :title="title" :description="description" :links="links" :ui="ui"
-    class="bg-primary-700 rounded-none" />
+  <UPageCTA variant="naked"
+            :title="title"
+            :description="description"
+            :links="links"
+            :ui="ui"
+            class="bg-primary-700 rounded-none" />
 </template>
 
 <script setup lang="ts">
@@ -22,14 +26,14 @@ const props = withDefaults(
         to: '/contact',
         icon: 'i-heroicons-calendar-days',
         size: 'lg',
-        class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
+        class: 'flex w-80 items-center justify-center px-8 py-3 text-lg font-semibold !bg-white/95 !text-secondary-950 shadow-medium ring-1 ring-white/30 transition-colors hover:!bg-secondary-200 hover:!text-secondary-950 active:!bg-secondary-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-700'
       },
       {
         label: 'Download Free Guides',
         to: '/resources',
         icon: 'i-heroicons-document-text',
         size: 'lg',
-        class: 'flex items-center justify-center px-8 py-3 w-80 bg-secondary-100 hover:bg-secondary-300 hover:text-secondary-900 text-lg'
+        class: 'flex w-80 items-center justify-center px-8 py-3 text-lg font-semibold !bg-white/95 !text-secondary-950 shadow-medium ring-1 ring-white/30 transition-colors hover:!bg-secondary-200 hover:!text-secondary-950 active:!bg-secondary-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-700'
       }
     ]) as ButtonProps[]
   }
